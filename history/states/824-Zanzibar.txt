@@ -1,0 +1,30 @@
+
+state={
+	id=824
+	name="STATE_824"
+	history={
+		owner = ENG
+		victory_points = {
+			13246 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13246 = {
+				naval_base = 3
+			}
+			13245 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TZN
+		add_core_of = ZAN
+
+	}
+	provinces={
+		13245 13246 
+	}
+	manpower=854600
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,13 @@
+###########################
+###### NEUTRAL ZONE #######
+###########################
+
+piety_decisions = {
+
+	icon = GFX_decision_category_piety
+	picture = GFX_decision_cat_picture_piety_mechanics
+	
+	visible = {
+		is_islamic = yes
+	}
+}

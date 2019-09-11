@@ -1,0 +1,154 @@
+﻿capital = 446
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+oob = "EGY_1936"
+
+add_ideas = {
+	
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	EGY_world_breadbasket
+	EGY_political_instability
+	EGY_women_marches
+	EGY_corrupt_bureaucracy
+	EGY_rural_urban_split
+}
+
+set_popularities = {
+    democratic = 19
+    fascism = 8
+    communism = 2
+    neutrality = 71
+}
+
+create_country_leader = {
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fuad I"
+	desc = ""
+	picture = "gfx/leaders/EGY/Fuad_I.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Mohamed Naguib"
+	gfx = ""
+	traits = { infantry_officer infantry_leader politically_connected }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Abdelhakim Amer"
+	gfx = ""
+	traits = { infantry_officer panzer_expert armor_officer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mohamed Sanwar el-Sadat"
+	gfx = ""
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gamal Abdel Nasser"
+	gfx = ""
+	traits = { trait_reckless career_officer politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Hussein Sirri Amer"
+	gfx = ""
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Hussein Rekfi Pasha"
+	gfx = ""
+	traits = { politically_connected inflexible_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Hussein Rekfi Pasha"
+	gfx = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 4
+}

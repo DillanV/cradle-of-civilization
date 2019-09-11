@@ -1,0 +1,96 @@
+﻿###########################
+# Cradle Events (Neutral Zones)
+###########################
+
+add_namespace = neutral_zone
+
+# Neutral Zone Revoked; Other side loses DMZ
+country_event = {
+	id = neutral_zone.1
+	title = neutral_zone.1.t
+	desc = neutral_zone.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = neutral_zone_void }
+ 		} 		
+ 	}
+
+	option = {
+		name = neutral_zone.1.a
+		if = {
+			limit = {
+				original_tag = SAU
+				800 = {
+					is_demilitarized_zone = yes
+				}
+			}
+			800 = {
+				set_demilitarized_zone = no
+			}
+		}
+		if = {
+			limit = {
+				original_tag = IRQ
+				801 = {
+					is_demilitarized_zone = yes
+				}
+			}
+			801 = {
+				set_demilitarized_zone = no
+			}
+		}
+		hidden_effect = {
+			KUW = {
+				country_event = {
+					id = neutral_zone.2
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+# Kuwait Responds to Militarization
+country_event = {
+	id = neutral_zone.2
+	title = neutral_zone.2.t
+	desc = neutral_zone.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = neutral_zone.2.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 5
+				threat > 0.2
+			}
+		}
+		if = {
+			limit = {
+				original_tag = KUW
+				802 = {
+					is_demilitarized_zone = yes
+				}
+			}
+			802 = {
+				set_demilitarized_zone = no
+			}
+			812 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	option = {
+		name = neutral_zone.2.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

@@ -1,0 +1,38 @@
+on_actions = {
+	on_startup = {
+		effect = {
+            every_country = {
+                limit = {
+                    is_islamic = yes
+                    NOT = {
+                        has_government = communism
+                    }
+                }
+                set_variable = { islam_progress_bar = 50 }
+                set_variable = { islam = islam_progress_bar }
+                divide_variable = { islam = 1000 }
+                clamp_variable = { var = islam min = 0 max = 100 }
+                add_dynamic_modifier = {
+                    modifier = islamic_dynamic_modifier
+                }
+                set_variable = { islam_effect_2 = islam }
+                multiply_variable = {
+                       var = islam_effect_2
+                        value = 1.2
+                }
+                set_variable = { islam_effect_3 = islam }
+                multiply_variable = {
+                       var = islam_effect_3
+                        value = -1.5
+                }
+            }
+            #### ISLAM FOR COUNTRIES; MAX ADD AND DECREASE IS 25
+            SAU = {
+                add_25_islam = yes
+            }
+            YEM = {
+                add_20_islam = yes
+            }
+		}
+	}
+}

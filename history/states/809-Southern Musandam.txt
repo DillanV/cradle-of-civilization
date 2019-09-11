@@ -1,0 +1,23 @@
+
+state={
+	id=809
+	name="STATE_809"
+
+	history={
+		add_core_of = UAE
+		owner = UAE
+		add_claim_by = OMA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		10904 13228 
+	}
+	manpower=68900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

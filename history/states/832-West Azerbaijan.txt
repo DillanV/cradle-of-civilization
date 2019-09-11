@@ -1,0 +1,17 @@
+state={
+	id=832
+	name="STATE_832"
+	provinces={
+		1636 1822 7604 13120 
+	}
+	history = {
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=559869
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

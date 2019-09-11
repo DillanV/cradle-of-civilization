@@ -1,0 +1,20 @@
+
+state={
+	id=820
+	name="STATE_820"
+
+	history={
+		owner = EGY
+		add_core_of = EGY
+		add_core_of = SUD
+
+	}
+
+	provinces={
+		1080 4910 7156 
+	}
+	manpower=2004
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+}

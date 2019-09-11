@@ -1,0 +1,18 @@
+state={
+	id=846
+	name="STATE_846"
+	history = {
+		owner = OMA
+		add_core_of = OMA
+		add_claim_by = UAE
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		13277 13278 
+	}
+	manpower=10000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

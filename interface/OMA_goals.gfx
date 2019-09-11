@@ -1,0 +1,86 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_generic_attack_UK"
+		texturefile = "gfx/interface/goals/generic_attack_UK.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_balanced_budget"
+		texturefile = "gfx/interface/goals/generic_balanced_budget.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_rifle_research"
+		texturefile = "gfx/interface/goals/generic_rifle_research.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_restore_empire"
+		texturefile = "gfx/interface/goals/OMA_restore_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_restore_the_empire"
+		texturefile = "gfx/interface/goals/OMA_restore_the_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_royal_guards"
+		texturefile = "gfx/interface/goals/OMA_royal_guards.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_fleet_returns"
+		texturefile = "gfx/interface/goals/OMA_fleet_returns.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_muscat_supremacy"
+		texturefile = "gfx/interface/goals/OMA_muscat_supremacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_oman_supremacy"
+		texturefile = "gfx/interface/goals/OMA_oman_supremacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_vanquish_imamate"
+		texturefile = "gfx/interface/goals/OMA_vanquish_imamate.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_peaceful_message"
+		texturefile = "gfx/interface/goals/generic_peaceful_message.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_ibadism"
+		texturefile = "gfx/interface/goals/OMA_ibadism.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_political_purge"
+		texturefile = "gfx/interface/goals/generic_political_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_oil_discovery"
+		texturefile = "gfx/interface/goals/generic_oil_discovery.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_army_modifier"
+		texturefile = "gfx/interface/goals/generic_army_modifier.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_faded_britain"
+		texturefile = "gfx/interface/goals/generic_faded_britain.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_democractic_ideals"
+		texturefile = "gfx/interface/goals/OMA_democractic_ideals.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_zanzibar_union"
+		texturefile = "gfx/interface/goals/OMA_zanzibar_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_zanzibar_revolt"
+		texturefile = "gfx/interface/goals/OMA_zanzibar_revolt.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_draft_laws"
+		texturefile = "gfx/interface/goals/generic_draft_laws.dds"
+	}
+	SpriteType = {
+		name = "GFX_OMA_western_blueprints"
+		texturefile = "gfx/interface/goals/OMA_western_blueprints.dds"
+	}
+}

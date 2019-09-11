@@ -1,0 +1,17 @@
+state={
+	id=834
+	name="STATE_834"
+	history = {
+		owner = PER
+		add_core_of = PER
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		7990 10759 10873 10890 12739 12852 
+	}
+	manpower=131839
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

@@ -1,0 +1,15 @@
+state={
+	id=838
+	name="STATE_838"
+	history={
+		owner = SAU
+		add_core_of = SAU
+	}
+	provinces={
+		4974 8101 10815 10901 
+	}
+	manpower=12500
+	state_category=wasteland
+	impassable=yes
+	buildings_max_level_factor=1.000
+}

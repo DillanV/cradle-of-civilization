@@ -1,0 +1,22 @@
+state={
+	id=830
+	name="STATE_830"
+	history = {
+		owner = OMA
+		add_core_of = OMA
+		add_core_of = PAK
+		add_core_of = BAL
+		buildings = {
+			infrastructure = 1
+			13254 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		13254 
+	}
+	manpower=9870
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

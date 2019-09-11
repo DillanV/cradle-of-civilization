@@ -1,0 +1,66 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_saudi_meet"
+		texturefile = "gfx/event_pictures/GFX_report_event_saudi_meet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_said_bin_taimur"
+		texturefile = "gfx/event_pictures/GFX_report_event_said_bin_taimur.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_montreux_convention"
+		texturefile = "gfx/event_pictures/GFX_report_event_montreux_convention.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_montreux"
+		texturefile = "gfx/event_pictures/GFX_news_event_montreux.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_edward_with_ataturk"
+		texturefile = "gfx/event_pictures/GFX_report_event_edward_with_ataturk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_sword_of_islam"
+		texturefile = "gfx/event_pictures/GFX_report_event_sword_of_islam.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sword_of_islam_2"
+		texturefile = "gfx/event_pictures/GFX_report_event_sword_of_islam_2.dds"
+	}
+	spriteType = {
+		name = "GFX_abbased_texticon"
+		texturefile = "gfx/texticons/abbased_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_deathlinger_texticon"
+		texturefile = "gfx/texticons/deathlinger_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_globus_texticon"
+		texturefile = "gfx/texticons/globus_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_indy_texticon"
+		texturefile = "gfx/texticons/indy_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ryanlandia_texticon"
+		texturefile = "gfx/texticons/ryanlandia_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sirbobby_texticon"
+		texturefile = "gfx/texticons/sirbobby_texticon.dds"
+		legacy_lazy_load = no
+	}
+}

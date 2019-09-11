@@ -1,0 +1,1693 @@
+focus_tree = {
+	id = oman
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMA
+		}
+	}
+	#Focus for Omani Armed Forces
+	focus = {
+		id = OMA_omaniarmedforces
+		icon = GFX_focus_generic_combined_arms
+		x = 50
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			army_experience= 5
+			navy_experience= 5
+			air_experience= 5
+		}
+
+	}
+
+	#Focus for Rally the Populace
+	focus = {
+		id = OMA_rallythepopulace
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supremacyofoman }
+		ai_will_do = {
+			factor = 50
+		}
+
+	}
+
+	#Focus for Supremacy of Muscat
+	focus = {
+		id = OMA_supremacyofmuscat
+		icon = GFX_OMA_muscat_supremacy
+		x = 2
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = OMA_attemptcompromise }
+		mutually_exclusive = { focus = OMA_supremacyofoman }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power= 50
+			add_stability= -0.05
+		}
+
+	}
+
+	#Focus for Destroyer Research
+	focus = {
+		id = OMA_destroyerresearch
+		icon = GFX_goal_generic_navy_cruiser
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_returnoftheroyalnavy }
+		ai_will_do = {
+			factor = 15
+		}
+
+	}
+
+	#Focus for Skies of Tomorrow
+	focus = {
+		id = OMA_skiesoftomorrow
+		icon = GFX_goal_generic_build_airforce
+		x = 57
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_omaniarmedforces }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			air_experience= 10
+		}
+
+	}
+
+	#Focus for Submarine Effort
+	focus = {
+		id = OMA_submarineeffort
+		icon = GFX_goal_generic_navy_submarine
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_destroyerresearch }
+		ai_will_do = {
+			factor = 15
+		}
+
+	}
+
+	#Focus for Secularized Islam
+	focus = {
+		id = OMA_secularizedislam
+		icon = GFX_generic_peaceful_message
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_vanquishtheimamate }
+		available = {
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			subtract_15_islam = yes
+		}
+
+	}
+
+	#Focus for Zanzibar Revolt
+	focus = {
+		id = OMA_zanzibarrevolt
+		icon = GFX_OMA_zanzibar_revolt
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_gunstozanzibar }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			ZAN = {
+				country_event= {
+					days = 1
+					id = zanzibar.1
+				}
+			}
+		}
+
+	}
+
+	#Focus for Unite with Zanzibar
+	focus = {
+		id = OMA_unitewithzanzibar
+		icon = GFX_OMA_zanzibar_union
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_claimsonhadramaut }
+		prerequisite = { focus = OMA_zanzibarrevolt }
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			ZAN = {
+				exists= yes
+				has_country_flag= zanzibar_revolt_over
+			}
+		}
+		completion_reward = {
+			ZAN = {
+				country_event= {
+					days = 1
+					id = zanzibar.2
+				}
+			}
+		}
+
+	}
+
+	#Focus for Glory to the Sultan!
+	focus = {
+		id = OMA_glorytothesultan
+		icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_pacifytheinterior }
+		prerequisite = { focus = OMA_secularizedislam }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			remove_ideas = OMA_resistance_oman_2
+		}
+
+	}
+
+	#Focus for Pacify the Interior
+	focus = {
+		id = OMA_pacifytheinterior
+		icon = GFX_goal_generic_political_pressure
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_vanquishtheimamate }
+		available = {
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OMA_resistance_oman
+				add_idea = OMA_resistance_oman_2
+			}
+		}
+
+	}
+
+	#Focus for New Code of Laws
+	focus = {
+		id = OMA_newcodeoflaws
+		icon = GFX_generic_draft_laws
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supremacyofmuscat }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_ideas = OMA_new_law_code
+		}
+
+	}
+
+	#Focus for British Naval Cooperation
+	focus = {
+		id = OMA_britishnavalcooperation
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_requestbritisharmaments }
+		prerequisite = { focus = OMA_antifascism }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			navy_experience= 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+
+	}
+
+	#Focus for Guns to Zanzibar
+	focus = {
+		id = OMA_gunstozanzibar
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_independentambitions }
+		ai_will_do = {
+			factor = 33
+		}
+		available = {
+			is_subject= no
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.9
+			}
+		}
+
+	}
+
+	#Focus for Omani Royal Marines
+	focus = {
+		id = OMA_omaniroyalmarines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 42
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_navalofficertraining }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = marines
+				technology = marines2
+			}
+		}
+
+	}
+
+	#Focus for Naval Officer Training
+	focus = {
+		id = OMA_navalofficertraining
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 42
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_dockyardsofmuscat }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+
+	}
+
+	#Focus for Dockyards of Muscat
+	focus = {
+		id = OMA_dockyardsofmuscat
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 42
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_returnoftheroyalnavy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+
+	}
+
+	#Focus for Return of the Royal Navy
+	focus = {
+		id = OMA_returnoftheroyalnavy
+		icon = GFX_OMA_fleet_returns
+		x = 43
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_omaniarmedforces }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			navy_experience= 10
+		}
+
+	}
+
+	#Focus for Artillery Research
+	focus = {
+		id = OMA_artilleryresearch
+		icon = GFX_goal_generic_army_artillery2
+		x = 53
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_infantryequipmentresearch }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+
+	}
+
+	#Focus for Infantry Equipment Research
+	focus = {
+		id = OMA_infantryequipmentresearch
+		icon = GFX_generic_rifle_research
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_directionofthearmy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+
+	#Focus for Vanquish the Imamate
+	focus = {
+		id = OMA_vanquishtheimamate
+		icon = GFX_OMA_vanquish_imamate
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_newcodeoflaws }
+		prerequisite = { focus = OMA_sultansguard }
+		prerequisite = { focus = OMA_tightenimamregulations }
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.2
+			}
+		}
+
+	}
+
+	#Focus for Sultan's Guard
+	focus = {
+		id = OMA_sultansguard
+		icon = GFX_OMA_royal_guards
+		x = 4
+		y = 1
+		cost = 20
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supremacyofmuscat }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			custom_effect_tooltip = OMA_royal_guard_tt
+			hidden_effect = {
+				load_oob = OMA_royal_guard
+			}
+		}
+
+	}
+
+	#Focus for Tighten Imam Regulations
+	focus = {
+		id = OMA_tightenimamregulations
+		icon = GFX_goal_generic_forceful_treaty
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supremacyofmuscat }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_political_power= -50
+			country_event= {
+				days = 1
+				id = oman.1
+			}
+		}
+
+	}
+
+	#Focus for Attempt Compromise
+	focus = {
+		id = OMA_attemptcompromise
+		icon = GFX_goal_tripartite_pact
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = OMA_supremacyofmuscat }
+		mutually_exclusive = { focus = OMA_supremacyofoman }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power= -50
+			add_stability= 0.05
+		}
+
+	}
+
+	#Focus for Meeting with the Imam
+	focus = {
+		id = OMA_meetingwiththeimam
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_attemptcompromise }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.3
+			}
+		}
+
+	}
+
+	#Focus for Congress of Nizwa
+	focus = {
+		id = OMA_congressofnizwa
+		icon = GFX_focus_generic_treaty
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_meetingwiththeimam }
+		prerequisite = { focus = OMA_curbopposingnobility }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.4
+			}
+		}
+
+	}
+
+	#Focus for Curb Opposing Nobility
+	focus = {
+		id = OMA_curbopposingnobility
+		icon = GFX_generic_political_purge
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_attemptcompromise }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+	}
+
+	#Focus for Claims on Hadramaut
+	focus = {
+		id = OMA_claimsonhadramaut
+		icon = GFX_generic_faded_britain
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_musandamdispute }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_state_claim= 659
+			ENG = {
+				country_event= {
+					days = 1
+					id = oman.8
+				}
+			}
+		}
+
+	}
+
+	#Focus for Musandam Dispute
+	focus = {
+		id = OMA_musandamdispute
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_independentambitions }
+		ai_will_do = {
+			factor = 33
+		}
+		available = {
+			is_subject= no
+		}
+		completion_reward = {
+			UAE = {
+				country_event= {
+					days = 1
+					id = oman.7
+				}
+			}
+		}
+
+	}
+
+	#Focus for Independent Ambitions
+	focus = {
+		id = OMA_independentambitions
+		icon = GFX_focus_eng_decolonization
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_restoretheempire }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_ideas = OMA_independent_ambitions
+		}
+
+	}
+
+	#Focus for Rights of Man
+	focus = {
+		id = OMA_rightsofman
+		icon = GFX_OMA_democractic_ideals
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_religiouscompromise }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_war_support = -0.1
+			remove_ideas = OMA_resistance_oman_2
+		}
+
+	}
+
+	#Focus for Hinterland Colonization Project
+	focus = {
+		id = OMA_hinterlandcolonizationproject
+		icon = GFX_goal_generic_position_armies
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_aidtotheinterior }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_ideas = OMA_hinterland_colonization
+		}
+
+	}
+
+	#Focus for Religious Compromise
+	focus = {
+		id = OMA_religiouscompromise
+		icon = GFX_goal_generic_national_unity
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_congressofnizwa }
+		available = {
+			has_country_flag = OMA_crisis_avoided
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OMA_resistance_oman
+				add_idea = OMA_resistance_oman_2
+			}
+		}
+
+	}
+
+	#Focus for Aid to the Interior
+	focus = {
+		id = OMA_aidtotheinterior
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_congressofnizwa }
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_country_flag = OMA_crisis_avoided
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = OMA_sent_aid
+				days = 120
+			}
+			807 = {
+				one_random_infrastructure = yes
+			}
+			808 = {
+				one_random_infrastructure = yes
+			}
+		}
+	}
+
+	#Focus for Strength in Unity
+	focus = {
+		id = OMA_strengthinunity
+		icon = GFX_focus_generic_support_the_left_right
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_rightsofman }
+		prerequisite = { focus = OMA_hinterlandcolonizationproject }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+
+	#Focus for Petition the Sultan
+	focus = {
+		id = OMA_petitionthesultan
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supremacyofoman }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.4
+			}
+		}
+
+	}
+
+	#Focus for Supremacy of Oman
+	focus = {
+		id = OMA_supremacyofoman
+		icon = GFX_OMA_oman_supremacy
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = OMA_attemptcompromise }
+		mutually_exclusive = { focus = OMA_supremacyofmuscat }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+		}
+
+	}
+
+	#Focus for Omani Railways
+	focus = {
+		id = OMA_omanirailways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_taxationreforms }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			one_random_infrastructure = yes
+			two_random_infrastructure = yes
+		}
+
+	}
+
+	#Focus for Discovery of Oil
+	focus = {
+		id = OMA_discoveryofoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_oilconcessions }
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_country_flag= OMA_oil_discovered
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = synth_resources
+			}
+		}
+
+	}
+
+	#Focus for Further Oil Drilling
+	focus = {
+		id = OMA_furtheroildrilling
+		icon = GFX_goal_generic_construction2
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_discoveryofoil }
+		prerequisite = { focus = OMA_continuedindustrialization }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_resource= {
+				type = oil
+				amount = 4
+				state = 807
+			}
+			add_resource= {
+				type = oil
+				amount = 2
+				state = 808
+			}
+		}
+
+	}
+
+	#Focus for Oil Concessions
+	focus = {
+		id = OMA_oilconcessions
+		icon = GFX_generic_oil_discovery
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_balancedbudget }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.10
+			}
+		}
+
+	}
+
+	#Focus for Balanced Budget
+	focus = {
+		id = OMA_balancedbudget
+		icon = GFX_generic_balanced_budget
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_beginindustrialization }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+
+	}
+
+	#Focus for Restore the Empire
+	focus = {
+		id = OMA_restoretheempire
+		icon = GFX_OMA_restore_the_empire
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_entertheoutsideworld }
+		mutually_exclusive = { focus = OMA_staywithbritain }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+
+	}
+
+	#Focus for Proclaim the Omani Empire
+	focus = {
+		id = OMA_proclaimtheomaniempire
+		icon = GFX_OMA_restore_empire
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_unitewithzanzibar }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_cosmetic_tag= OMA_empire
+		}
+
+	}
+
+	#Focus for Enter the Outside World
+	focus = {
+		id = OMA_entertheoutsideworld
+		icon = GFX_goal_generic_political_pressure
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 66
+		}
+		available = {
+			has_country_flag= OMA_civil_war_ended
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+
+	}
+
+	#Focus for Glory to the Imam!
+	focus = {
+		id = OMA_glorytotheimam
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_spreadislamicscholars }
+		prerequisite = { focus = OMA_pacifymuscatnobles }
+		prerequisite = { focus = OMA_reinforceibaditraditions }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_war_support= 0.1
+		}
+
+	}
+
+	#Focus for Reinforce Ibadi Traditions
+	focus = {
+		id = OMA_reinforceibaditraditions
+		icon = GFX_OMA_ibadism
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_overthrowtheregime }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_ideas = OMA_ibadi_nationalism
+			add_15_islam = yes
+		}
+
+	}
+
+	#Focus for Overthrow the Regime
+	focus = {
+		id = OMA_overthrowtheregime
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_petitionthesultan }
+		prerequisite = { focus = OMA_rallythepopulace }
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.5
+			}
+		}
+
+	}
+
+	#Focus for Pacify Muscat Nobles
+	focus = {
+		id = OMA_pacifymuscatnobles
+		icon = GFX_goal_generic_attack_allies
+		x = 16
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_overthrowtheregime }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			remove_ideas = OMA_resistance_muscat
+		}
+
+	}
+
+	#Focus for Spread Islamic Scholars
+	focus = {
+		id = OMA_spreadislamicscholars
+		icon = GFX_focus_generic_military_academy
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_overthrowtheregime }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			SAU = {
+				country_event= {
+					days = 1
+					id = oman.6
+				}
+			}
+			UAE = {
+				country_event= {
+					days = 1
+					id = oman.6
+				}
+			}
+		}
+
+	}
+
+	#Focus for Stay with Britain
+	focus = {
+		id = OMA_staywithbritain
+		icon = GFX_focus_chi_british_cooperation
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_entertheoutsideworld }
+		mutually_exclusive = { focus = OMA_restoretheempire }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+
+	#Focus for Request British Armaments
+	focus = {
+		id = OMA_requestbritisharmaments
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_staywithbritain }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.9
+			}
+		}
+
+	}
+
+	#Focus for Anti-Fascism
+	focus = {
+		id = OMA_antifascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_staywithbritain }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = OMA_fascism_banned
+		}
+
+	}
+
+	#Focus for Support Civil Liberties
+	focus = {
+		id = OMA_supportcivilliberties
+		icon = GFX_goal_support_democracy
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_requestbritisharmaments }
+		prerequisite = { focus = OMA_antifascism }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support= -0.1
+		}
+
+	}
+
+	#Focus for Even the Field
+	focus = {
+		id = OMA_eventhefield
+		icon = GFX_focus_generic_support_the_left_right
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_supportcivilliberties }
+		prerequisite = { focus = OMA_britishnavalcooperation }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = OMA_even_field
+		}
+
+	}
+
+	#Focus for Begin Industrialization
+	focus = {
+		id = OMA_beginindustrialization
+		icon = GFX_goal_generic_construct_civilian
+		x = 35
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+
+	#Focus for Taxation Reforms
+	focus = {
+		id = OMA_taxationreforms
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_balancedbudget }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_ideas = OMA_economic_bonus
+		}
+
+	}
+
+	#Focus for Industrial Retooling
+	focus = {
+		id = OMA_industrialretooling
+		icon = GFX_goal_generic_production2
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_omanirailways }
+		prerequisite = { focus = OMA_westernblueprints }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+
+	#Focus for Continued Industrialization
+	focus = {
+		id = OMA_continuedindustrialization
+		icon = GFX_focus_generic_industry_2
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_industrialmanufacturing }
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			NOT = {
+				has_idea = OMA_industrial_incentive
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
+			}
+			add_timed_idea = {
+				idea = OMA_industrial_incentive
+				days = 180
+			}
+		}
+	}
+
+	#Focus for Industrial Manufacturing
+	focus = {
+		id = OMA_industrialmanufacturing
+		icon = GFX_focus_generic_industry_1
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_balancedbudget }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
+			}
+			add_timed_idea = {
+				idea = OMA_industrial_incentive
+				days = 180
+			}
+		}
+
+	}
+
+	#Focus for The New Age
+	focus = {
+		id = OMA_thenewage
+		icon = GFX_focus_generic_industry_3
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_industrialretooling }
+		prerequisite = { focus = OMA_furtheroildrilling }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+
+	#Focus for The Old Ways
+	focus = {
+		id = OMA_theoldways
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_directionofthearmy }
+		mutually_exclusive = { focus = OMA_thenewways }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_manpower = 7500
+		}
+
+	}
+
+	#Focus for Mass Production Ethos
+	focus = {
+		id = OMA_massproductionethos
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_theoldways }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_ideas = OMA_mass_production
+		}
+
+	}
+
+	#Focus for Mass Assault
+	focus = {
+		id = OMA_massassault
+		icon = GFX_goal_generic_small_arms
+		x = 49
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_massproductionethos }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+
+	}
+
+	#Focus for Call the Banners
+	focus = {
+		id = OMA_callthebanners
+		icon = GFX_goal_generic_propaganda
+		x = 49
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_massassault }
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_civil_war= no
+		}
+		completion_reward = {
+			add_ideas = OMA_tribal_banners
+		}
+
+	}
+
+	#Focus for Western Blueprints
+	focus = {
+		id = OMA_westernblueprints
+		icon = GFX_OMA_western_blueprints
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_educationreforms }
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			num_of_factories > 5
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+
+	#Focus for Land Doctrine I
+	focus = {
+		id = OMA_landdoctrinei
+		icon = GFX_goal_generic_army_doctrines
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_directionofthearmy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+
+	#Focus for Purchase Foreign Arms
+	focus = {
+		id = OMA_purchaseforeignarms
+		icon = GFX_goal_generic_military_sphere
+		x = 51
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_selectiveservice }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = oman.11
+			}
+		}
+
+	}
+
+	#Focus for Prussia of the Middle East
+	focus = {
+		id = OMA_prussiaofthemiddleeast
+		icon = GFX_goal_rhineland
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_purchaseforeignarms }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OMA_prussian_army
+				add_idea = OMA_prussian_army_2
+			}
+		}
+
+	}
+
+	#Focus for Selective Service
+	focus = {
+		id = OMA_selectiveservice
+		icon = GFX_focus_generic_military_academy
+		x = 51
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_thenewways }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = OMA_undecided_army
+			    add_idea = OMA_prussian_army
+			}
+		}
+
+	}
+
+	#Focus for Education Reforms
+	focus = {
+		id = OMA_educationreforms
+		icon = GFX_focus_research2
+		x = 32
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_balancedbudget }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_ideas = OMA_education_reform
+		}
+
+	}
+
+	#Focus for Direction of the Army
+	focus = {
+		id = OMA_directionofthearmy
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 50
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_omaniarmedforces }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+
+	#Focus for The New Ways
+	focus = {
+		id = OMA_thenewways
+		icon = GFX_generic_army_modifier
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_directionofthearmy }
+		mutually_exclusive = { focus = OMA_theoldways }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_manpower = 3250
+			army_experience = 10
+		}
+
+	}
+
+	#Focus for Land Doctrine II
+	focus = {
+		id = OMA_landdoctrineii
+		icon = GFX_goal_generic_army_doctrines
+		x = 47
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_landdoctrinei }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+
+	#Focus for Further Air Bases
+	focus = {
+		id = OMA_furtherairbases
+		icon = GFX_goal_generic_construction2
+		x = 56
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_studyofairwarfare }
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+
+	#Focus for Fighter Breakthrough
+	focus = {
+		id = OMA_fighterbreakthrough
+		icon = GFX_goal_generic_air_fighter2
+		x = 58
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_skiesoftomorrow }
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+
+	#Focus for CAS Research
+	focus = {
+		id = OMA_casresearch
+		icon = GFX_goal_generic_air_bomber
+		x = 58
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_fighterbreakthrough }
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+
+	#Focus for Invest in Capital Ships
+	focus = {
+		id = OMA_investincapitalships
+		icon = GFX_goal_generic_navy_battleship
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_submarineeffort }
+		ai_will_do = {
+			factor = 15
+		}
+
+	}
+
+	#Focus for Study of Air Warfare
+	focus = {
+		id = OMA_studyofairwarfare
+		icon = GFX_goal_generic_air_doctrine
+		x = 56
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_skiesoftomorrow }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+		}
+
+	}
+}

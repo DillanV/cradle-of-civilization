@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_sau_treaty_of_taif"
+		texturefile = "gfx/interface/ideas/idea_sau_treaty_of_taif.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_sau_pastoral_population"
+		texturefile = "gfx/interface/ideas/idea_SAU_pastoral_population.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_sau_inexperienced_army"
+		texturefile = "gfx/interface/ideas/idea_SAU_inexperienced_army.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_sau_ikhwan"
+		texturefile = "gfx/interface/ideas/idea_SAU_ikhwan.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_sau_ulama"
+		texturefile = "gfx/interface/ideas/idea_SAU_ulama.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_sau_hajj_based_economy"
+		texturefile = "gfx/interface/ideas/idea_SAU_hajj_based_economy.dds"			
+	}
+}

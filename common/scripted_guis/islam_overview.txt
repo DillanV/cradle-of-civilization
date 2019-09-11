@@ -1,0 +1,41 @@
+scripted_gui = {
+
+	fuhrer_mana_powers = {
+		context_type = player_context
+		
+		window_name = "islam_overview_container"
+		
+		visible = {
+                check_variable = { show_islam_overview = 1 }
+            }
+
+        properties = {
+            islam_score_progressbar = {
+                frame = ROOT.islam_progress_bar
+            }
+        }
+		
+		#effects = {
+		#	fuhrer_mana_power_gain_manpower_click = {
+		#		add_manpower = 10000
+		#		subtract_from_variable = { fuhrer_mana = 5 }
+		#	}
+		#	fuhrer_mana_power_gain_pp_click = {
+		#		add_political_power = 15
+		#		subtract_from_variable = { fuhrer_mana = 5 }
+		#	}
+		#	fuhrer_mana_power_gain_cp_click = {
+		#		add_command_power = 10
+		#		subtract_from_variable = { fuhrer_mana = 5 }
+		#	}
+		#	
+		#	fuhrer_mana_power_gain_xp_click = {
+		#		army_experience = 5
+		#		navy_experience = 5
+		#		air_experience = 5
+		#		subtract_from_variable = { fuhrer_mana = 5 }
+		#	}
+		#}
+	#}
+}
+

@@ -1,0 +1,76 @@
+on_actions = {
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = { 
+					OR = {
+						TAG = UAE
+						TAG = BRI
+						TAG = QAT
+						TAG = KUW
+						TAG = ISR
+					}
+				} 
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AFG
+						tag = ALB
+						tag = ALG
+						tag = AZR
+						tag = BAH
+						tag = BAN
+						tag = BOS
+						tag = CHA
+						tag = DJI
+						tag = EGY
+						tag = ERI
+						tag = GNA
+						tag = INS
+						tag = IRQ
+						tag = JOR
+						tag = KAZ
+						tag = KEN
+						tag = KUW
+						tag = KYR
+						tag = LBA
+						tag = LEB
+						tag = MAL
+						tag = MLD
+						tag = MLI
+						tag = MOR
+						tag = MRT
+						tag = NGR
+						tag = OMA
+						tag = PAK
+						tag = PAL
+						tag = PER
+						tag = QAT
+						tag = SAU
+						tag = SEN
+						tag = SIE
+						tag = SOM
+						tag = SUD
+						tag = SYR
+						tag = TAJ
+						tag = TMS
+						tag = TUN
+						tag = TUR
+						tag = TZN
+						tag = UAE
+						tag = UZB
+						tag = WES
+						tag = YEM
+					}
+				}
+				set_country_flag = muslim_nation
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=817
+	name="STATE_817"
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+
+	}
+
+	provinces={
+		1015 7176 11970 13237 
+	}
+	manpower=47000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

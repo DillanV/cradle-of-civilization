@@ -1,0 +1,176 @@
+﻿division_template = {
+	name = "Dasteband-e Piyade"
+	division_names_group = PER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Dasteband-e Savareh" #Cavalry
+	division_names_group = PER_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Dasteband-e Qazzaq" #Special Cavalry
+	division_names_group = PER_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Zandarmiri-e Daulati" #Militiary Police used as Militias
+	division_names_group = PER_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Machin-e Artesh" #American-Made armored cars
+	division_names_group = PER_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	######## LAND OOB ########
+	##### Royal Iranian Army #####
+	division = {
+		name = "Berigard-e Qazzaq I"
+		location = 1896
+		division_template = "Dasteband-e Qazzaq"		
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Berigard-e Qazzaq II"
+		location = 1896
+		division_template = "Dasteband-e Qazzaq"		
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Lashgar-e Sardar Pahlavi"
+		location = 10837
+		division_template = "Dasteband-e Piyade"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Lashgar-e Tahmasp"
+		location = 10837
+		division_template = "Machin-e Artesh"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Zandarmiri-e Pahlavi"
+		location = 2026
+		division_template = "Zandarmiri-e Daulati"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Nezam Savareh-ye Puladin"
+		location = 4580
+		division_template = "Dasteband-e Savareh"		
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		name = "Nezam Savareh-ye Dezfuli"
+		location = 7953
+		division_template = "Dasteband-e Savareh"		
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "Zandarmiri-e Keyhani"
+		location = 5029
+		division_template = "Zandarmiri-e Daulati"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Lashgar-e Rostam"
+		location = 8117
+		division_template = "Dasteband-e Piyade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+}
+
+air_wings = {
+	### Royal Iranian Air Force ###
+	266 = {
+		#Hawker Furys
+		fighter_equipment_0 =  {
+			owner = "PER" 
+			amount = 92
+		}
+		name = "Havaniruz Jangande"
+		ace={  
+			modifier="fighter_good"
+			name="Ozra"
+			surname="Asgar Gilani"
+			callsign="Khanoom"
+			is_female=yes
+			portrait = 1
+		}
+		# Hinds, Soviet Bombers
+		CAS_equipment_1 =  {
+			owner = "PER" 
+			amount = 48
+		}
+		name = "Havaniruz Bombafkan"
+	}
+}

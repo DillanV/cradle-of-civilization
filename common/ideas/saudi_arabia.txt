@@ -1,0 +1,434 @@
+ideas = {
+    country = {
+        SAU_treaty_of_taif = {
+			picture = sau_treaty_of_taif
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+                justify_war_goal_time = 0.20
+            }
+        }
+	}
+	country = {
+        SAU_inexperienced_army = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				max_planning = -0.15
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+            }
+        }
+	}
+	country = {
+        SAU_large_rural_population_1 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				conscription_factor = -0.35
+            }
+        }
+	}
+	
+	country = {
+        SAU_large_rural_population_2 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				conscription_factor = -0.25
+            }
+        }
+	}
+	
+	country = {
+        SAU_large_rural_population_3 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				conscription_factor = -0.15
+            }
+        }
+	}
+	country = {
+        SAU_ulama = {
+			picture = sau_ulama
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				research_speed_factor = -0.15
+            }
+        }
+	}
+	country = {
+        SAU_hajj_based_economy = {
+			picture = sau_hajj_based_economy
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				political_power_gain = -0.20
+				production_speed_buildings_factor = -0.10
+            }
+        }
+	}
+	country = {
+        SAU_ikhwan_unrest = {
+			picture = sau_hajj_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				stability_factor = -0.15
+            }
+        }
+	}
+	country = {
+        SAU_diversify_economy_idea = {
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+            modifier = {
+				production_speed_buildings_factor = 0.20
+            }
+        }
+	}
+	
+########################################	
+######################################## MINISTERS
+	political_advisor = {
+		fawzi_al_qawuqji = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			available = {
+				if = {
+					has_completed_focus = SAU_reinvite_fawzi
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { fascist_demagogue }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nazir_tyuryakulov = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { communist_revolutionary }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sheikh_abdullah = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { democratic_reformer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mohamed_bin_awad_bin_laden = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { quartermaster_general }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		faisal_bin_abdulaziz = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { compassionate_gentleman }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		abdullah_al_sulaiman_al_hamdan = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jawhara_bint_faisal = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+##############################
+############################## HIGH COMMAND
+	army_chief = {
+		
+		abdulaziz_ibn_saud = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+			available = {
+				SAU = { has_government = neutrality }
+			}
+
+			cost = 50
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mansour_bin_abdulaziz_al_saud = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		abdullah_al_mandili = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rashid_al_saleh = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+
+			traits = { air_pilot_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	high_command = {
+
+		mohamed_tarek_abdelkader_afrique = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jafar_bek_pilot = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_regrouping_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		said_bin_abdullah_kurdi = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+##############################
+############################## COMPANIES
+	materiel_manufacturer = {
+
+		designer = yes
+
+		haji_husein_alireza = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+		
+		alawwal_bank = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		bin_ladin_group = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		house_of_alireza = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.20
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		aramco = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor  = 0.15
+				local_resources_factor = 0.20
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+state={
+	id=829
+	name="STATE_829"
+	history={
+		owner = EGY
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = EGY
+	}
+	provinces={
+		1068 3996 4055 7117 10031 
+	}
+	manpower=2663086
+	state_category=town
+	buildings_max_level_factor=1.000
+}

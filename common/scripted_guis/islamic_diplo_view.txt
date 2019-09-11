@@ -1,0 +1,16 @@
+scripted_gui = {
+	islam_diploview = {
+	        context_type = selected_country_context
+			parent_window_token = selected_country_view
+
+	        window_name = "islamic_diploview"
+
+	        visible = {
+	        	is_islamic = yes
+	        }
+
+	        effects = {
+	    }
+	}
+}
+

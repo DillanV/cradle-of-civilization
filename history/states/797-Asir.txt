@@ -1,0 +1,21 @@
+state={
+	id=797
+	name="STATE_797"
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+		victory_points = {
+			8073 1 
+		}
+
+	}
+	provinces={
+		5006 8073 
+	}
+	manpower=376000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

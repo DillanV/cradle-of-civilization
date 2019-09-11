@@ -1,0 +1,27 @@
+
+state={
+	id=819
+	name="STATE_819"
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 5
+			air_base = 2
+
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+		victory_points = {
+			13239 1 
+		}
+
+	}
+
+	provinces={
+		13239 13272 
+	}
+	manpower=43000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

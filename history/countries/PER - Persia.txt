@@ -1,0 +1,144 @@
+﻿capital = 266
+
+oob = "PER_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "PER_1936_naval_mtg"
+	else = {
+		set_naval_oob = "PER_1936_naval_legacy"
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		mtg_transport = 1
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+	transport = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gwtank = 1
+}
+
+set_convoys = 10
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 99
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 8
+    fascism = 17
+    communism = 11
+    neutrality = 64
+}
+
+add_ideas = {
+	PER_oil_concessions
+	
+	PER_you_are_corrupt_congrats
+	PER_ploopy_economy
+	PER_you_are_unpopular
+	PER_the_clergy_hate_you
+}
+
+create_country_leader = {
+	name = "Reza Shah Pahlavi"
+	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
+	picture = "gfx/leaders/PER/Reza_Shah.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		strongman_shah
+	}
+}
+
+create_country_leader = {
+	name = "Soleiman Mirza Eskanderi"
+	desc = ""
+	picture = "gfx/leaders/PER/Soleiman_Eskanderi.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		triumphant_revolutionary
+	}
+}
+
+create_country_leader = {
+	name = "Bahram Ariana"
+	desc = ""
+	picture = "Bahram_Ariana.tga"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		nationalist_symbol
+	}
+}
+
+create_country_leader = {
+	name = "Mohammed Mossadegh"
+	desc = ""
+	picture = "Mohammad_Mossadegh.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Hassan Arfa"
+	portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = {  trickster desert_fox }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Reza Shah"
+	portrait_path = "gfx/leaders/PER/Reza_Khan.tga"
+	traits = { old_guard war_hero defensive_doctrine }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+}

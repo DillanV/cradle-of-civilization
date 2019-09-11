@@ -1,0 +1,95 @@
+neutral_zone_management = {
+
+#Decision for Break the Protocol
+breaktheprotocol = {
+	icon = decision_generic_break_treaty
+	visible = {
+		800 = {
+			is_demilitarized_zone = yes
+		}
+		801 = {
+			is_demilitarized_zone = yes
+		}
+	}
+	complete_effect = {
+		if = {
+			limit = {
+				SAU = {
+					is_ai = no
+				}
+			}
+			SAU = {
+				800 = {
+					set_demilitarized_zone = no
+				}
+			}
+			IRQ = {
+				country_event = {
+					id = neutral_zone.1
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				IRQ = {
+					is_ai = no
+				}
+			}
+			IRQ = {
+				801 = {
+					set_demilitarized_zone = no
+				}
+			}
+			SAU = {
+				country_event = {
+					id = neutral_zone.1
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					IRQ = {
+						is_ai = no
+					}
+					SAU = {
+						is_ai = no
+					}
+				}
+			}
+			801 = {
+				set_demilitarized_zone = no
+			}
+			SAU = {
+				country_event = {
+					id = neutral_zone.1
+					days = 1
+				}
+			}
+		}
+	}
+	cost = 100
+	fire_only_once = yes
+	ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				threat > 0.2
+			}
+			modifier = {
+				factor = 20
+				threat > 0.5
+			}
+			modifier = {
+				factor = 40
+				threat > 0.75
+			}
+			modifier = {
+				factor = 80
+				threat > 0.95
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=802
+	name="STATE_802"
+	history = {
+		owner = KUW
+		add_core_of = KUW
+		add_claim_by = IRQ
+		
+		buildings = {
+			infrastructure = 1
+		}
+		
+		set_demilitarized_zone = yes
+	}
+	provinces={
+		13223 
+	}
+	manpower=1220
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

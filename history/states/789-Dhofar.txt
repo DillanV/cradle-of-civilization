@@ -1,0 +1,21 @@
+state={
+	id=789
+	name="STATE_789"
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = OMA
+		victory_points = {
+			2103 1
+		}
+
+	}
+	provinces={
+		2059 2103 
+	}
+	manpower=13700
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

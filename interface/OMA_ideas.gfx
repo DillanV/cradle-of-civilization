@@ -1,0 +1,30 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_oman_rivalry"
+		texturefile = "gfx/interface/ideas/idea_oman_rivalry.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_oman_undecided_military"
+		texturefile = "gfx/interface/ideas/idea_oman_undecided_military.dds"			
+	}
+	spriteType = {
+		name = "GFX_idea_OMA_ibadi_nationalism"
+		texturefile = "gfx/interface/ideas/idea_OMA_ibadi_nationalism.dds"			
+	}
+	spriteType = {
+		name = "GFX_decision_generic_independent_ambition"
+		texturefile = "gfx/interface/ideas/decision_generic_independent_ambition.dds"			
+	}
+	spriteType = {
+		name = "GFX_decision_generic_economic_revenue"
+		texturefile = "gfx/interface/ideas/generic_economic_revenue.dds"			
+	}
+	spriteType = {
+		name = "GFX_decision_generic_prussian_army"
+		texturefile = "gfx/interface/ideas/generic_prussian_army.dds"			
+	}
+	spriteType = {
+		name = "GFX_decision_generic_prussian_army2"
+		texturefile = "gfx/interface/ideas/generic_prussian_army2.dds"			
+	}
+}

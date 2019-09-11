@@ -1,0 +1,20 @@
+state={
+	id=801
+	name="STATE_801"
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		
+		buildings = {
+			infrastructure = 1
+		}
+		
+		set_demilitarized_zone = yes
+	}
+	provinces={
+		13221 
+	}
+	manpower=820
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,18 @@
+﻿######Iran had a small, mostly italian navy.
+units = {
+	fleet = {
+		name = "Imperial Iranian Navy"
+		naval_base = 7982
+		task_force = {				
+			name = "Imperial Iranian Fleet"
+			location = 7982
+			ship = { name = "Babr" definition = destroyer equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Palang" definition = destroyer equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Shahrokh" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Simorgh" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Karkas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Chahbaaz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PER } } }
+			ship = { name = "Nahang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PER } } }
+		}
+	}	
+}

@@ -1,0 +1,19 @@
+state={
+	id=788
+	name="STATE_788"
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TUR
+		add_core_of = HAT
+	}
+	provinces={
+		12029 
+	}
+	manpower=219340
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

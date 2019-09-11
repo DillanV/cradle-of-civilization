@@ -1,0 +1,26 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			13242 1 
+		}
+		add_core_of = OMA
+
+	}
+
+	provinces={
+		2018 5049 13229 13241 13242 
+	}
+	manpower=83000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

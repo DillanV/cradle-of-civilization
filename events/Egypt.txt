@@ -1,0 +1,63 @@
+﻿#EVENTS FOR EGYPT
+
+add_namespace = egypt
+
+
+country_event = {
+    id = egypt.1
+    title = egypt.1.t
+    desc = egypt.1.d
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = EGY
+        date < 1936.4.1
+        date > 1936.3.1
+    }
+
+    option = { ####Regency
+    name = egypt.1.a
+        kill_country_leader = yes	
+        create_country_leader = {
+            name = "Fawzia Fuad" 
+            desc = "POLITICS_Fawzia_Fuad_DESC"
+            picture = "Portrait_EGY_Fawzia_Fuad.dds" 
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {
+            }
+        }
+        set_country_flag = fuad_death
+    }
+}
+
+country_event = {
+    id = egypt.2
+    title = egypt.2.t
+    desc = egypt.2.d
+    fire_only_once = yes
+
+
+
+    option = {
+        name = egypt.2.a
+        set_politics = {
+            ruling_party = neutrality
+        }
+    }
+
+    option = {
+        name = egypt.2.b
+        set_politics = {
+            ruling_party = democratic
+        }
+    }
+
+    option = {
+        name = egypt.2.c
+        set_politics = {
+            ruling_party = fascism
+        }
+    }
+}

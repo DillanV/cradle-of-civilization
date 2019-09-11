@@ -1,0 +1,150 @@
+﻿###########################
+####### Oman Events #######
+###########################
+
+add_namespace = oman
+
+### Limit the power of the Imam
+country_event = {
+	id = oman.1
+	title = oman.1.t
+	desc = oman.1.d
+	picture = GFX_report_event_said_bin_taimur
+
+	is_triggered_only = yes	
+
+	option = {
+		# Soft restrictions
+		name = oman.1.a
+		ai_chance = {
+			factor = 50
+		}
+		custom_effect_tooltip = OMA_soft_restriction_tt
+		add_stability = -0.1
+		add_war_support = -0.1
+		subtract_5_islam = yes
+		set_country_flag = OMA_weakened_imam
+	}
+
+	option = {
+		# Hard restrictions
+		name = oman.1.b
+		ai_chance = {
+			factor = 50
+		}
+		custom_effect_tooltip = OMA_hard_restriction_tt
+		add_stability = -0.2
+		add_war_support = -0.25
+		subtract_10_islam = yes
+		set_country_flag = OMA_severe_weakened_imam
+	}
+
+	option = {
+		# No restrictions
+		name = oman.1.c
+		ai_chance = {
+			factor = 50
+		}
+		custom_effect_tooltip = OMA_no_restriction_tt
+	}
+}
+
+### Vanquish the Imamate, civil war occurs
+country_event = {
+	id = oman.2
+	title = oman.2.t
+	desc = oman.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes	
+
+	option = {
+		# Civil War
+		name = oman.2.a
+		custom_effect_tooltip = OMA_civil_war_tt
+		subtract_5_islam = yes
+		hidden_effect = {	
+
+			add_stability = -0.1
+			add_war_support = -0.1
+			set_country_flag = OMA_sultan_backed
+
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = neutrality
+				size = 0
+				only_own_territory = yes
+				capital = 293
+				states = { 
+					807 789 846
+				}	
+			    keep_unit_leaders = {
+			    	9001
+			    }
+			}
+
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+
+			load_oob = "OMA_civil_war_sultan"
+
+			random_country = {
+				limit = {
+					original_tag = OMA
+					NOT = {
+						has_country_flag = OMA_sultan_backed
+					}
+				}
+				load_oob = "OMA_civil_war_imam"
+				add_offsite_building = { type = arms_factory level = 1 }
+				create_country_leader = {
+					name = "Ghalib Alhinai"
+					desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+					picture = "OMA_Ghalib_Alhinai.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_weakened_imam
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_sultan_backed
+						}
+					}
+					add_ideas = OMA_imam_weakened
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_severe_weakened_imam
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_sultan_backed
+						}
+					}
+					add_ideas = OMA_imam_severely_weakened
+				}
+			}
+		}
+	}
+}
+

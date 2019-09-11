@@ -1,0 +1,21 @@
+state={
+	id=814
+	name="STATE_814"
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			1634 1 
+		}
+		add_core_of = SYR
+
+	}
+	provinces={
+		901 1549 1578 1606 1634 6883 10882 
+	}
+	manpower=216000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

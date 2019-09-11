@@ -1,0 +1,15 @@
+state={
+	id=839
+	name="STATE_839"
+	history={
+		owner = JOR
+		add_core_of = JOR
+	}
+	provinces={
+		1544 4440 4603 
+	}
+	manpower=6500
+	state_category=wasteland
+	impassable=yes
+	buildings_max_level_factor=1.000
+}

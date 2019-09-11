@@ -1,0 +1,24 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_islam_icon"
+		texturefile = "gfx/interface/islam_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_islam_bg"
+		texturefile = "gfx/interface/islam_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_progress_bar_frame"
+		texturefile = "gfx/interface/progress_bar_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_islam_texticon"
+		texturefile = "gfx/texticons/islam_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_diplo_unity_bg_2"
+		texturefile = "gfx/interface/diplo_unity_bg_2.dds"
+		legacy_lazy_load = no
+	}
+}

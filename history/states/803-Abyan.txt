@@ -1,0 +1,22 @@
+
+state={
+	id=803
+	name="STATE_803"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YEM
+
+	}
+
+	provinces={
+		5074 13234 13265 
+	}
+	manpower=427000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

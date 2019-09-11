@@ -1,0 +1,2507 @@
+focus_tree = {
+	id = yemen
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YEM
+		}
+	}
+	continuous_focus_position = { x = 25 y = 1100 }
+
+	#Focus for Encourage Militarism
+	focus = {
+		id = YEM_encourage_militarism
+		icon = GFX_YEM_militarism
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_conservativepartywins }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_ideas= YEM_militarism
+		}
+
+	}
+
+	#Focus for Sharia Law
+	focus = {
+		id = YEM_traditionallaw
+		icon = GFX_generic_sharia_law
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_conservativepartywins }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_10_islam = yes
+			add_ideas= YEM_traditional_law
+		}
+
+	}
+
+	#Focus for Equality before God
+	focus = {
+		id = YEM_equality_before_god
+		icon = GFX_goal_tripartite_pact
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_traditionallaw }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_5_islam = yes
+			add_war_support = 0.1
+			add_stability = 0.05
+		}
+
+	}
+
+	#Focus for German Military Mission
+	focus = {
+		id = YEM_wehrmacht_partnership
+		icon = GFX_generic_wehrmacht_partnership
+		x = 50
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 45
+		}
+		completion_reward = {
+			army_experience= 10
+		}
+
+	}
+
+	#Focus for Cadets to Iraq
+	focus = {
+		id = YEM_iraqi_officers
+		icon = GFX_generic_iraqi_officers
+		x = 52
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 45
+		}
+		completion_reward = {
+			army_experience= 10
+		}
+
+	}
+
+	#Focus for British Industrial Deals
+	focus = {
+		id = YEM_britishindustrialdeals
+		icon = GFX_focus_chi_british_cooperation
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_beginthesixyearplan }
+		available = {
+			NOT = {
+				has_completed_focus = YEM_italianindustrialdeals
+			}
+		}
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			### NEEDS WORK
+			add_political_power= 50
+		}
+
+	}
+
+	#Focus for Begin the Six-Year Plan
+	focus = {
+		id = YEM_beginthesixyearplan
+		icon = GFX_goal_generic_consumer_goods
+		x = 41
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+
+	#Focus for Industrial Research
+	focus = {
+		id = YEM_industrialresearch
+		icon = GFX_goal_generic_construct_civilian
+		x = 40
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_beginthesixyearplan }
+		mutually_exclusive = { focus = YEM_electronicsresearch }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+
+	#Focus for Armanents in Sana'a
+	focus = {
+		id = YEM_armanentsinsanaa
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 38
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_industryinsanaa }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			293={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+
+	#Focus for Armanents in Taizz
+	focus = {
+		id = YEM_armanentsintaizz
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_industryintaizz }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			805={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+
+				}
+			}
+		}
+
+	}
+
+	#Focus for Industry in Sana'a
+	focus = {
+		id = YEM_industryinsanaa
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_britishindustrialdeals }
+		mutually_exclusive = { focus = YEM_industryintaizz }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			293={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+
+	#Focus for Industry in Taizz
+	focus = {
+		id = YEM_industryintaizz
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_britishindustrialdeals }
+		mutually_exclusive = { focus = YEM_industryinsanaa }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			805={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+
+	#Focus for Crush the Nobles
+	focus = {
+		id = YEM_crush_nobles
+		icon = GFX_generic_crush_extremists
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_exportcrops }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_popularity = {
+			    ideology = democratic
+			    popularity = 0.15
+			}
+			add_political_power = -75
+		}
+
+	}
+
+	#Focus for The Yemeni Constitution
+	focus = {
+		id = YEM_the_yemeni_constutution
+		icon = GFX_theyemeniconstitution
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_fund_democratic_partisans focus = YEM_nahda }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+
+	}
+
+	#Focus for Export Cash Crops
+	focus = {
+		id = YEM_exportcrops
+		icon = GFX_generic_opium_growth
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_conservativepartywins }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_ideas= YEM_cash_crops
+		}
+
+	}
+
+	#Focus for An Islamic Republic
+	focus = {
+		id = YEM_conservativepartywins
+		icon = GFX_generic_liberalizing_islam
+		x = 9
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_holdelections }
+		mutually_exclusive = { focus = YEM_liberalpartywins }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = yem_conservativewin_tt
+		}
+	}
+
+	#Focus for Join the Western Democracies
+	focus = {
+		id = YEM_liberalpartywins
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 13
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_holdelections }
+		mutually_exclusive = { focus = YEM_conservativepartywins }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = yem_liberalwin_tt
+		}
+
+	}
+
+	#Focus for Gain British Support
+	focus = {
+		id = YEM_gainbritishsupport
+		icon = GFX_focus_chi_british_cooperation
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_riseofdemocracy }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			ENG = {country_event= {
+					days = 1
+					id = yemen.1
+				}
+			}
+		}
+
+	}
+
+	#Focus for Hire Democratic Supporters
+	focus = {
+		id = YEM_hiredemocraticsupporters
+		icon = GFX_generic_democratic_propaganda
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_riseofdemocracy }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas= democratic_influence
+		}
+
+	}
+
+	#Focus for Crush Bait al-Nidal
+	focus = {
+		id = YEM_crush_bait_al-nidal
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 2
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_expandmilitarycontrol }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = -0.1
+			}
+		}
+
+	}
+
+	#Focus for Italian Production Mission
+	focus = {
+		id = YEM_italianproductionmission
+		icon = GFX_goal_generic_production2
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_favortheitalians }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_ideas= YEM_italian_mission
+		}
+
+	}
+
+	#Focus for Invite Intellectuals
+	focus = {
+		id = YEM_inviteintellectuals
+		icon = GFX_goal_generic_scientific_exchange
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_liberalpartywins }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_ideas= YEM_intellectuals
+		}
+
+	}
+
+	#Focus for Favour the British
+	focus = {
+		id = YEM_favourthebritish
+		icon = GFX_focus_chi_british_cooperation
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_newforeignpolicy }
+		mutually_exclusive = { focus = YEM_favortheitalians }
+		mutually_exclusive = { focus = YEM_independentpolicy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = YEM_friendship_opinion
+			}
+			ENG = {add_opinion_modifier= {
+					target = YEM
+					modifier = YEM_friendship_opinion
+				}
+			}
+		}
+
+	}
+
+	#Focus for New Foreign Policy
+	focus = {
+		id = YEM_newforeignpolicy
+		icon = GFX_goal_generic_alliance
+		x = 27
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				has_completed_focus = YEM_thenewcentralgovernment
+				has_completed_focus = YEM_alwaziri_coup
+				has_completed_focus = YEM_holdelections
+			}
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+
+	}
+
+	#Focus for Nahda
+	focus = {
+		id = YEM_nahda
+		icon = GFX_generic_islamic_research
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_civilliberties }
+		prerequisite = { focus = YEM_abolish_slavery }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+
+	}
+
+	#Focus for Worker's Push
+	focus = {
+		id = YEM_workers_push
+		icon = GFX_generic_union_workers
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_liberalpartywins }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = YEM_rebuild
+				days = 180
+			}
+		}
+
+	}
+
+	#Focus for Begin Electrification
+	focus = {
+		id = YEM_beginelectrification
+		icon = GFX_goal_generic_production2
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_liberalpartywins }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			293= {
+				add_building_construction = {type = infrastructure
+					level = 1
+					instant_build = yes}
+
+			}
+
+			805= {
+				add_building_construction = {type = infrastructure
+					level = 1
+					instant_build = yes}
+
+			}
+		}
+
+	}
+
+	#Focus for Abolish Slavery
+	focus = {
+		id = YEM_abolish_slavery
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_beginelectrification }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.15
+			add_timed_idea = {
+				idea = YEM_echoes_of_slavery
+				days = 150
+			}
+		}	
+	}
+
+	#Focus for Rewrite the Friendship Treaty
+	focus = {
+		id = YEM_rewritethefriendshiptreaty
+		icon = GFX_focus_generic_treaty
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_favourthebritish }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			ENG = {
+				country_event = { days = 1 id = yemen.4 }
+			}
+		}
+
+	}
+
+	#Focus for Hold Elections
+	focus = {
+		id = YEM_holdelections
+		icon = GFX_YEM_elections
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_startthecivilwar }
+		available = {
+			has_civil_war = no
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = yemen.13
+			}
+		}
+
+	}
+
+	#Focus for Electronics Research
+	focus = {
+		id = YEM_electronicsresearch
+		icon = GFX_goal_generic_radar
+		x = 42
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_beginthesixyearplan }
+		mutually_exclusive = { focus = YEM_industrialresearch }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+		}
+
+	}
+
+	#Focus for Promote Zaydi Islam
+	focus = {
+		id = YEM_promotezaydiislam
+		icon = GFX_goal_generic_political_pressure
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_greateryemenproject }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_timed_idea= {
+				idea = YEM_propagate_zaydi
+				days = 365
+			}
+		}
+
+	}
+
+	#Focus for Freedom for the Islamic World
+	focus = {
+		id = YEM_freedomfortheislamicworld
+		icon = GFX_focus_AST_never_gallipoli
+		x = 28
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_sponsorsabotage }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			### NEEDS WORK
+			declare_war_on= {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on= {
+				target = FRA
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for War with Saudi Arabia
+	focus = {
+		id = YEM_warwithsaudiarabia
+		icon = GFX_goal_generic_major_war
+		x = 32
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_promotezaydiislam }
+		prerequisite = { focus = YEM_denouncethesaudis }
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_army_manpower = {
+				size > 29999
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for Denounce the Saudis
+	focus = {
+		id = YEM_denouncethesaudis
+		icon = GFX_denouncethesaudis
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_greateryemenproject }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_state_claim = 797
+			add_state_claim = 795
+			add_opinion_modifier = {
+				target = SAU
+				modifier = deteriorating_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = SAU
+				modifier = deteriorating_relations
+			}
+		}
+	}
+
+	#Focus for Unity among Islam
+	focus = {
+		id = YEM_unityamongislam
+		icon = GFX_focus_generic_support_the_left_right
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_saudialliance }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			add_ideas = YEM_religious_tolerance
+			subtract_5_islam = yes
+		}
+
+	}
+
+	#Focus for Coerce Independent Nations
+	focus = {
+		id = YEM_coerceindependentnations
+		icon = GFX_goal_generic_propaganda
+		x = 26
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_unityamongislam }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			IRQ = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			BRI = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			KUW = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			UAE = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			JOR = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			QAT = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+			OMA = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							is_subject_of = ENG
+						}
+					}
+					country_event = {
+						id = yemen.12
+						days = 1
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Sponsor Sabotage
+	focus = {
+		id = YEM_sponsorsabotage
+		icon = GFX_focus_prc_infiltration
+		x = 28
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_saudialliance }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			ENG = { set_country_flag = colonial_sabotage }
+			FRA = { set_country_flag = colonial_sabotage }
+		}
+
+	}
+
+	#Focus for Befriend the Saudis
+	focus = {
+		id = YEM_befriendthesaudis
+		icon = GFX_goal_generic_improve_relations
+		x = 26
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_panarabism }
+		ai_will_do = {
+			factor = 30
+		}
+		bypass = {
+			SAU = {
+				OR= {
+					has_war_with = YEM
+					is_in_faction = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SAU
+				modifier = YEM_friendship_opinion
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = YEM_friendship_opinion
+				}
+			}
+		}
+	}
+
+	#Focus for Anti-Imperialism
+	focus = {
+		id = YEM_antiimperialism
+		icon = GFX_antiimperialism
+		x = 28
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_panarabism }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = anti_colonialism_opinion }
+			add_opinion_modifier = { target = FRA modifier = anti_colonialism_opinion }
+		}
+
+	}
+
+	#Focus for Unwavering Bastion
+	focus = {
+		id = YEM_unwaveringbastion
+		icon = GFX_goal_generic_major_alliance
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_declareneutrality }
+		prerequisite = { focus = YEM_deterrence }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = deterrence
+				add_idea = YEM_deterrence
+			}
+		}
+
+	}
+
+	#Focus for Pan-Arabism
+	focus = {
+		id = YEM_panarabism
+		icon = GFX_goal_tripartite_pact
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_italianbasingrights focus = YEM_unwaveringbastion }
+		mutually_exclusive = { focus = YEM_greateryemenproject }
+		bypass = {
+	        NOT = {
+	        	has_global_flag = pan_arab_alliance_flag
+	        }
+	    }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+
+	}
+
+	#Focus for Independent Policy
+	focus = {
+		id = YEM_independentpolicy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_newforeignpolicy }
+		mutually_exclusive = { focus = YEM_favourthebritish }
+		mutually_exclusive = { focus = YEM_favortheitalians }
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+
+	}
+
+	#Focus for Declare Neutrality
+	focus = {
+		id = YEM_declareneutrality
+		icon = GFX_goal_generic_neutrality_focus
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_independentpolicy }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_ideas= neutrality_idea
+			add_war_support = -0.1
+		}
+
+	}
+
+	#Focus for Deterrence
+	focus = {
+		id = YEM_deterrence
+		icon = GFX_goal_generic_small_arms
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_independentpolicy }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_ideas= deterrence
+		}
+
+	}
+
+	#Focus for Italian Basing Rights
+	focus = {
+		id = YEM_italianbasingrights
+		icon = GFX_goal_support_fascism
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_renewthefriendshiptreaty }
+		prerequisite = { focus = YEM_italianproductionmission }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			ITA = {country_event= {
+					days = 1
+					id = yemen.6
+				}
+			}
+		}
+
+	}
+
+	#Focus for Renew the Friendship Treaty
+	focus = {
+		id = YEM_renewthefriendshiptreaty
+		icon = GFX_goal_generic_forceful_treaty
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_favortheitalians }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			ITA = {
+				country_event = {days = 1 id = yemen.4 }
+			}
+		}
+
+	}
+
+	#Focus for Favor the Italians
+	focus = {
+		id = YEM_favortheitalians
+		icon = GFX_favortheitalians
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_newforeignpolicy }
+		mutually_exclusive = { focus = YEM_favourthebritish }
+		mutually_exclusive = { focus = YEM_independentpolicy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = YEM_friendship_opinion
+			}
+			ITA = {add_opinion_modifier= {
+					target = YEM
+					modifier = YEM_friendship_opinion
+				}
+			}
+		}
+
+	}
+
+	#Focus for Anti-Fascist Sentiment
+	focus = {
+		id = YEM_antifascistsentiment
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_favourthebritish }
+		ai_will_do = {
+			factor = 31
+		}
+		completion_reward = {
+			add_ideas= fascism_banned
+		}
+
+	}
+
+	#Focus for Request Control of Aden
+	focus = {
+		id = YEM_requestcontrolofaden
+		icon = GFX_goal_generic_position_armies
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_signprotectoratetreaty focus = YEM_internationalequals }
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			custom_effect_tooltip = YEM_request_aden_tt
+			ENG = {country_event= {
+					days = 1
+					id = yemen.5
+				}
+			}
+		}
+
+	}
+
+	#Focus for Appeasement Policy
+	focus = {
+		id = YEM_appeasementpolicy
+		icon = GFX_focus_CZE_german_puppet
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_rewritethefriendshiptreaty }
+		prerequisite = { focus = YEM_antifascistsentiment }
+		mutually_exclusive = { focus = YEM_independentapproach }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_country_flag = YEM_appeasement_flag
+		}
+
+	}
+
+	#Focus for International Equals
+	focus = {
+		id = YEM_internationalequals
+		icon = GFX_internationalequals
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_armytraininginitiative }
+		prerequisite = { focus = YEM_hirebritishadvisors }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+
+	}
+
+	#Focus for Army Training Initiative
+	focus = {
+		id = YEM_armytraininginitiative
+		icon = GFX_goal_generic_small_arms
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_independentapproach }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = yemen.11
+					days = 1
+				}
+			}
+		}
+
+	}
+
+	#Focus for Hire British Advisors
+	focus = {
+		id = YEM_hirebritishadvisors
+		icon = GFX_focus_research2
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_independentapproach }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+		}
+
+	}
+
+	#Focus for Sign Protectorate Treaty
+	focus = {
+		id = YEM_signprotectoratetreaty
+		icon = GFX_signprotectoratetreaty
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_integratetradesystems }
+		prerequisite = { focus = YEM_joincommonwealthresearchgroup }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			ENG = {
+				puppet = YEM
+			}
+		}
+
+	}
+
+	#Focus for Join Commonwealth Research Group
+	focus = {
+		id = YEM_joincommonwealthresearchgroup
+		icon = GFX_goal_generic_scientific_exchange
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_appeasementpolicy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			ENG = {
+				add_to_tech_sharing_group = commonwealth_research
+			}
+		}
+
+	}
+
+	#Focus for Integrate Trade Systems
+	focus = {
+		id = YEM_integratetradesystems
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_appeasementpolicy }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = trade_integrated
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = trade_integrated
+			}
+		}
+
+	}
+
+	#Focus for Independent Approach
+	focus = {
+		id = YEM_independentapproach
+		icon = GFX_goal_anschluss
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_rewritethefriendshiptreaty }
+		prerequisite = { focus = YEM_antifascistsentiment }
+		mutually_exclusive = { focus = YEM_appeasementpolicy }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+
+	#Focus for Expand Military Control
+	focus = {
+		id = YEM_expandmilitarycontrol
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_thenewcentralgovernment }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			country_event= {
+				days = 1
+				id = yemen.10
+			}
+		}
+
+	}
+
+	#Focus for Anti-Zionism
+	focus = {
+		id = YEM_anti_zionism
+		icon = GFX_generic_anti_zionism
+		x = 0
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_thenewcentralgovernment }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = {
+			    target = ISR
+			    modifier = anti_zionism
+			}
+			custom_effect_tooltip = YEM_anti_zionism_tt
+			SAU = {
+				country_event = {
+					id = yemen.15
+					days = 1
+				}
+			}
+			IRQ = {
+				country_event = {
+					id = yemen.15
+					days = 1
+				}
+			}
+			hidden_effect = {
+				add_ideas = YEM_anti_zionist_pact
+			}
+		}
+	}
+
+	#Focus for Start the Civil War
+	focus = {
+		id = YEM_startthecivilwar
+		icon = GFX_civilwar
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_gainbritishsupport }
+		prerequisite = { focus = YEM_hiredemocraticsupporters }
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			custom_effect_tooltip = YEM_civilwarhelp_tt
+			country_event= {
+				days = 1
+				id = yemen.2
+			}
+		}
+
+	}
+
+	#Focus for Consolidate Imam Authority
+	focus = {
+		id = YEM_thenewcentralgovernment
+		icon = GFX_YEM_consolidate_imam_authority
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_consolidateimamauthority }
+		mutually_exclusive = { focus = YEM_alwaziri_coup }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+
+	}
+
+	#Focus for Anti-Democratic Stance
+	focus = {
+		id = YEM_consolidateimamauthority
+		icon = GFX_YEM_anti_democracy
+		x = 3
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = YEM_riseofdemocracy }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+
+	}
+
+	#Focus for Alwaziri Coup
+	focus = {
+		id = YEM_alwaziri_coup
+		icon = GFX_YEM_kill_imam_yahya
+		relative_position_id = YEM_consolidateimamauthority
+        x = 2
+        y = 1
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = YEM_thenewcentralgovernment }
+		prerequisite = { focus = YEM_consolidateimamauthority }
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			country_event = {
+				id = yemen.14
+			}
+		}
+
+	}
+
+	#Focus for Shura Council
+	focus = {
+		id = YEM_shura_council
+		icon = GFX_generic_shia_focus
+		relative_position_id = YEM_alwaziri_coup
+        x = -1
+        y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_alwaziri_coup }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_resistance
+				add_idea = YEM_resistance_2
+			}
+		}
+
+	}
+
+	#Focus for Faith in the Supreme Guide
+	focus = {
+		id = YEM_supreme_guide
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = YEM_shura_council
+        x = 0
+        y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_shura_council }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			remove_ideas = YEM_resistance_2
+			add_15_islam = yes
+		}
+
+	}
+
+	#Focus for Anti-Sunni Sentiment
+	focus = {
+		id = YEM_anti_sunni
+		icon = GFX_YEM_anti_saudi_sentiment
+		relative_position_id = YEM_alwaziri_coup
+        x = 1
+        y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_alwaziri_coup }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_5_islam = yes
+		}
+
+	}
+
+	#Focus for Incite Hasa Riots
+	focus = {
+		id = YEM_incite_saudi_riots
+		icon = GFX_YEM_wargoal_focus
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_anti_sunni }
+		relative_position_id = YEM_anti_sunni
+        x = 0
+        y = 1
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			SAU = {
+				add_timed_idea = { 
+					idea = SAU_hasa_riots
+					days = 200 
+				}
+			}
+		}
+
+	}
+
+	#Focus for Organize the Royal Guard
+	focus = {
+		id = YEM_organize_royal_guard
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_anti_zionism }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			remove_ideas= YEM_family_struggle
+			add_manpower = 6000
+		}
+
+	}
+
+	#Focus for Rise of Democracy
+	focus = {
+		id = YEM_riseofdemocracy
+		icon = GFX_riseofdemocracy
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = YEM_consolidateimamauthority }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas= YEM_rise_democracy
+		}
+
+	}
+
+	#Focus for Civil Liberties
+	focus = {
+		id = YEM_civilliberties
+		icon = GFX_generic_civil_rights
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_inviteintellectuals }
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			add_stability= 0.1
+			add_war_support= -0.15
+			subtract_10_islam = yes
+		}
+
+	}
+
+	#Focus for Greater Yemen Project
+	focus = {
+		id = YEM_greateryemenproject
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_unwaveringbastion focus = YEM_italianbasingrights }
+		mutually_exclusive = { focus = YEM_panarabism }
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+
+	}
+
+	#Focus for Fund Democratic Partisans
+	focus = {
+		id = YEM_fund_democratic_partisans
+		icon = GFX_YEM_saudi_partisans
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_equality_before_god }
+		prerequisite = { focus = YEM_crush_nobles }
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			SAU = {
+				add_timed_idea = {
+					idea = YEM_democratic_partisans
+					days = 120
+				}
+			}
+			OMA = {
+				add_timed_idea = {
+					idea = YEM_democratic_partisans
+					days = 120
+				}
+			}
+			add_political_power = -100
+		}
+
+	}
+
+	#Focus for Saudi Alliance
+	focus = {
+		id = YEM_saudialliance
+		icon = GFX_saudialliance
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_befriendthesaudis }
+		prerequisite = { focus = YEM_antiimperialism }
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			SAU = { country_event = { days = 1 id = yemen.7 } }
+		}
+
+	}
+
+	#Focus for Pacify Asir
+	focus = {
+		id = YEM_pacifyasir
+		icon = GFX_pacifyasir
+		x = 33
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_warwithsaudiarabia }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_political_power = -200
+			add_state_core = 795
+			add_state_core = 797
+		}
+
+	}
+
+	#Focus for Demand Dhofar
+	focus = {
+		id = YEM_demanddhofar
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 32
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_warforaden }
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			OMA = {
+				country_event = { days = 1 id = yemen.8 }
+			}
+		}
+
+	}
+
+	#Focus for Raids on Aden
+	focus = {
+		id = YEM_raidsonaden
+		icon = GFX_goal_generic_occupy_start_war
+		x = 31
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_warwithsaudiarabia }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			set_country_flag = YEM_aden_raiding
+			custom_effect_tooltip = YEM_raiding_tt
+		}
+
+	}
+
+	#Focus for War for Aden
+	focus = {
+		id = YEM_warforaden
+		icon = GFX_goal_poland_goal
+		x = 32
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_raidsonaden }
+		prerequisite = { focus = YEM_pacifyasir }
+		ai_will_do = {
+			factor = 33
+		}
+		available = {
+			has_army_manpower = { size > 59999 }
+		}
+		completion_reward = {
+			declare_war_on = { target = ENG type = annex_everything }
+		}
+
+	}
+
+	#Focus for Industrial Capacity II
+	focus = {
+		id = YEM_industrialcapacityii
+		icon = GFX_focus_generic_industry_2
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_industrialcapacityi }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	#Focus for Industrial Capacity I
+	focus = {
+		id = YEM_industrialcapacityi
+		icon = GFX_focus_generic_industry_1
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_italianindustrialdeals }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	#Focus for Italian Industrial Deals
+	focus = {
+		id = YEM_italianindustrialdeals
+		icon = GFX_italianindustrialdeals
+		x = 45
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_beginthesixyearplan }
+		available = {
+			NOT = {
+				has_completed_focus = YEM_britishindustrialdeals
+			}
+		}
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+
+	#Focus for Extra Research Slot
+	focus = {
+		id = YEM_extraresearchslot
+		icon = GFX_focus_research2
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_infrastructurerenovationii }
+		prerequisite = { focus = YEM_manufacturingimprovementii }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+
+	#Focus for Infrastructure Renovation II
+	focus = {
+		id = YEM_infrastructurerenovationii
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 40
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_infrastructurerenovationi }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = {	type = infrastructure	level = 2 instant_build = yes	} }
+		}
+
+	}
+
+	#Focus for Manufacturing Improvement I
+	focus = {
+		id = YEM_manufacturingimprovementi
+		icon = GFX_goal_generic_production2
+		x = 42
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_electronicsresearch focus = YEM_industrialresearch }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = YEM_pastoralism add_idea = YEM_pastoralism_2 }
+		}
+
+	}
+
+	#Focus for Infrastructure Renovation I
+	focus = {
+		id = YEM_infrastructurerenovationi
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_industrialresearch focus = YEM_electronicsresearch }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = {	type = infrastructure	level = 1 instant_build = yes	} }
+		}
+
+	}
+
+	#Focus for Prospect for Oil
+	focus = {
+		id = YEM_prospectforoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_extraresearchslot }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			custom_effect_tooltip = YEM_extract_oil_tt
+		}
+
+	}
+
+	#Focus for Industry in the East
+	focus = {
+		id = YEM_industryintheeast
+		icon = GFX_goal_generic_construction2
+		x = 37
+		y = 4
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_armanentsinsanaa focus = YEM_armanentsintaizz }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			806={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+
+	#Focus for Manufacturing Improvement II
+	focus = {
+		id = YEM_manufacturingimprovementii
+		icon = GFX_goal_generic_production2
+		x = 42
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_manufacturingimprovementi }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			remove_ideas = YEM_pastoralism_2
+		}
+
+	}
+
+	#Focus for Industrial Capacity III
+	focus = {
+		id = YEM_industrialcapacityiii
+		icon = GFX_focus_generic_industry_3
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_industrialcapacityii }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+
+				}
+
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	#Focus for Import Industrial Machines
+	focus = {
+		id = YEM_importindustrialmachines
+		icon = GFX_goal_generic_construction2
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_italianindustrialdeals }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+
+	#Focus for Expand Red Sea Ports
+	focus = {
+		id = YEM_expandredseaports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_importindustrialmachines }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			293 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 13231
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Italian Foreign Aid
+	focus = {
+		id = YEM_italianforeignaid
+		icon = GFX_focus_generic_concessions
+		x = 46
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_expandredseaports }
+		ai_will_do = {
+			factor = 33
+		}
+		completion_reward = {
+			ITA = {
+				country_event= {
+					days = 1
+					id = yemen.9
+				}
+			}
+		}
+
+	}
+
+	#Focus for The New Army
+	focus = {
+		id = YEM_thenewarmy
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 51
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_wehrmacht_partnership }
+		prerequisite = { focus = YEM_iraqi_officers }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 10
+		}
+
+	}
+
+	#Focus for Tribal Army
+	focus = {
+		id = YEM_tribal_army
+		icon = GFX_generic_tribal_army
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_thenewarmy }
+		mutually_exclusive = { focus = YEM_city_military }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+		}
+
+	}
+
+	#Focus for Improve the Taizz Arsenal
+	focus = {
+		id = YEM_taizz_arsenal
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 52
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_recruit_tribes }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = YEM_taizz_arsenal_idea
+		}
+
+	}
+
+	#Focus for Recruit the Tribes
+	focus = {
+		id = YEM_recruit_tribes
+		icon = GFX_focus_generic_military_academy
+		x = 53
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_tribal_army }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_army
+				add_idea = YEM_tribal_army
+			}
+		}
+
+	}
+
+	#Focus for A City Army
+	focus = {
+		id = YEM_city_military
+		icon = GFX_YEM_city_military
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_thenewarmy }
+		mutually_exclusive = { focus = YEM_tribal_army }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+		}
+
+	}
+
+	#Focus for Reform the Draft
+	focus = {
+		id = YEM_census_improvements
+		icon = GFX_focus_secret_rearmament
+		x = 48
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_city_military }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_army
+				add_idea = YEM_army_2
+			}
+		}
+
+	}
+
+	#Focus for Kneel the Bedouin
+	focus = {
+		id = YEM_crush_tribes
+		icon = GFX_goal_generic_secret_weapon
+		x = 50
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_city_military }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			country_event = {
+				id = yemen.16
+				days = 1
+			}
+		}
+
+	}
+
+	#Focus for Western Tactics
+	focus = {
+		id = YEM_modern_tactics
+		icon = GFX_generic_modern_tactics
+		x = 49
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_crush_tribes }
+		prerequisite = { focus = YEM_census_improvements }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_army_2
+				add_idea = YEM_army_3
+			}
+		}
+
+	}
+
+	#Focus for Expand the Gendarmerie
+	focus = {
+		id = YEM_strengthenthegendarmerie
+		icon = GFX_strengthenthegendarmerie
+		x = 48
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_modern_tactics }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability  = -0.05
+			add_ideas = YEM_gendarmerie
+		}
+
+	}
+
+	#Focus for Cavalry Improvements
+	focus = {
+		id = YEM_cavalry_improvements
+		icon = GFX_generic_cavalry_improvements
+		x = 50
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_modern_tactics }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = generic_arabian_calvary
+		}
+
+	}
+
+	#Focus for Naval Doctrine Research.
+	focus = {
+		id = YEM_navaldoctrineresearch
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 58
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_createamerchantmarine }
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 3
+				category = fleet_in_being_tree
+			}
+		}
+
+	}
+
+	#Focus for Create a Merchant Marine
+	focus = {
+		id = YEM_createamerchantmarine
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 57
+		y = 0
+		cost = 15
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+			}
+			navy_experience = 10
+		}
+
+	}
+
+	#Focus for Destroyer Project
+	focus = {
+		id = YEM_destroyerproject
+		icon = GFX_goal_generic_navy_cruiser
+		x = 56
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_createamerchantmarine }
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+
+	}
+
+	#Focus for Pride of the Fleet
+	focus = {
+		id = YEM_prideofthefleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 57
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_navaldoctrineresearch }
+		prerequisite = { focus = YEM_destroyerproject }
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	#End of focuses
+}

@@ -1,0 +1,30 @@
+state={
+	id=799
+	name="STATE_799"
+	history={
+		owner = SAU
+		victory_points = {
+			12883 1 
+		}
+		victory_points = {
+			5037 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			12883 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		1923 5037 12883 
+	}
+	manpower=673000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

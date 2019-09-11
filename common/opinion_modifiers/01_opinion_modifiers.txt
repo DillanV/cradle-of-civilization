@@ -1,0 +1,28 @@
+opinion_modifiers = {
+	
+	YEM_friendship_opinion = {
+		value = 30
+	}
+	anti_colonialism_opinion = {
+		value = -50
+	}
+	trade_integrated = {
+		trade = yes
+		value = 25
+	}
+	deteriorating_relations = {
+		value = -50
+	}
+	YEM_denied_aden = {
+		value = -50
+	}
+	anti_zionism = {
+		value = -33
+	}
+	SAU_invited_american_experts = {
+		value = 15
+	}
+	SAU_invited_german_experts = {
+		value = 15
+	}
+}

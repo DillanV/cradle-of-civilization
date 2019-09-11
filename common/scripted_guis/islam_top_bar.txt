@@ -1,0 +1,16 @@
+scripted_gui = {
+	islam_top_bar = {
+	        context_type = player_context
+
+	        window_name = "islamic_gui_container"
+
+	        visible = {
+	        }
+
+	        effects = {
+	            islamic_gui_bg_click = {
+	        }
+	    }
+	}
+}
+

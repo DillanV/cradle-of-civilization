@@ -1,0 +1,21 @@
+state={
+	id=792
+	name="STATE_792"
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = ARM
+		add_core_of = AZR
+	}
+	provinces={
+		1467 9715 
+	}
+	manpower=203921
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,17 @@
+state={
+	id=845
+	name="STATE_845"
+	history = {
+		owner = AFG
+		add_core_of = AFG
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		7519 10781 10852 12248 12314 12653 13270 
+	}
+	manpower=995000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

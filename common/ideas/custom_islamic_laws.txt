@@ -1,0 +1,11 @@
+ideas = {
+	hidden_ideas = {
+		muslim_nation = {
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		}
+	}
+}

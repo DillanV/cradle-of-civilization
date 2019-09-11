@@ -1,0 +1,90 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "PER"
+		default = yes
+		
+		"YEM"={
+			history = "YEM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				YEM_family_struggle
+				YEM_pastoralism
+				YEM_army
+			}
+			focuses = {
+				YEM_consolidateimamauthority
+				YEM_riseofdemocracy
+				YEM_greateryemenproject
+			}
+		}
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				### Needs work
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+		"IRQ"={
+			history = "IRQ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				### Needs work
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+		"PER"={
+			history = "PER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PER_oil_concessions
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+		"EGY"={
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				### Needs work
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+		"SAU"={
+			history = "SAU_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				### Needs work
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+		"OMA"={
+			history = "OMA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				OMA_imam_rivalry
+				OMA_undecided_army
+			}
+			focuses = {
+				### Needs work
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+	}
+}

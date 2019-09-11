@@ -1,0 +1,21 @@
+state={
+	id=823
+	name="STATE_823"
+	history = {
+		owner = RAJ
+		add_core_of = CHI
+		add_core_of = PRC
+		add_claim_by = PAK
+		add_core_of = JKS
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		5042 
+	}
+	manpower=11000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

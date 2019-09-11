@@ -1,0 +1,44 @@
+ideas = {
+    country = {
+        TUR_religious_extremists = {
+            allowed = {
+                original_tag = TUR
+            }
+            modifier = {
+                stability_factor = -0.1
+            }
+        }
+		TUR_century_of_wars = {
+            allowed = {
+                original_tag = TUR
+            }
+            modifier = {
+                conscription = -0.003
+				war_support_factor = -0.05
+            }
+        }
+		TUR_weak_government = {
+            allowed = {
+                original_tag = TUR
+            }
+            modifier = {
+                political_power_gain = -0.05
+            }
+        }
+        TUR_straits_tax = {
+
+            allowed = {
+                original_tag = TUR
+            }
+
+            removal_cost = -1
+
+            picture = generic_economic_revenue
+
+            modifier = {
+                consumer_goods_factor = -0.1 
+            }
+            
+        }
+    }
+}

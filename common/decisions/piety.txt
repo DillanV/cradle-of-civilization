@@ -1,0 +1,76 @@
+piety_decisions = {
+	increase_piety = {
+
+		icon = GFX_decision_generic_piety
+
+		available = {
+			NOT = {
+				has_country_flag = already_taking_piety_flag
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = already_taking_piety_flag
+		}
+
+		remove_effect = {
+			add_5_islam = yes
+			clr_country_flag = already_taking_piety_flag
+		}
+		
+		cost = 25
+
+		days_remove = 30
+		days_re_enable = 30
+
+		modifier = {
+			political_power_gain = -0.33
+		}
+		ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0.5
+					check_variable = { 
+						islam_progress_bar < 50 
+				}
+			}
+		}
+	}
+	decrease_piety = {
+
+		icon = GFX_decision_generic_piety
+
+		available = {
+			NOT = {
+				has_country_flag = already_taking_piety_flag
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = already_taking_piety_flag
+		}
+
+		remove_effect = {
+			subtract_5_islam = yes
+			clr_country_flag = already_taking_piety_flag
+		}
+
+		cost = 25
+
+		days_remove = 30
+		days_re_enable = 30
+
+		modifier = {
+			political_power_gain = -0.33
+		}
+		ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0.5
+					check_variable = { 
+						islam_progress_bar > 50 
+				}
+			}
+		}
+	}
+}

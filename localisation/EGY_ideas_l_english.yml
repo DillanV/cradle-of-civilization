@@ -1,0 +1,62 @@
+﻿l_english:
+
+###POLITICAL ADVSORS
+ EGY_ahmad_hussein:0 "Ahmed Hussein"
+ EGY_gamal_abdel_nasser:0 "Gamal Abdel Nasser"
+ EGY_safiya_zaghloul:0 "Safiya Zaghloul"
+ EGY_aly_mahir_pasha:0 "Aly Mahir Pasha"
+ EGY_fawzia_fuad:0 "Princess Fawzia"
+ EGY_talaat_harb:0 "Talaat Harb"
+ EGY_ismal_chrine:0 "Ismail Chirine"
+ EGY_huda_shaarawi:0 "Huda Shaarawi"
+ EGY_Farouk_1:0 "Farouk I"
+ EGY_zakaria_mohieddin:0 "Zakaria Mohieddin"
+ EGY_mohammed_naguib:0 "Mohamed Naguib"
+ EGY_Mohamed_Mahmoud_Pasha:0 "Mohamed Mahmoud Pasha"
+ EGY_Mustafa_el_Nahhas_Pasha:0 "Mustafa el-Nahhas Pasha"
+ EGY_Agha_Khan_III:0 "Aga Khan III"
+ 
+###NATIONAL SPIRITS
+
+EGY_faruk_1:0 "Farouk I"
+EGY_political_instability:0 "Political Instability"
+EGY_women_marches:0 "Women's Marches"
+EGY_corrupt_bureaucracy:0 "Corrupt Bureaucracy"
+EGY_world_breadbasket:0 "World's Breadbasket"
+EGY_rural_urban_split:0 "Rural-Urban Split"
+
+###DESIGNERS
+
+EGY_Helwan_Vehicle_Sector:0 "Helwan Vehicle Sector"
+EGY_Vauxhall_Egypt:0 "Vauxhall Egypt"
+EGY_Mercedes_Benz_Egypt:0 "Mercedes-Benz Egypt"
+EGY_Alexandria_Dockyard_Union:0 "Alexandria Dockyard Union"
+EGY_Cairo_Nile_Docks:0 "Cairo Nile Docks"
+EGY_Port_Said_Dockyard_Union:0 "Port Sa'id Dockyard Union"
+EGY_Egypt_Air:0 "EgyptAir"
+EGY_Messerschmitt_Egypt:0 "Messerschmitt Egypt"
+EGY_Supermarine_Cairo:0 "Supermarine Cairo"
+EGY_National_Armed_Forces_Manufacturing_Company:0 "National Armed Forces Manufacturing Company"
+EGY_Maadi_Firearms:0 "Mahdi Firearms"
+EGY_Cohen_Munitions:0 "Cohen Munitions"
+EGY_Telecom_Egypt:0 "Telecom Egypt"
+EGY_Helwan_Industrial_City:0 "Helwan Industrial City"
+EGY_Sameera_Moussa:0 "Sameera Moussa"
+EGY_Ali_Moustafa_Mousharafa:0 "Ali Moustafa Mousharafa"
+
+###ARMY BOIS
+
+EGY_farouk_i:0 "Farouk I"
+EGY_hussein_rekfi_pasha:0 "Hussein Rekfi Pasha"
+EGY_mohamed_naguib_army_chief:0 "Mohamed Naguib"
+EGY_hussein_rekfi_pasha_boats:0 "Hussein Rekfi Pasha"
+EGY_ismail_chirine_boats:0 "Ismail Chirine"
+EGY_adel_amin_hafez:0 "Adel Amin Hafez"
+EGY_hassan_ibrahim:0 "Hassan Ibrahim"
+EGY_mohamed_sedky_mahmoud:0 "Mohamed Sedky Mahmoud"
+EGY_nasser_high_command:0 "Gamal Abdel Nasser"
+EGY_mohamed_sanwar_el_sadat:0 "Mohamed Sanwar el-Sadat"
+EGY_ahmed_hakim_amer:0 "Ahmed Hakim Amer"
+EGY_hussein_sirri_amer:0 "Hussein Sirri Amer"
+EGY_abdul_moniem_riad:0 "Abdul Moniem Riad"
+EGY_saad_el_shazly:0 "Saad el-Shazly"

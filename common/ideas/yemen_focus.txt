@@ -1,0 +1,811 @@
+ideas = {
+	hidden_ideas = {
+		yem_constitution_liberal = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = -0.5
+				stability_weekly = 0.0025
+			}
+		}
+		yem_constitution_neutral = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = -0.25
+				stability_weekly = 0.0015
+				war_support_weekly = 0.0015
+			}
+		}
+		yem_constitution_conservative = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.5
+				war_support_weekly = 0.0025
+			}
+		}
+	}
+	country = {
+		YEM_propagate_zaydi = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_school_shia_zaidi
+
+			modifier = {
+				stability_factor = -0.2
+				stability_weekly = 0.005
+			}
+		}
+		YEM_family_struggle = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_family_struggle
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		YEM_traditional_law = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantee
+
+			modifier = {
+				drift_defence_factor = 0.50
+				democratic_drift = 0.05
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+			}
+		}
+		YEM_new_laws = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantee
+
+			modifier = {
+				drift_defence_factor = -0.50
+				democratic_drift = 0.1
+				air_chief_cost_factor = 0.25
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+				political_power_gain = 0.5
+				stability_factor = 0.1
+			}
+		}
+		YEM_intellectuals = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		YEM_religious_tolerance = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_islamic_tolerance
+
+			modifier = {
+				non_core_manpower = 0.08
+				enemy_partisan_effect = -0.25
+				drift_defence_factor = 0.2
+			}
+		}
+		YEM_state_shiite = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				stability_factor = 0.1
+				non_core_manpower = -0.02
+				drift_defence_factor = -0.2
+				enemy_partisan_effect = 0.33
+			}
+		}
+		YEM_rise_democracy = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = yemen_rise_democracy
+
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		generic_arabian_calvary = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_cavalry_improvement
+
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.10
+			}
+		}
+		YEM_central_government = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_strengthened_kingdom
+
+			modifier = {
+				political_power_gain = 0.35
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+			}
+		}
+		YEM_governor_sons = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				neutrality_drift = 0.10
+			}
+		}
+		YEM_cash_crops = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = yemen_cash_crops
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+		YEM_italian_mission = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		YEM_pastoralism = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.33
+			}
+		}
+		YEM_pastoralism_2 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.16
+			}
+		}
+		YEM_pastoralism_3 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.11
+			}
+		}
+		YEM_army = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = yemen_broken_army
+
+			modifier = {
+				conscription = -0.005
+				army_org_factor = -0.20
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		YEM_army_2 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption_2
+
+			modifier = {
+				army_org_factor = -0.20
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		YEM_army_3 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption_3
+
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+			}
+		}
+		YEM_army_4 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_org_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		YEM_tribal_army = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.05
+				stability_weekly = -0.002
+				army_org_factor = -0.20
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		YEM_democraticboost = {
+
+			allowed = {
+				original_tag = YEM
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				conscription = 0.005
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		YEM_democraticboost2 = {
+
+			allowed = {
+				original_tag = YEM
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				conscription = 0.01
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		YEM_democraticboost3 = {
+
+			allowed = {
+				original_tag = YEM
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				conscription = 0.015
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+			}
+		}
+		YEM_rebuild = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.3
+			}
+		}
+		YEM_deterrence = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = yemen_deterrence
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+				production_speed_anti_air_building_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
+				army_core_defence_factor = 0.2
+			}
+		}
+		YEM_army_training = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				experience_gain_army = 0.1 
+				industrial_capacity_factory = 0.25
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				training_time_factor = -0.1
+			}
+		}
+		YEM_resistance = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				political_power_cost = 1
+			}
+		}
+		YEM_resistance_2 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_cost = 0.5
+			}
+		}
+		SAU_hasa_riots = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		YEM_anti_zionist_pact = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_anti_zionist_pact
+
+			modifier = {
+			}
+		}
+		YEM_gendarmerie = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+
+			modifier = {
+				enemy_partisan_effect = -0.33
+				decryption_factor = 0.25 
+			}
+		}
+		YEM_democratic_partisans = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_political
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = -0.05
+			}
+		}
+		YEM_echoes_of_slavery = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		YEM_militarism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		YEM_taizz_arsenal_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+
+			removal_cost = -1
+
+			equipment_bonus = {
+			    infantry_equipment = {
+			    	instant = yes
+			    	build_cost_ic = -0.1
+				}
+			}
+		}
+	}
+}

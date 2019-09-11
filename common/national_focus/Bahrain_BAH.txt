@@ -1,0 +1,510 @@
+focus_tree = { 
+id = BAH
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = Bahrain 
+} 
+} 
+#Focus for Worker Training
+focus = { 
+id = Bahrain_workertraining
+icon = GFX_goal_generic_production
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_foreignschools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Gem of the Gulf
+focus = { 
+id = Bahrain_gemofthegulf
+icon = GFX_focus_generic_the_giant_wakes
+x = 5
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_adevelopedbahrain } 
+prerequisite = { focus = Bahrain_ajustbahrain } 
+prerequisite = { focus = Bahrain_alearntbahrain } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Retrain Police
+focus = { 
+id = Bahrain_retrainpolice
+icon = GFX_focus_generic_military_mission
+x = 6
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_foreignjudges } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Developed Bahrain
+focus = { 
+id = Bahrain_adevelopedbahrain
+icon = GFX_focus_generic_industry_3
+x = 9
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_privatesectorinvestments focus = Bahrain_accumulatetreasury } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Private Sector Investments
+focus = { 
+id = Bahrain_privatesectorinvestments
+icon = GFX_goal_generic_intelligence_exchange
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_propertyrights } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Seize the Pearls
+focus = { 
+id = Bahrain_seizethepearls
+icon = GFX_focus_hol_prepare_the_inundation_lines
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_industrynationalization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Accumulate Treasury
+focus = { 
+id = Bahrain_accumulatetreasury
+icon = GFX_focus_mex_privatisation
+x = 8
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_seizethepearls } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for dab
+focus = { 
+id = Bahrain_dab
+icon = GFX_goal_unknown
+x = 4
+y = 11
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Manama University
+focus = { 
+id = Bahrain_manamauniversity
+icon = GFX_manamauniversity
+x = 2
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_workertraining } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Rural Schools
+focus = { 
+id = Bahrain_ruralschools
+icon = GFX_focus_generic_industry_1
+x = 0
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_religioussplit } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Learnt Bahrain
+focus = { 
+id = Bahrain_alearntbahrain
+icon = GFX_goal_generic_scientific_exchange
+x = 1
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_manamauniversity focus = Bahrain_ruralschools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industry Rights
+focus = { 
+id = Bahrain_industryrights
+icon = GFX_goal_generic_construct_civilian
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_thereformsofhamadibnisa } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Suppress Tribesman
+focus = { 
+id = Bahrain_suppresstribesman
+icon = GFX_focus_prc_infiltration
+x = 9
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_industryrights } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Industry Nationalization
+focus = { 
+id = Bahrain_industrynationalization
+icon = GFX_focus_rom_parties_end
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_suppresstribesman } 
+mutually_exclusive = { focus = Bahrain_donotangerourlords } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Do Not Anger our Lords
+focus = { 
+id = Bahrain_donotangerourlords
+icon = GFX_focus_AST_never_gallipoli
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_suppresstribesman } 
+mutually_exclusive = { focus = Bahrain_industrynationalization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Property Rights
+focus = { 
+id = Bahrain_propertyrights
+icon = GFX_focus_generic_self_management
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_donotangerourlords } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Judicial System
+focus = { 
+id = Bahrain_thejudicialsystem
+icon = GFX_thejudicialsystem
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_thereformsofhamadibnisa } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Build Courtrooms
+focus = { 
+id = Bahrain_buildcourtrooms
+icon = GFX_buildcourtrooms
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_thejudicialsystem } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Sharia Law
+focus = { 
+id = Bahrain_sharialaw
+icon = GFX_sharialaw
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_buildcourtrooms } 
+mutually_exclusive = { focus = Bahrain_westernlaw } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Western Law
+focus = { 
+id = Bahrain_westernlaw
+icon = GFX_focus_generic_strike_at_democracy3
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_buildcourtrooms } 
+mutually_exclusive = { focus = Bahrain_sharialaw } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Just Bahrain
+focus = { 
+id = Bahrain_ajustbahrain
+icon = GFX_ajustbahrain
+x = 5
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_retrainpolice focus = Bahrain_militiapolice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Religious Split
+focus = { 
+id = Bahrain_religioussplit
+icon = GFX_religioussplit
+x = 0
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_bahrainischools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Literacy Reforms
+focus = { 
+id = Bahrain_literacyreforms
+icon = GFX_literacyreforms
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_theeducationalsystem } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Reforms of Hamad ibn Isa
+focus = { 
+id = Bahrain_thereformsofhamadibnisa
+icon = GFX_thereformsofhamadibnisa
+x = 5
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Educational System
+focus = { 
+id = Bahrain_theeducationalsystem
+icon = GFX_focus_generic_military_academy
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_thereformsofhamadibnisa } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Bahraini Schools
+focus = { 
+id = Bahrain_bahrainischools
+icon = GFX_focus_rom_royal_dictatorship
+x = 0
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_literacyreforms } 
+mutually_exclusive = { focus = Bahrain_foreignschools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Foreign Schools
+focus = { 
+id = Bahrain_foreignschools
+icon = GFX_focus_hol_the_fourth_ally
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_literacyreforms } 
+mutually_exclusive = { focus = Bahrain_bahrainischools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Council of Clerics
+focus = { 
+id = Bahrain_councilofclerics
+icon = GFX_councilofclerics
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_sharialaw } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Foreign Judges
+focus = { 
+id = Bahrain_foreignjudges
+icon = GFX_foreignjudges
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_westernlaw } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Militia Police
+focus = { 
+id = Bahrain_militiapolice
+icon = GFX_goal_generic_cavalry
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_councilofclerics } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Democratic Revolution
+focus = { 
+id = Bahrain_thedemocraticrevolution
+icon = GFX_goal_support_democracy
+x = 15
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for eef x mzo
+focus = { 
+id = Bahrain_eefxmzo
+icon = GFX_goal_unknown
+x = 66
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Form the HEC
+focus = { 
+id = Bahrain_formthehec
+icon = GFX_goal_generic_propaganda
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Bahrain_thedemocraticrevolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

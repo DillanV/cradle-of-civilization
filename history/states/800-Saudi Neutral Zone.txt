@@ -1,0 +1,19 @@
+state={
+	id=800
+	name="STATE_800"
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		
+		set_demilitarized_zone = yes
+	}
+	provinces={
+		13222 
+	}
+	manpower=610
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

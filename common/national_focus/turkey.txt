@@ -1,0 +1,1558 @@
+focus_tree = {
+	id = Turkey
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	continuous_focus_position = { x = 25 y = 1350 }
+	#Focus for Liberalisation
+	focus = {
+		id = TUR_liberalisation
+		icon = GFX_liberalisation
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_valuesoftherepublic }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Deal
+	focus = {
+		id = TUR_thedeal
+		icon = GFX_thedeal
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_kemalistethos focus = TUR_liberalisation }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Kemalist Ethos
+	focus = {
+		id = TUR_kemalistethos
+		icon = GFX_kemalistethos
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_valuesoftherepublic }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Social Rights Expended
+	focus = {
+		id = TUR_socialrightsexpended
+		icon = GFX_socialrightsexpended
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thedeal }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Vanguards of The Republic
+	focus = {
+		id = TUR_vanguardsoftherepublic
+		icon = GFX_focus_generic_little_entente
+		x = 14
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_socialrightsexpended }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Values of The Republic
+	focus = {
+		id = TUR_valuesoftherepublic
+		icon = GFX_valuesoftherepublic
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thegodfather }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for March on Istanbul
+	focus = {
+		id = TUR_marchonistanbul
+		icon = GFX_marchonistanbul
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_musolinnimhmeeting }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Status of TSK
+	focus = {
+		id = TUR_statusoftsk
+		icon = GFX_statusoftsk
+		x = 41
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Western Policy
+	focus = {
+		id = TUR_westernpolicy
+		icon = GFX_westernpolicy
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_theturkishforeignministry }
+		mutually_exclusive = { focus = TUR_regionalpolitics }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Regional Politics
+	focus = {
+		id = TUR_regionalpolitics
+		icon = GFX_regionalpolitics
+		x = 30
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_theturkishforeignministry }
+		mutually_exclusive = { focus = TUR_westernpolicy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Kemalist Take
+	focus = {
+		id = TUR_kemalisttake
+		icon = GFX_kemalisttake
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_internalproblems }
+		mutually_exclusive = { focus = TUR_traditionaltake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Montreux Convention
+	focus = {
+		id = TUR_themontreuxconvention
+		icon = GFX_themontreuxconvention
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = montreux.1
+				days = 1
+			}
+		}
+	}
+
+	#Focus for Internal Problems
+	focus = {
+		id = TUR_internalproblems
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_inspectionofproblems }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+
+	}
+
+	#Focus for Sue The Police State
+	focus = {
+		id = TUR_suethepolicestate
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_nationalizebanks }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Supress Liberals
+	focus = {
+		id = TUR_supressliberals
+		icon = GFX_supressliberals
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_formmilletvilayets }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Turkey: United and Ready
+	focus = {
+		id = TUR_turkeyunitedandready
+		icon = GFX_turkeyunitedandready
+		x = 5
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_suethepolicestate }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Anatolia: Land of Believers
+	focus = {
+		id = TUR_anatolialandofbelievers
+		icon = GFX_anatolialandofbelievers
+		x = 3
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_supressliberals }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Protect The Deities
+	focus = {
+		id = TUR_protectthedeities
+		icon = GFX_protectthedeities
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_traditionaltake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Reinforce Traditional Values For Kurds
+	focus = {
+		id = TUR_reinforcetraditionalvaluesforkurds
+		icon = GFX_reinforcetraditionalvaluesforkurds
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_traditionaltake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Deal With The Kizilbash
+	focus = {
+		id = TUR_dealwiththekizilbash
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_protectthedeities }
+		prerequisite = { focus = TUR_reinforcetraditionalvaluesforkurds }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Nationalize Banks
+	focus = {
+		id = TUR_nationalizebanks
+		icon = GFX_nationalizebanks
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_aftermathofdersym }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Form Millet Vilayets
+	focus = {
+		id = TUR_formmilletvilayets
+		icon = GFX_formmilletvilayets
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_dealwiththekizilbash }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Status of Religion
+	focus = {
+		id = TUR_statusofreligion
+		icon = GFX_statusofreligion
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_kemalisttake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Inspection of Problems
+	focus = {
+		id = TUR_inspectionofproblems
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_themontreuxconvention }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+
+	}
+
+	#Focus for Traditional Take
+	focus = {
+		id = TUR_traditionaltake
+		icon = GFX_traditionaltake
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_internalproblems }
+		mutually_exclusive = { focus = TUR_kemalisttake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Status of Minorities
+	focus = {
+		id = TUR_statusofminorities
+		icon = GFX_statusofminorities
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_kemalisttake }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Aftermath of Dersym
+	focus = {
+		id = TUR_aftermathofdersym
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_statusofreligion focus = TUR_statusofminorities }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Allow Local Authorities
+	focus = {
+		id = TUR_allowlocalauthorities
+		icon = GFX_allowlocalauthorities
+		x = 3
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_anatolialandofbelievers }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Regulation of Imams
+	focus = {
+		id = TUR_regulationofimams
+		icon = GFX_regulationofimams
+		x = 5
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_turkeyunitedandready }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Musolinni-MH Meeting
+	focus = {
+		id = TUR_musolinnimhmeeting
+		icon = GFX_musolinnimhmeeting
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_dealwiththedevil }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Deal With The Devil
+	focus = {
+		id = TUR_dealwiththedevil
+		icon = GFX_dealwiththedevil
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_greywolfagenda focus = TUR_panturkistagenda }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Greywolf Agenda
+	focus = {
+		id = TUR_greywolfagenda
+		icon = GFX_greywolfagenda
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_bribekemalists }
+		mutually_exclusive = { focus = TUR_panturkistagenda }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The New Coalition: DP
+	focus = {
+		id = TUR_thenewcoalitiondp
+		icon = GFX_thenewcoalitiondp
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thegreatcongress }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Brave Generals: MH
+	focus = {
+		id = TUR_bravegeneralsmh
+		icon = GFX_bravegeneralsmh
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thegreatcongress }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Godfather
+	focus = {
+		id = TUR_thegodfather
+		icon = GFX_thegodfather
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thegreatcongress }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Assembly Meeting of 1936
+	focus = {
+		id = TUR_assemblymeetingof1936
+		icon = GFX_assemblymeetingof1936
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_themontreuxconvention }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Great Congress
+	focus = {
+		id = TUR_thegreatcongress
+		icon = GFX_thegreatcongress
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_assemblymeetingof1936 }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Bribe Kemalists
+	focus = {
+		id = TUR_bribekemalists
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_bravegeneralsmh }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Pan-Turkist Agenda
+	focus = {
+		id = TUR_panturkistagenda
+		icon = GFX_panturkistagenda
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_bribekemalists }
+		mutually_exclusive = { focus = TUR_greywolfagenda }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Voice of The People
+	focus = {
+		id = TUR_voiceofthepeople
+		icon = GFX_voiceofthepeople
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thenewcoalitiondp }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Republicanism
+	focus = {
+		id = TUR_republicanism
+		icon = GFX_republicanism
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_voiceofthepeople }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Open Democracy
+	focus = {
+		id = TUR_opendemocracy
+		icon = GFX_opendemocracy
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_voiceofthepeople }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Contact The West
+	focus = {
+		id = TUR_contactthewest
+		icon = GFX_contactthewest
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_republicanism focus = TUR_opendemocracy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Land of Oppurtunity
+	focus = {
+		id = TUR_landofoppurtunity
+		icon = GFX_landofoppurtunity
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_contactthewest }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Wake The Tiger
+	focus = {
+		id = TUR_wakethetiger
+		icon = GFX_wakethetiger
+		x = 18
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_landofoppurtunity }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Closer With France
+	focus = {
+		id = TUR_closerwithfrance
+		icon = GFX_closerwithfrance
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_westernpolicy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Country of White Lilies
+	focus = {
+		id = TUR_thecountryofwhitelilies
+		icon = GFX_thecountryofwhitelilies
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_robertcollege }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for New Age Doctrines
+	focus = {
+		id = TUR_newagedoctrines
+		icon = GFX_newagedoctrines
+		x = 41
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_statusoftsk }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Equipment From West
+	focus = {
+		id = TUR_equipmentfromwest
+		icon = GFX_equipmentfromwest
+		x = 43
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_statusoftsk }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Skilled Generals
+	focus = {
+		id = TUR_skilledgenerals
+		icon = GFX_focus_generic_military_mission
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_newagearmy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Superdoctrine Research
+	focus = {
+		id = TUR_superdoctrineresearch
+		icon = GFX_superdoctrineresearch
+		x = 41
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_newagedoctrines }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Tank & Motorized Research
+	focus = {
+		id = TUR_tankmotorizedresearch
+		icon = GFX_tankmotorizedresearch
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_equipmentfromwest }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Military School In Ankara
+	focus = {
+		id = TUR_militaryschoolinankara
+		icon = GFX_militaryschoolinankara
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_skilledgenerals }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Artillery Leveling
+	focus = {
+		id = TUR_artilleryleveling
+		icon = GFX_artilleryleveling
+		x = 43
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_tankmotorizedresearch }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Prepare For The Black Sabbath
+	focus = {
+		id = TUR_preparefortheblacksabbath
+		icon = GFX_preparefortheblacksabbath
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_superdoctrineresearch }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Ask For Hatay
+	focus = {
+		id = TUR_askforhatay
+		icon = GFX_askforhatay
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_edwardataturkmeeting }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Turkish Cypriots
+	focus = {
+		id = TUR_turkishcypriots
+		icon = GFX_turkishcypriots
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_edwardataturkmeeting }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Letter To Greece
+	focus = {
+		id = TUR_lettertogreece
+		icon = GFX_lettertogreece
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_askforhatay focus = TUR_turkishcypriots }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for People of Kavala and Dedeagac
+	focus = {
+		id = TUR_peopleofkavalaanddedeagac
+		icon = GFX_peopleofkavalaanddedeagac
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_lettertogreece }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Mosul and Qerquq Turkmens
+	focus = {
+		id = TUR_mosulandqerquqturkmens
+		icon = GFX_mosulandqerquqturkmens
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_peopleofkavalaanddedeagac }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Misq-ı Milli Completed
+	focus = {
+		id = TUR_misqmillicompleted
+		icon = GFX_misqmillicompleted
+		x = 26
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_mosulandqerquqturkmens }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Punish Syria
+	focus = {
+		id = TUR_punishsyria
+		icon = GFX_punishsyria
+		x = 30
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_annexhatay }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Beacon Of The Middle East
+	focus = {
+		id = TUR_beaconofthemiddleeast
+		icon = GFX_beaconofthemiddleeast
+		x = 30
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_punishsyria }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Develop Afghanistan
+	focus = {
+		id = TUR_developafghanistan
+		icon = GFX_developafghanistan
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_beaconofthemiddleeast }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Reform Iraq
+	focus = {
+		id = TUR_reformiraq
+		icon = GFX_reformiraq
+		x = 31
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_beaconofthemiddleeast }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Liberation of Levant
+	focus = {
+		id = TUR_liberationoflevant
+		icon = GFX_liberationoflevant
+		x = 30
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_reformiraq focus = TUR_developafghanistan }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Closer with Italy
+	focus = {
+		id = TUR_closerwithitaly
+		icon = GFX_closerwithitaly
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_panturkistpolicy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Falange-Fascismo Pact
+	focus = {
+		id = TUR_falangefascismopact
+		icon = GFX_falangefascismopact
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_closerwithitaly }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Arm South Azerbaijan
+	focus = {
+		id = TUR_armsouthazerbaijan
+		icon = GFX_armsouthazerbaijan
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thenaturalbalkanborders }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Arm Our Brothers
+	focus = {
+		id = TUR_armourbrothers
+		icon = GFX_armourbrothers
+		x = 22
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_armsouthazerbaijan }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Turkish Foreign Ministry
+	focus = {
+		id = TUR_theturkishforeignministry
+		icon = GFX_theturkishforeignministry
+		x = 26
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Pan-Turkist Policy
+	focus = {
+		id = TUR_panturkistpolicy
+		icon = GFX_panturkistpolicy
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_theturkishforeignministry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Edward-Ataturk Meeting
+	focus = {
+		id = TUR_edwardataturkmeeting
+		icon = GFX_edwardataturkmeeting
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_closerwithfrance }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Demand Hatay-Northern Iraq
+	focus = {
+		id = TUR_demandhataynortherniraq
+		icon = GFX_demandhataynortherniraq
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_falangefascismopact }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Claim Our Prize
+	focus = {
+		id = TUR_claimourprize
+		icon = GFX_claimourprize
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_falangefascismopact }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Claim The Birthright
+	focus = {
+		id = TUR_claimthebirthright
+		icon = GFX_claimthebirthright
+		x = 22
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_armourbrothers }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Natural Balkan Borders
+	focus = {
+		id = TUR_thenaturalbalkanborders
+		icon = GFX_thenaturalbalkanborders
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_claimourprize }
+		prerequisite = { focus = TUR_demandhataynortherniraq }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for A Flight To Tehran
+	focus = {
+		id = TUR_aflighttotehran
+		icon = GFX_aflighttotehran
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_neutralpolitics }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Neutral Politics
+	focus = {
+		id = TUR_neutralpolitics
+		icon = GFX_neutralpolitics
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_regionalpolitics }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for The Sadabat Pact
+	focus = {
+		id = TUR_thesadabatpact
+		icon = GFX_thesadabatpact
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_aflighttotehran }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Annex Hatay
+	focus = {
+		id = TUR_annexhatay
+		icon = GFX_annexhatay
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thesadabatpact }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for New Age Army
+	focus = {
+		id = TUR_newagearmy
+		icon = GFX_newagearmy
+		x = 39
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_statusoftsk }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for For A Newer Future
+	focus = {
+		id = TUR_foranewerfuture
+		icon = GFX_foranewerfuture
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_develophatay }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Capital of The Future
+	focus = {
+		id = TUR_capitalofthefuture
+		icon = GFX_capitalofthefuture
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_civillianindustryii }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Turkish Guns
+	focus = {
+		id = TUR_turkishguns
+		icon = GFX_turkishguns
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_militaryindustryii }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Develop Hatay
+	focus = {
+		id = TUR_develophatay
+		icon = GFX_develophatay
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_chakmakhatti }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Civillian Industry II
+	focus = {
+		id = TUR_civillianindustryii
+		icon = GFX_goal_generic_production
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_civillianindustry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Military Industry
+	focus = {
+		id = TUR_militaryindustry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 37
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_turkishindustry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Military Industry II
+	focus = {
+		id = TUR_militaryindustryii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 37
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_militaryindustry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Chakmak Hatti
+	focus = {
+		id = TUR_chakmakhatti
+		icon = GFX_chakmakhatti
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_turkishindustry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Civillian Industry
+	focus = {
+		id = TUR_civillianindustry
+		icon = GFX_goal_generic_production
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_turkishindustry }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Turkish Industry
+	focus = {
+		id = TUR_turkishindustry
+		icon = GFX_turkishindustry
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Istanbulian Effort
+	focus = {
+		id = TUR_istanbulianeffort
+		icon = GFX_istanbulianeffort
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_capitalofthefuture }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Robert College
+	focus = {
+		id = TUR_robertcollege
+		icon = GFX_robertcollege
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_foranewerfuture }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for For Country
+	focus = {
+		id = TUR_forcountry
+		icon = GFX_forcountry
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_preparefortheblacksabbath }
+		prerequisite = { focus = TUR_militaryschoolinankara }
+		prerequisite = { focus = TUR_artilleryleveling }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Marines of The Future
+	focus = {
+		id = TUR_marinesofthefuture
+		icon = GFX_marinesofthefuture
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_navalfortsoftherepublic }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Merchant Navy
+	focus = {
+		id = TUR_merchantnavy
+		icon = GFX_merchantnavy
+		x = 46
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_marinesofthefuture }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for "Vatanim İçin"
+	focus = {
+		id = TUR_vatanimin
+		icon = GFX_vatanimin
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_turkishguns }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Hold The Line
+	focus = {
+		id = TUR_holdtheline
+		icon = GFX_holdtheline
+		x = 46
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Naval Forts of The Republic
+	focus = {
+		id = TUR_navalfortsoftherepublic
+		icon = GFX_navalfortsoftherepublic
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_holdtheline }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Wartime Novelty
+	focus = {
+		id = TUR_wartimenovelty
+		icon = GFX_wartimenovelty
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_merchantnavy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Aegean Protection
+	focus = {
+		id = TUR_aegeanprotection
+		icon = GFX_aegeanprotection
+		x = 48
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_merchantnavy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#End of focuses
+}

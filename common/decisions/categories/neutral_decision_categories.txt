@@ -1,0 +1,24 @@
+###########################
+###### NEUTRAL ZONE #######
+###########################
+
+neutral_zone_management = {
+	
+	icon = power_struggle
+
+	allowed = {
+		OR = {
+			original_tag = SAU
+			original_tag = IRQ
+		}
+	}
+
+	visible = {
+		800 = {
+			is_demilitarized_zone = yes
+		}
+		801 = {
+			is_demilitarized_zone = yes
+		}
+	}
+}

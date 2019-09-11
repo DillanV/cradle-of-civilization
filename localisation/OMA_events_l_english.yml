@@ -1,0 +1,12 @@
+﻿l_english: 
+  ### Misc
+ OMA_soft_restriction_tt:0 "§YLimited restrictions§! will be placed on the Imam, reducing his power in a civil war."
+ OMA_hard_restriction_tt:0 "§YSevere restrictions§! will be placed on the Imam, reducing his power in a civil war."
+ OMA_no_restriction_tt:0 "§YNo restrictions§! will be placed on the Imam."
+ OMA_civil_war_tt:0 "§YBegins§! the civil war and §Ydeploys§! militia divisions."
+  ### Event Names
+ oman.1.t:0 "The Restriction Question"
+ oman.1.d:0 "For nearly a hundred years now, the Sultan and Imam have been at odds. While it has not escalated into civil war yet, experts have said that it is inevitable that a clash will occur. We must find ways to limit the power of the Imam, so that his power is weakened in case of a civil war."
+ oman.1.a:0 "Place mild restrictions on the Imam."
+ oman.1.b:0 "Place severe restrictions on the Imam."
+ oman.1.c:0 "Place no restrictions on the Imam."

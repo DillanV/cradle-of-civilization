@@ -1,0 +1,218 @@
+spriteTypes = {	
+	spriteType = {
+	name = "GFX_idea_unruly_poopulace"
+	texturefile = "gfx/interface/ideas/idea_unruly_poopulace.tga"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_oil_concession"
+	texturefile = "gfx/interface/ideas/idea_generic_oil_concession.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_infidel_religion"
+	texturefile = "gfx/interface/ideas/idea_generic_infidel_religion.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_sunni_islam"
+	texturefile = "gfx/interface/ideas/idea_generic_sunni_islam.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_shia_islam"
+	texturefile = "gfx/interface/ideas/idea_generic_shia_islam.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_ibadi_islam"
+	texturefile = "gfx/interface/ideas/idea_generic_ibadi_islam.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_generic_school_hanafi"
+	texturefile = "gfx/interface/ideas/idea_generic_school_hanafi.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_school_hanbali"
+	texturefile = "gfx/interface/ideas/idea_generic_school_hanbali.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_school_maliki"
+	texturefile = "gfx/interface/ideas/idea_generic_school_maliki.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_generic_school_shafi"
+	texturefile = "gfx/interface/ideas/idea_generic_school_shafi.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_school_shia_ismaili"
+	texturefile = "gfx/interface/ideas/idea_generic_school_shia_ismaili.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_school_shia_jafari"
+	texturefile = "gfx/interface/ideas/idea_generic_school_shia_jafari.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_school_shia_zaidi"
+	texturefile = "gfx/interface/ideas/idea_generic_school_shia_zaidi.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_family_struggle"
+	texturefile = "gfx/interface/ideas/idea_generic_family_struggle.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_generic_debt_1"
+	texturefile = "gfx/interface/ideas/idea_generic_debt_1.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_debt_2"
+	texturefile = "gfx/interface/ideas/idea_generic_debt_2.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_debt_3"
+	texturefile = "gfx/interface/ideas/idea_generic_debt_3.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_debt_4"
+	texturefile = "gfx/interface/ideas/idea_generic_debt_4.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_debt_5"
+	texturefile = "gfx/interface/ideas/idea_generic_debt_5.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_islamic_tolerance"
+	texturefile = "gfx/interface/ideas/idea_generic_islamic_tolerance.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_cavalry_improvement"
+	texturefile = "gfx/interface/ideas/idea_generic_cavalry_improvement.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_generic_strengthened_kingdom"
+	texturefile = "gfx/interface/ideas/idea_generic_strengthened_kingdom.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_yemen_deterrence"
+	texturefile = "gfx/interface/ideas/idea_yemen_deterrence.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_yemen_cash_crops"
+	texturefile = "gfx/interface/ideas/idea_yemen_cash_crops.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_yemen_rise_democracy"
+	texturefile = "gfx/interface/ideas/idea_yemen_rise_democracy.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_TUR_religious_extremists"
+	texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_TUR_century_of_wars"
+	texturefile = "gfx/interface/ideas/idea_prc_low_popular_support.dds"			
+	}	
+	spriteType = {
+	name = "GFX_idea_TUR_weak_government"
+	texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"			
+	}		
+	spriteType = {
+	name = "GFX_idea_generic_anti_zionist_pact"
+	texturefile = "gfx/interface/ideas/idea_generic_anti_zionist_pact.dds"			
+	}		
+	spriteType = {
+	name = "GFX_idea_EGY_Alexandria_Dockyard_Union"
+	texturefile = "gfx/interface/ideas/idea_EGY_Alexandria_Dockyard_Union.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Helwan_Vehicle_Sector"
+	texturefile = "gfx/interface/ideas/idea_EGY_Helwan_Vehicle_Sector.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Cairo_Nile_Docks"
+	texturefile = "gfx/interface/ideas/idea_EGY_Cairo_Nile_Docks.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Egypt_Air"
+	texturefile = "gfx/interface/ideas/idea_EGY_Egypt_Air.dds"			
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Mercedes_Benz_Egypt"
+	texturefile = "gfx/interface/ideas/idea_EGY_Mercedes_Benz_Egypt.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_National_Armed_Forces_Manufacturing_Company"
+	texturefile = "gfx/interface/ideas/idea_EGY_National_Armed_Forces_Manufacturing_Company.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Port_Said_Dockyard_Union"
+	texturefile = "gfx/interface/ideas/idea_EGY_Port_Said_Dockyard_Union.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Telecom_Egypt"
+	texturefile = "gfx/interface/ideas/idea_EGY_Telecom_Egypt.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Supermarine_Cairo"
+	texturefile = "gfx/interface/ideas/idea_EGY_Supermarine_Cairo.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_gamal_abdel_nasser"
+	texturefile = "gfx/interface/ideas/idea_EGY_gamal_abdel_nasser.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_safiya_zaghloul"
+	texturefile = "gfx/interface/ideas/idea_EGY_safiya_zaghloul.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_aly_mahir_pasha"
+	texturefile = "gfx/interface/ideas/idea_EGY_aly_mahir_pasha.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_fawzia_fuad"
+	texturefile = "gfx/interface/ideas/idea_EGY_fawzia_fuad.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_talaat_harb"
+	texturefile = "gfx/interface/ideas/idea_EGY_talaat_harb.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_ismal_chrine"
+	texturefile = "gfx/interface/ideas/idea_EGY_ismal_chrine.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_huda_shaarawi"
+	texturefile = "gfx/interface/ideas/idea_EGY_huda_shaarawi.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Farouk_1"
+	texturefile = "gfx/interface/ideas/idea_EGY_Farouk_1.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_zakaria_mohieddin"
+	texturefile = "gfx/interface/ideas/idea_EGY_zakaria_mohieddin.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_ahmad_hussein"
+	texturefile = "gfx/interface/ideas/idea_EGY_ahmad_hussein.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_mohammed_naguib"
+	texturefile = "gfx/interface/ideas/idea_EGY_mohammed_naguib.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Mohamed_Mahmoud_Pasha"
+	texturefile = "gfx/interface/ideas/idea_EGY_Mohamed_Mahmoud_Pasha.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Mustafa_el_Nahhas_Pasha"
+	texturefile = "gfx/interface/ideas/idea_EGY_Mustafa_el_Nahhas_Pasha.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_EGY_Agha_Khan_III"
+	texturefile = "gfx/interface/ideas/idea_EGY_Agha_Khan_III.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_yemen_broken_army"
+	texturefile = "gfx/interface/ideas/idea_yemen_broken_army.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_militarism"
+	texturefile = "gfx/interface/ideas/YEM_militarism.dds"
+	}
+}

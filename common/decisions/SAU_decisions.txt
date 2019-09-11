@@ -1,0 +1,26 @@
+piety_decisions = {
+	SAU_build_a_palace = {
+
+#		icon = 
+
+		available = {
+			original_tag = SAU
+		}
+
+		visible = {
+			always = yes
+			has_government = neutrality
+		}
+
+		fire_only_once = no
+
+		days_remove = 200
+		days_re_enable = 0
+
+		cost = 100
+
+		complete_effect = {
+			add_10_islam = yes
+		}
+	}
+}

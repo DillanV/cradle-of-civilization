@@ -1,0 +1,229 @@
+add_5_islam = {
+	custom_effect_tooltip = add_five_islam_tt
+	hidden_effect = {
+		add_to_variable = {
+		    var = islam_progress_bar
+		    value = 5
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+add_10_islam = {
+	custom_effect_tooltip = add_ten_islam_tt
+	hidden_effect = {
+		add_to_variable = {
+		    var = islam_progress_bar
+		    value = 10
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+add_15_islam = {
+	custom_effect_tooltip = add_fifteen_islam_tt
+	hidden_effect = {
+		add_to_variable = {
+		    var = islam_progress_bar
+		    value = 15
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+add_20_islam = {
+	custom_effect_tooltip = add_twenty_islam_tt
+	hidden_effect = {
+		add_to_variable = {
+		    var = islam_progress_bar
+		    value = 20
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+add_25_islam = {
+	custom_effect_tooltip = add_twenty_five_islam_tt
+	hidden_effect = {
+		add_to_variable = {
+		    var = islam_progress_bar
+		    value = 25
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+subtract_5_islam = {
+	custom_effect_tooltip = subtract_five_islam_tt
+	hidden_effect = {
+		subtract_from_variable = {
+		    var = islam_progress_bar
+		    value = 5
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+subtract_10_islam = {
+	custom_effect_tooltip = subtract_ten_islam_tt
+	hidden_effect = {
+		subtract_from_variable = {
+		    var = islam_progress_bar
+		    value = 10
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+subtract_15_islam = {
+	custom_effect_tooltip = subtract_fifteen_islam_tt
+	hidden_effect = {
+		subtract_from_variable = {
+		    var = islam_progress_bar
+		    value = 15
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+subtract_20_islam = {
+	custom_effect_tooltip = subtract_twenty_islam_tt
+	hidden_effect = {
+		subtract_from_variable = {
+		    var = islam_progress_bar
+		    value = 20
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}
+
+subtract_25_islam = {
+	custom_effect_tooltip = subtract_twenty_five_islam_tt
+	hidden_effect = {
+		subtract_from_variable = {
+		    var = islam_progress_bar
+		    value = 25
+		}
+		set_variable = { islam = islam_progress_bar }
+		divide_variable = { islam = 1000 }
+		clamp_variable = { var = islam min = 0 max = 0.1 }
+		set_variable = { islam_effect_2 = islam }
+		multiply_variable = {
+			var = islam_effect_2
+			value = 1.2
+		}
+		set_variable = { islam_effect_3 = islam }
+		multiply_variable = {
+			var = islam_effect_3
+			value = -1.5
+		}
+	}
+}

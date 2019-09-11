@@ -1,0 +1,23 @@
+state={
+	id=790
+	name="STATE_790"
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			8000 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = YEM
+
+	}
+	provinces={
+		8000 
+	}
+	manpower=18520
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

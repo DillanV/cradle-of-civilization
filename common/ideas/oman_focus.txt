@@ -1,0 +1,416 @@
+ideas = {
+	country = {
+		OMA_imam_rivalry = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = oman_rivalry
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				stability_weekly = -0.003
+				war_support_weekly = -0.002
+			}
+		}
+		OMA_undecided_army = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = oman_undecided_military
+
+			modifier = {
+				army_org_factor = -0.15 
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		OMA_sent_aid = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.15  
+			}
+		}
+		OMA_industrial_incentive = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.2  
+			}
+		}
+		OMA_new_law_code = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = hun_treaty_of_trianon
+
+			modifier = {
+				political_power_gain = 0.25  
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		OMA_resistance_oman = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+			}
+		}
+		OMA_resistance_oman_2 = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+			}
+		}
+		OMA_resistance_muscat = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.66
+			}
+		}
+		OMA_ibadi_nationalism = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = OMA_ibadi_nationalism
+
+			modifier = {
+				stability_factor = 0.05
+				army_core_attack_factor = 0.1 
+				army_core_defence_factor = 0.1 
+			}
+		}
+		OMA_independent_ambitions = {
+			allowed = {
+				original_tag = OMA
+				is_puppet = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = yes
+
+			picture = generic_independent_ambition
+
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+		OMA_even_field = {
+			allowed = {
+				original_tag = OMA
+				is_puppet = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = yes
+
+			picture = generic_independent_ambition
+
+			modifier = {
+				autonomy_gain = 0.5
+			}
+		}
+		OMA_hinterland_colonization = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+				stability_factor = -0.05
+			}
+		}
+		OMA_fascism_banned = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_oppression
+
+			modifier = {
+				fascism_drift = -0.05
+				drift_defence_factor = 0.5
+			}
+		}
+		OMA_economic_bonus = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_revenue
+
+			modifier = {
+				consumer_goods_factor = -0.1 
+				industrial_capacity_factory = 0.15
+			}
+		}
+		OMA_mass_production = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_revenue
+
+			equipment_bonus = {
+			    infantry_equipment = {
+			    	instant = yes
+			    	reliability = -0.2
+			    	build_cost_ic = -0.15
+				}
+			}
+		}
+		OMA_tribal_banners = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.075
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		OMA_prussian_army = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_prussian_army
+
+			modifier = {
+				conscription = -0.015
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05 
+			}
+		}
+		OMA_prussian_army_2 = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_prussian_army2
+
+			modifier = {
+				conscription = -0.02
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.1  
+			}
+		}
+		OMA_education_reform = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_prussian_army2
+
+			modifier = {
+				research_speed_factor = -0.075  
+			}
+		}
+		OMA_imam_weakened = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+
+			modifier = {
+				stability_factor = -0.1
+				army_core_defence_factor = -0.15  
+			}
+		}
+		OMA_imam_severely_weakened = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+
+			modifier = {
+				stability_factor = -0.1
+				army_core_defence_factor = -0.15  
+			}
+		}
+	}
+}

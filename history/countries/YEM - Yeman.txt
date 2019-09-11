@@ -1,0 +1,151 @@
+﻿capital = 293
+
+oob = "YEM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_war_support = 0.2
+set_stability = 0.5
+set_convoys = 10
+
+add_ideas = {
+	
+}
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "YEM_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    fascism = 9
+    communism = 0
+    neutrality = 81
+}
+
+add_ideas = {
+	YEM_family_struggle
+	YEM_pastoralism
+	YEM_army
+}	
+
+create_country_leader = {
+	name = "Yahya Muhammad Hamid ed-Din"
+	desc = "POLITICS_IMAM_YAHYA_DESC"
+	picture = "GFX_portrait_yemen_imam_yahya"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ahmad Muhammad Numan"
+	desc = "POLITICS_SHABAB_AL-AMR_DESC"
+	picture = "Portrait_YEM_Ahmad_Muhammad_Numan.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {}
+}
+
+create_field_marshal = {
+	name = "Yahya Muhammad Hamid ed-Din"
+	picture = "portrait_yem_imam_yaha.dds"
+	traits = {
+		offensive_doctrine
+	}
+	id = 8001
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Abdullah as-Sallal"
+	picture = "Portrait_YEM_Abdullah_as_Sallal.tga"
+	traits = {
+		commando
+	}
+	id = 8003
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ahmad bin Yahya"
+	picture = "YEM_Ahmad_bin_Yahya.tga"
+	traits = {
+		harsh_leader
+	}
+	id = 8002
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+1939.1.1 = {
+	set_politics = {	
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        democratic = 0
+        fascism = 0
+        communism = 0
+        neutrality = 100
+    }
+}

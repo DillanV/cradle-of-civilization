@@ -1,0 +1,28 @@
+
+state={
+	id=815
+	name="STATE_815"
+
+	history={
+		owner = PER
+		add_core_of = PER
+		victory_points = {
+			7982 3 
+		}
+		buildings = {
+			infrastructure = 1
+			7982 = {
+				naval_base = 4
+
+			}
+		}
+
+	}
+
+	provinces={
+		1889 2039 7982 12863 13236 
+	}
+	manpower=242597
+	buildings_max_level_factor=1.000
+	state_category=town
+}
