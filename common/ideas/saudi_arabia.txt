@@ -118,7 +118,7 @@ ideas = {
 	}
 	country = {
         SAU_exploit_ghawar_idea = {
-			picture = mex_privatisation
+			picture = generic_foreign_capital
             allowed = {
                 original_tag = SAU
 				always = no
