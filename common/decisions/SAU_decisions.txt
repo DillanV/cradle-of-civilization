@@ -8,7 +8,7 @@ piety_decisions = {
 		}
 
 		visible = {
-			always = yes
+			original_tag = SAU
 			has_government = neutrality
 		}
 

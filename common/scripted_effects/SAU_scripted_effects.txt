@@ -24,3 +24,20 @@ SAU_large_rural_population_level_down = {
 		}
 	}
 }
+
+SAU_hajj_based_economy_level_down = {
+	if = {
+		limit = {
+			has_idea = SAU_hajj_based_economy_2
+		}
+		remove_idea = SAU_hajj_based_economy_2
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_hajj_based_economy_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_hajj_based_economy_1
+			add_idea = SAU_hajj_based_economy_2
+		}
+	}
