@@ -96,7 +96,7 @@ ideas = {
 	}
 	country = {
         SAU_ikhwan_unrest = {
-			picture = sau_hajj_ikhwan
+			picture = sau_ikhwan
             allowed = {
                 original_tag = SAU
             }
