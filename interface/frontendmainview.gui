@@ -228,25 +228,13 @@ guiTypes = {
 		
 		instantTextBoxType = {
 
-			name ="mod_version_label"
+			name ="version_label"
 			position = { x = 35 y = 356 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
-			text = "mod_version"	
-			format = centre
-			maxWidth = 250
-			maxHeight = 20	
-		}
-		
-		instantTextBoxType = {
-
-			name ="version_label"
-			position = { x = 10000 y = 356 }
-			textureFile = ""
-			font = "hoi_18b"
-			borderSize = {x = 0 y = 0}
 			text = "ALPHA"	
+			pdx_tooltip = "mod_version"	
 			format = centre
 			maxWidth = 250
 			maxHeight = 20	
