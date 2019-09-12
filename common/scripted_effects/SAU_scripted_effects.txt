@@ -30,7 +30,7 @@ SAU_hajj_based_economy_level_down = {
 		limit = {
 			has_idea = SAU_hajj_based_economy_2
 		}
-		remove_idea = SAU_hajj_based_economy_2
+		remove_ideas = SAU_hajj_based_economy_2
 	}
 	else_if = {
 		limit = {
