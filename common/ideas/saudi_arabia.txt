@@ -11,7 +11,7 @@ ideas = {
         }
 	}
 	country = {
-        SAU_inexperienced_army = {
+        SAU_inexperienced_army_1 = {
 			picture = sau_inexperienced_army
             allowed = {
                 original_tag = SAU
@@ -21,6 +21,34 @@ ideas = {
 				army_org_factor = -0.15
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
+            }
+        }
+	}
+	country = {
+        SAU_inexperienced_army_2 = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				max_planning = -0.10
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+            }
+        }
+	}
+	country = {
+        SAU_inexperienced_army_3 = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+            modifier = {
+				max_planning = -0.05
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
             }
         }
 	}
@@ -124,7 +152,7 @@ ideas = {
 				always = no
             }
             modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.07
 			}
         }
 	}
