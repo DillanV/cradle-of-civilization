@@ -136,8 +136,10 @@
  SAU_diversify_economy_idea_desc:0 "We must move away from basing our economy solely on hajj tourism if we are to fully realize our potential as a great Saudi state."
  SAU_ikhwan_unrest:0 "Ikhwan Unrest"
  SAU_ikhwan_unrest_desc:0 "After the crushing of all Ikhwan rebellion after their contributions to the unification of Saudi Arabia, there is a large sense of betrayal in the Ikhwan of our nation."
- SAU_exploit_ghawar_idea:0 "Oil Money"
- SAU_exploit_ghawar_idea_desc:0 "The massive recently discovered oil fields in the province of Hasa have allowed us to gain a new economic base."
+ SAU_oil_money_1:0 "Oil Money"
+ SAU_oil_money_1_desc:0 "The massive recently discovered oil fields in our provinces of the east have allowed us to gain a new economic base."
+ SAU_oil_money_2:0 "Oil Money"
+ SAU_oil_money_2_desc:0 "The massive recently discovered oil fields in our provinces of the east have allowed us to gain a new economic base."
  
  
  alawwal_bank:0 "Alawwal Bank"

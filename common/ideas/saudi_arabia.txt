@@ -145,14 +145,26 @@ ideas = {
         }
 	}
 	country = {
-        SAU_exploit_ghawar_idea = {
+        SAU_oil_money_1 = {
 			picture = generic_foreign_capital
             allowed = {
                 original_tag = SAU
 				always = no
             }
             modifier = {
-				consumer_goods_factor = -0.07
+				consumer_goods_factor = -0.05
+			}
+        }
+	}
+	country = {
+        SAU_oil_money_2 = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+            modifier = {
+				consumer_goods_factor = -0.10
 			}
         }
 	}

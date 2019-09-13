@@ -214,7 +214,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = SAU_exploit_ghawar_idea
+			add_ideas = SAU_oil_money_1
 			SAU_hajj_based_economy_level_down = yes
         }
     }
