@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Saudi Arabia Events
 ###########################
 
@@ -34,6 +34,7 @@ country_event = {
 		JAP = {
 				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_japan }
 		}
+		SAU_oil_money_level_up = yes
 	}
 	option = { # Give concession rights to Texas Company and Socal (USA)
 		name = saudi.1.b
@@ -44,5 +45,6 @@ country_event = {
 		USA = {
 				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_american_companies }
 		}
+		SAU_oil_money_level_up = yes
 	}
 }
