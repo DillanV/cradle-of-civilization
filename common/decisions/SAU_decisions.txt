@@ -1,7 +1,7 @@
 piety_decisions = {
 	SAU_build_a_palace = {
 
-#		icon = 
+		icon = GFX_decision_generic_piety
 
 		available = {
 			original_tag = SAU
@@ -20,7 +20,7 @@ piety_decisions = {
 		cost = 100
 
 		complete_effect = {
-			add_10_islam = yes
+			add_5_islam = yes
 		}
 	}
 }

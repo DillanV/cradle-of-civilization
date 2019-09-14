@@ -28,7 +28,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_diversify_economy
-#		icon = 
+		icon = GFX_generic_balanced_budget
 		prerequisite = { focus = SAU_third_saudi_state }
 		relative_position_id = SAU_third_saudi_state
         x = -2
@@ -61,7 +61,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_prospect_for_oil
-#		icon = 
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SAU_diversify_economy }
 		relative_position_id = SAU_diversify_economy
         x = 0
@@ -96,7 +96,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_the_concession_question
-#		icon = 
+		icon = GFX_generic_oil_discovery
 		prerequisite = { focus = SAU_prospect_for_oil }
 		relative_position_id = SAU_prospect_for_oil
         x = 0
@@ -194,7 +194,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_exploit_ghawar
-#		icon = 
+		icon = GFX_generic_oil_discovery
 		prerequisite = { focus = SAU_invite_german_experts focus = SAU_invite_american_experts}
 		relative_position_id = SAU_invite_german_experts
         x = -1
@@ -239,7 +239,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_urban_relocation_program
-#		icon = 
+		icon = GFX_encouragemigration
 		prerequisite = { focus = SAU_pro_saudi_propoganda }
 		relative_position_id = SAU_pro_saudi_propoganda
         x = 0

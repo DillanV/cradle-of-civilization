@@ -1,0 +1,15 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_generic_balanced_budget"
+		texturefile = "gfx/interface/goals/generic_balanced_budget.dds"			
+	}
+	spriteType = {
+		name = "GFX_generic_oil_discovery"
+		texturefile = "gfx/interface/goals/generic_oil_discovery.dds"			
+	}
+	spriteType = {
+		name = "GFX_encouragemigration"
+		texturefile = "gfx/interface/goals/GFX_encouragemigration.dds"			
+	}
+	
+}
