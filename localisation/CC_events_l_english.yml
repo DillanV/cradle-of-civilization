@@ -123,3 +123,8 @@
  yemen.215.t:0 "[From.GetName] Refuses Pact"
  yemen.215.d:0 "[From.GetName] has refused to join our pact, saying that they have no reason to be against Jews at the moment. This means that we have to fight for our cause without them."
  yemen.215.a:0 "We can make do without [From.GetName]."
+  ### Saudi Arabia
+ saudi.1.t:0 "The Concession Question"
+ saudi.1.d:0 "The time has come to decide who to concess our oil reserves to, as we have so much and we need so little. There is immense capital to be made if we can strike up a good deal. But to who?"
+ saudi.1.a:0 "The Germans and the Japanese!"
+ saudi.1.b:0 "The American companies!"

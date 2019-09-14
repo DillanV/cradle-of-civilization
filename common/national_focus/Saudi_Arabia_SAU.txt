@@ -60,7 +60,7 @@ focus_tree = {
     }
 	
 	focus = {
-        id = SAU_prospect_for_oil_in_al_hasa
+        id = SAU_prospect_for_oil
 #		icon = 
 		prerequisite = { focus = SAU_diversify_economy }
 		relative_position_id = SAU_diversify_economy
@@ -79,18 +79,50 @@ focus_tree = {
 					amount = 12
 				}
 			}
+			292 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+			798 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_the_concession_question
+#		icon = 
+		prerequisite = { focus = SAU_prospect_for_oil }
+		relative_position_id = SAU_prospect_for_oil
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			SAU = {
+				country_event = { id = saudi.1 days = 1 }
+			}
         }
     }
 	
 	focus = {
         id = SAU_invite_american_experts
 #		icon = 
-		prerequisite = { focus = SAU_prospect_for_oil_in_al_hasa }
-		relative_position_id = SAU_prospect_for_oil_in_al_hasa
+		prerequisite = { focus = SAU_the_concession_question }
+		relative_position_id = SAU_the_concession_question
 		mutually_exclusive = { focus = SAU_invite_german_experts }
         x = -1
         y = 1
-        cost = 10
+        cost = 15
         available_if_capitulated = no
         bypass = {
         }
@@ -103,6 +135,18 @@ focus_tree = {
 					amount = 48
 				}
 			}
+			292 = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
+			798 = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
 			USA = {
 				add_opinion_modifier = { target = SAU modifier = SAU_invited_american_experts }
 			}
@@ -112,8 +156,8 @@ focus_tree = {
 	focus = {
         id = SAU_invite_german_experts
 #		icon = 
-		prerequisite = { focus = SAU_prospect_for_oil_in_al_hasa }
-		relative_position_id = SAU_prospect_for_oil_in_al_hasa
+		prerequisite = { focus = SAU_the_concession_question }
+		relative_position_id = SAU_the_concession_question
 		mutually_exclusive = { focus = SAU_invite_american_experts }
         x = 1
         y = 1
@@ -128,6 +172,18 @@ focus_tree = {
 				add_resource = {
 					type = oil
 					amount = 48
+				}
+			}
+			292 = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
+			798 = {
+				add_resource = {
+					type = oil
+					amount = 24
 				}
 			}
 			GER = {
@@ -158,7 +214,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = SAU_exploit_ghawar_idea
+			add_ideas = SAU_oil_money_1
 			SAU_hajj_based_economy_level_down = yes
         }
     }

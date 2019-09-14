@@ -41,3 +41,18 @@ SAU_hajj_based_economy_level_down = {
 			add_idea = SAU_hajj_based_economy_2
 		}
 	}
+}
+SAU_oil_money_level_up = {
+	if = {
+		limit = {
+			has_idea = SAU_oil_money_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_oil_money_1
+			add_idea = SAU_oil_money_2
+		}
+	}
+	else = {
+		add_ideas = SAU_oil_money_1
+	}
+}

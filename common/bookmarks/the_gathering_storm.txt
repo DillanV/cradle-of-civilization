@@ -65,10 +65,14 @@ bookmarks = {
 			history = "SAU_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				### Needs work
+				SAU_ulama
+				SAU_hajj_based_economy_1
+				SAU_large_rural_population_1
 			}
 			focuses = {
-				### Needs work
+				SAU_third_saudi_state
+				SAU_support_abdulaziz
+				SAU_reinvite_fawzi
 			}
 		}
 		"OMA"={

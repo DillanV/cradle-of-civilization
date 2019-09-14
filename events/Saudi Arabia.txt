@@ -1,0 +1,47 @@
+﻿###########################
+# Saudi Arabia Events
+###########################
+
+add_namespace = saudi
+
+## The Concession Question
+country_event = {
+	id = saudi.1
+	title = saudi.1.t
+	desc = saudi.1.d
+#	picture = 
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		has_completed_focus = SAU_the_concession_question
+	}
+
+	option = { ## Give concession rights to Germany and Japan
+		name = saudi.1.a
+		SAU = {
+			give_resource_rights = { receiver = GER state = 798 }
+			give_resource_rights = { receiver = JAP state = 292 }
+		}
+		GER = {
+				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_germany }
+		}
+		JAP = {
+				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_japan }
+		}
+		SAU_oil_money_level_up = yes
+	}
+	
+	option = { # Give concession rights to Texas Company and Socal (USA)
+		name = saudi.1.b
+		SAU = {
+			give_resource_rights = { receiver = USA state = 798 }
+			give_resource_rights = { receiver = USA state = 292 }
+		}
+		USA = {
+				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_american_companies }
+		}
+		SAU_oil_money_level_up = yes
+	}
+}

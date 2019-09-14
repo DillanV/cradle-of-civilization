@@ -16,7 +16,7 @@ set_convoys = 5
 
 add_ideas = {
 	SAU_treaty_of_taif
-	SAU_inexperienced_army
+	SAU_inexperienced_army_1
 	SAU_large_rural_population_1
 	SAU_ulama
 	SAU_hajj_based_economy_1

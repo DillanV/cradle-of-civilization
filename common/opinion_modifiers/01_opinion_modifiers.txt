@@ -25,4 +25,13 @@ opinion_modifiers = {
 	SAU_invited_german_experts = {
 		value = 15
 	}
+	SAU_concession_rights_to_germany = {
+		value = 30
+	}
+	SAU_concession_rights_to_japan = {
+		value = 30
+	}
+	SAU_concession_rights_to_american_companies = {
+		value = 30
+	}
 }
