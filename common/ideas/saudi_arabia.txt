@@ -129,7 +129,7 @@ ideas = {
                 original_tag = SAU
             }
             modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.10
             }
         }
 	}
@@ -164,7 +164,7 @@ ideas = {
 				always = no
             }
             modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.08
 			}
         }
 	}

@@ -60,6 +60,57 @@ focus_tree = {
     }
 	
 	focus = {
+        id = SAU_loans_for_factories
+		icon = GFX_generic_balanced_budget
+		prerequisite = { focus = SAU_diversify_economy }
+		relative_position_id = SAU_diversify_economy
+        x = -2
+        y = 1
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 50
+        }
+    }
+	
+	focus = {
+        id = SAU_alireza_automobile_factories
+		icon = GFX_generic_balanced_budget
+		prerequisite = { focus = SAU_loans_for_factories }
+		relative_position_id = SAU_loans_for_factories
+        x = -1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = -150
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+        }
+    }
+	
+	focus = {
         id = SAU_prospect_for_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SAU_diversify_economy }
@@ -155,7 +206,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_invite_german_experts
-#		icon = 
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = SAU_the_concession_question }
 		relative_position_id = SAU_the_concession_question
 		mutually_exclusive = { focus = SAU_invite_american_experts }
@@ -209,7 +260,7 @@ focus_tree = {
 			796 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
+					type = synthetic_refinery
 					level = 1
 					instant_build = yes
 				}
@@ -276,7 +327,7 @@ focus_tree = {
 #		icon = 
 		relative_position_id = SAU_support_abdulaziz
 		mutually_exclusive = { focus = SAU_support_abdulaziz }
-        x = 3
+        x = 8
         y = 0
         cost = 5
         available_if_capitulated = no
@@ -287,6 +338,226 @@ focus_tree = {
         completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = fawzi_al_qawuqji
+        }
+    }
+	focus = {
+        id = SAU_influence_saud
+#		icon = 
+		prerequisite = { focus = SAU_reinvite_fawzi }
+		relative_position_id = SAU_reinvite_fawzi
+        x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_stability = -0.05
+			set_party_name = { ideology = fascism long_name = SAU_sauds_coup_long name = SAU_sauds_coup }
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_formulate_the_plan
+#		icon = 
+		prerequisite = { focus = SAU_influence_saud }
+		relative_position_id = SAU_influence_saud
+        x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_army_support
+#		icon = 
+		prerequisite = { focus = SAU_formulate_the_plan }
+		relative_position_id = SAU_formulate_the_plan
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			army_experience = 20
+			add_political_power = 100
+			add_stability = -0.05
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_high_command_support
+#		icon = 
+		prerequisite = { focus = SAU_formulate_the_plan }
+		relative_position_id = SAU_formulate_the_plan
+        x = 4
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_ulama_support
+#		icon = 
+		prerequisite = { focus = SAU_formulate_the_plan }
+		relative_position_id = SAU_formulate_the_plan
+        x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 100
+			add_stability = -0.05
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_brothers_support
+#		icon = 
+		prerequisite = { focus = SAU_formulate_the_plan }
+		prerequisite = { focus = SAU_speak_with_muhammad }
+		relative_position_id = SAU_formulate_the_plan
+        x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_speak_with_faisal
+#		icon = 
+		prerequisite = { focus = SAU_reinvite_fawzi }
+		relative_position_id = SAU_ensure_brothers_support
+        x = 0
+        y = -4
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+        }
+    }
+	
+	focus = {
+        id = SAU_speak_with_khalid
+#		icon = 
+		prerequisite = { focus = SAU_speak_with_faisal }
+		relative_position_id = SAU_ensure_brothers_support
+        x = 0
+        y = -3
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+        }
+    }
+	
+	focus = {
+        id = SAU_speak_with_muhammad
+#		icon = 
+		prerequisite = { focus = SAU_speak_with_khalid }
+		relative_position_id = SAU_ensure_brothers_support
+        x = 0
+        y = -2
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+        }
+    }
+	
+	focus = {
+        id = SAU_launch_the_coup
+#		icon = 
+		prerequisite = { focus = SAU_ensure_army_support }
+		prerequisite = { focus = SAU_ensure_ulama_support }
+		prerequisite = { focus = SAU_ensure_high_command_support }
+		prerequisite = { focus = SAU_ensure_brothers_support }
+		relative_position_id = SAU_formulate_the_plan
+        x = 0
+        y = 2
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Saud ibn Saud"
+				desc = "POLITICS_SAUD_DESC"
+#				picture = ".dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
         }
     }
 }
