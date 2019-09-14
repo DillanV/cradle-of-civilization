@@ -2032,6 +2032,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = YEM_extract_oil_tt
+			set_country_flag = YEM_exploit_oil
 		}
 
 	}
@@ -2063,6 +2064,25 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			806={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
 						level = 1
 						instant_build = yes
 					}
@@ -2251,6 +2271,48 @@ focus_tree = {
 
 	}
 
+	#Focus for Standardized Training
+	focus = {
+		id = YEM_standardized_training
+		icon = GFX_focus_generic_military_mission
+		x = 54
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_recruit_tribes }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_tribal_army
+				add_idea = YEM_tribal_army_2
+			}
+		}
+
+	}
+
+	#Focus for for Allah and Country!
+	focus = {
+		id = YEM_for_god_and_country
+		icon = GFX_focus_generic_little_entente
+		x = 54
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_standardized_training }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_tribal_army_2
+				add_idea = YEM_tribal_army_3
+			}
+		}
+
+	}
+
 	#Focus for Improve the Taizz Arsenal
 	focus = {
 		id = YEM_taizz_arsenal
@@ -2265,6 +2327,27 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = YEM_taizz_arsenal_idea
+		}
+
+	}
+
+	#Focus for Nomadic Supply Lines
+	focus = {
+		id = YEM_nomadic_supply_lines
+		icon = GFX_goal_generic_position_armies
+		x = 52
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = YEM_taizz_arsenal }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_taizz_arsenal_idea
+				add_idea = YEM_nomad_lines
+			}
 		}
 
 	}
