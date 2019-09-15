@@ -1,0 +1,217 @@
+yemen_oil_prospect = {
+	YEM_exploit_sanaa_oil = {
+
+		icon = GFX_decision_oil
+
+		visible = {
+			#has_country_flag = YEM_exploit_oil
+			has_full_control_of_state = 293
+			tag = YEM
+
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = YEM_sanaa_oil_tt
+			    check_variable = {
+				    var = YEM_sanaa_oil
+				    value = 10
+				    compare = less_than_or_equals
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			    state = 293
+			}
+			hidden_effect = {
+				add_to_variable = {
+				    var = YEM_sanaa_oil
+				    value = 1
+				}
+			}
+		}
+	}
+	YEM_exploit_taizz_oil = {
+
+		icon = GFX_decision_oil
+
+		visible = {
+			#has_country_flag = YEM_exploit_oil
+			has_full_control_of_state = 293
+			tag = YEM
+
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = YEM_taizz_oil_tt
+			    check_variable = {
+				    var = YEM_taizz_oil
+				    value = 6
+				    compare = less_than_or_equals
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 30
+
+		cost = 45
+
+		complete_effect = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			    state = 805
+			}
+			hidden_effect = {
+				add_to_variable = {
+				    var = YEM_taizz_oil
+				    value = 1
+				}
+			}
+		}
+	}
+	YEM_exploit_al-jawf_oil = {
+
+		icon = GFX_decision_oil
+
+		visible = {
+			#has_country_flag = YEM_exploit_oil
+			has_full_control_of_state = 806
+			tag = YEM
+
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = YEM_al-jawf_oil_tt
+			    check_variable = {
+				    var = YEM_al-jawf_oil
+				    value = 3
+				    compare = less_than_or_equals
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 30
+
+		cost = 40
+
+		complete_effect = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			    state = 806
+			}
+			hidden_effect = {
+				add_to_variable = {
+				    var = YEM_al-jawf_oil
+				    value = 1
+				}
+			}
+		}
+	}
+	YEM_exploit_abyan_oil = {
+
+		icon = GFX_decision_oil
+
+		visible = {
+			#has_country_flag = YEM_exploit_oil
+			has_full_control_of_state = 803
+			tag = YEM
+
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = YEM_abyan_oil_tt
+			    check_variable = {
+				    var = YEM_abyan_oil
+				    value = 4
+				    compare = less_than_or_equals
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 30
+
+		cost = 45
+
+		complete_effect = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			    state = 803
+			}
+			hidden_effect = {
+				add_to_variable = {
+				    var = YEM_abyan_oil
+				    value = 1
+				}
+			}
+		}
+	}
+	YEM_exploit_hadramaut_oil = {
+
+		icon = GFX_decision_oil
+
+		visible = {
+			#has_country_flag = YEM_exploit_oil
+			has_full_control_of_state = 659
+			tag = YEM
+
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = YEM_hadramaut_oil_tt
+			    check_variable = {
+				    var = YEM_hadramaut_oil
+				    value = 2
+				    compare = less_than_or_equals
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+		days_re_enable = 30
+
+		cost = 35
+
+		complete_effect = {
+			add_resource = {
+			    type = oil
+			    amount = 2
+			    state = 659
+			}
+			hidden_effect = {
+				add_to_variable = {
+				    var = YEM_hadramaut_oil
+				    value = 1
+				}
+			}
+		}
+	}
+}

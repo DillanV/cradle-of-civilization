@@ -215,4 +215,32 @@ spriteTypes = {
 	name = "GFX_idea_YEM_militarism"
 	texturefile = "gfx/interface/ideas/YEM_militarism.dds"
 	}
+	spriteType = {
+	name = "GFX_idea_YEM_aden_partisans"
+	texturefile = "gfx/interface/ideas/YEM_aden_partisans.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_abdullah_al_wazir"
+	texturefile = "gfx/interface/ideas/idea_YEM_abdullah_al_wazir.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_abdullah_as_sallal"
+	texturefile = "gfx/interface/ideas/idea_YEM_abdullah_as_sallal.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_ahmad_bin_yahya"
+	texturefile = "gfx/interface/ideas/idea_YEM_ahmad_bin_yahya.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_ahmad_muhammad_numan"
+	texturefile = "gfx/interface/ideas/idea_YEM_ahmad_muhammad_numan.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_ali_nasser_al_qardaei"
+	texturefile = "gfx/interface/ideas/idea_YEM_ali_nasser_al_qardaei.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_hassan_ibn_yahya"
+	texturefile = "gfx/interface/ideas/idea_YEM_hassan_ibn_yahya.dds"
+	}
 }

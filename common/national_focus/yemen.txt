@@ -753,11 +753,12 @@ focus_tree = {
 	focus = {
 		id = YEM_freedomfortheislamicworld
 		icon = GFX_focus_AST_never_gallipoli
-		x = 28
+		x = 27
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_sponsorsabotage }
+		prerequisite = { focus = YEM_unityamongislam }
 		ai_will_do = {
 			factor = 100
 		}
@@ -834,7 +835,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_saudialliance }
+		prerequisite = { focus = YEM_unite_south_arabia }
 		ai_will_do = {
 			factor = 30
 		}
@@ -845,120 +846,6 @@ focus_tree = {
 
 	}
 
-	#Focus for Coerce Independent Nations
-	focus = {
-		id = YEM_coerceindependentnations
-		icon = GFX_goal_generic_propaganda
-		x = 26
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = YEM_unityamongislam }
-		ai_will_do = {
-			factor = 30
-		}
-		completion_reward = {
-			IRQ = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			BRI = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			KUW = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			UAE = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			JOR = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			QAT = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-			OMA = {
-				if = {
-					limit = {
-						exists = yes
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-					country_event = {
-						id = yemen.12
-						days = 1
-					}
-				}
-			}
-		}
-	}
-
 	#Focus for Sponsor Sabotage
 	focus = {
 		id = YEM_sponsorsabotage
@@ -967,31 +854,32 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_saudialliance }
+		prerequisite = { focus = YEM_unite_south_arabia }
 		ai_will_do = {
 			factor = 30
 		}
 		completion_reward = {
 			ENG = { set_country_flag = colonial_sabotage }
 			FRA = { set_country_flag = colonial_sabotage }
+			add_ideas = YEM_aden_partisans
 		}
 
 	}
 
-	#Focus for Befriend the Saudis
+	#Focus for Reach out to Trucial States
 	focus = {
-		id = YEM_befriendthesaudis
-		icon = GFX_goal_generic_improve_relations
+		id = YEM_reach_to_trucial_states
+		icon = GFX_generic_trucial_meeting
 		x = 26
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_panarabism }
+		prerequisite = { focus = YEM_muscat_meeting }
 		ai_will_do = {
 			factor = 30
 		}
 		bypass = {
-			SAU = {
+			UAE = {
 				OR= {
 					has_war_with = YEM
 					is_in_faction = yes
@@ -999,16 +887,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_opinion_modifier = {
-				target = SAU
-				modifier = YEM_friendship_opinion
-			}
-			SAU = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = YEM_friendship_opinion
-				}
-			}
+			add_opinion_modifier = { target = UAE modifier = YEM_friendship_opinion }
+			reverse_add_opinion_modifier = { target = UAE modifier = YEM_friendship_opinion }
 		}
 	}
 
@@ -1020,7 +900,7 @@ focus_tree = {
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_panarabism }
+		prerequisite = { focus = YEM_muscat_meeting }
 		ai_will_do = {
 			factor = 30
 		}
@@ -1053,26 +933,21 @@ focus_tree = {
 
 	}
 
-	#Focus for Pan-Arabism
+	#Focus for A Meeting In Muscat
 	focus = {
-		id = YEM_panarabism
-		icon = GFX_goal_tripartite_pact
+		id = YEM_muscat_meeting
+		icon = GFX_generic_oman_meeting
 		x = 27
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_italianbasingrights focus = YEM_unwaveringbastion }
 		mutually_exclusive = { focus = YEM_greateryemenproject }
-		bypass = {
-	        NOT = {
-	        	has_global_flag = pan_arab_alliance_flag
-	        }
-	    }
 		ai_will_do = {
 			factor = 50
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_opinion_modifier = { target = OMA modifier = YEM_friendship_opinion }
+			reverse_add_opinion_modifier = { target = OMA modifier = YEM_friendship_opinion }
 		}
 
 	}
@@ -1704,7 +1579,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_unwaveringbastion focus = YEM_italianbasingrights }
-		mutually_exclusive = { focus = YEM_panarabism }
+		mutually_exclusive = { focus = YEM_muscat_meeting }
 		available = {
 			NOT = {
 				has_government = democratic
@@ -1750,21 +1625,23 @@ focus_tree = {
 
 	}
 
-	#Focus for Saudi Alliance
+	#Focus for Unite South Arabia
 	focus = {
-		id = YEM_saudialliance
-		icon = GFX_saudialliance
+		id = YEM_unite_south_arabia
+		icon = GFX_YEM_south_arabian_union
 		x = 27
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_befriendthesaudis }
+		prerequisite = { focus = YEM_reach_to_trucial_states }
 		prerequisite = { focus = YEM_antiimperialism }
 		ai_will_do = {
 			factor = 30
 		}
 		completion_reward = {
-			SAU = { country_event = { days = 1 id = yemen.7 } }
+			create_faction = YEM_south_arab_union
+			OMA = { country_event = { days = 1 id = yemen.7 } }
+			UAE = { country_event = { days = 1 id = yemen.7 } }
 		}
 
 	}
@@ -1825,8 +1702,7 @@ focus_tree = {
 			factor = 33
 		}
 		completion_reward = {
-			set_country_flag = YEM_aden_raiding
-			custom_effect_tooltip = YEM_raiding_tt
+			add_ideas = YEM_aden_partisans
 		}
 
 	}
@@ -2418,17 +2294,15 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		x = 50
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_city_military }
 		ai_will_do = {
 			factor = 50
 		}
 		completion_reward = {
-			country_event = {
-				id = yemen.16
-				days = 1
-			}
+			add_stability = -0.05
+			add_war_support = 0.1
 		}
 
 	}

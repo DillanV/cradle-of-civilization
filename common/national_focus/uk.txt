@@ -2913,6 +2913,7 @@ focus_tree = {
 				has_full_control_of_state = 331
 				has_full_control_of_state = 119
 				has_full_control_of_state = 118
+				has_full_control_of_state = 822
 			}
 		}
 		bypass = {
@@ -2927,6 +2928,7 @@ focus_tree = {
 					owns_state = 331
 					owns_state = 119
 					owns_state = 118
+					owns_state = 822
 				}
 			}
 		}
@@ -2947,20 +2949,14 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 659
+					has_full_control_of_state = 790
+					has_full_control_of_state = 803
+					has_full_control_of_state = 804
 				}
 				YEM = {
 					transfer_state = 659
-					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
-				}
-				YEM = {
 					transfer_state = 790
-					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
-				}
-				YEM = {
 					transfer_state = 803
-					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
-				}
-				YEM = {
 					transfer_state = 804
 					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
 				}
@@ -2970,6 +2966,15 @@ focus_tree = {
 					has_full_control_of_state = 326
 				}
 				event_target:WTT_current_china_leader = {
+					transfer_state = 326
+					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 822
+				}
+				EGY = {
 					transfer_state = 326
 					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
 				}
