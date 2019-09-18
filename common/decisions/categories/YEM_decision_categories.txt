@@ -1,0 +1,13 @@
+###########################
+###### NEUTRAL ZONE #######
+###########################
+
+yemen_oil_prospect = {
+
+	icon = GFX_decision_category_generic_prospect_for_resources
+	
+	visible = {
+		#has_country_flag = YEM_exploit_oil
+		tag = YEM
+	}
+}

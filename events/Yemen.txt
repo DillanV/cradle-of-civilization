@@ -464,7 +464,7 @@ country_event = {
 	}
 }
 
-# Saudi Alliance
+# Alliance with Yemen?
 country_event = {
 	id = yemen.7
 	title = yemen.7.t
@@ -498,7 +498,7 @@ country_event = {
 	}
 }
 
-# Saudis Accept
+# FROM Accepts
 country_event = {
 	id = yemen.107
 	title = yemen.107.t
@@ -509,14 +509,13 @@ country_event = {
 
 	option = {
 		name = yemen.107.a
-		create_faction = YEM_pan_arab_alliance
 		YEM = { 
-			add_to_faction = SAU 
+			add_to_faction = FROM 
 		}
 	}
 }
 
-# Saudis Decline
+# FROM Declines
 country_event = {
 	id = yemen.207
 	title = yemen.207.t
@@ -527,7 +526,6 @@ country_event = {
 
 	option = {
 		name = yemen.207.a
-		create_faction = YEM_pan_arab_alliance
 	}
 }
 

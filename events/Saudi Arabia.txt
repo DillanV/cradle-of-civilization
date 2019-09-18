@@ -25,10 +25,16 @@ country_event = {
 			give_resource_rights = { receiver = JAP state = 292 }
 		}
 		GER = {
-				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_germany }
+			add_opinion_modifier = { 
+				target = SAU 
+				modifier = SAU_concession_rights_to_germany 
+			}
 		}
 		JAP = {
-				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_japan }
+			add_opinion_modifier = { 
+				target = SAU 
+				modifier = SAU_concession_rights_to_japan 
+			}
 		}
 		SAU_oil_money_level_up = yes
 	}
@@ -40,7 +46,10 @@ country_event = {
 			give_resource_rights = { receiver = USA state = 292 }
 		}
 		USA = {
-				add_opinion_modifier = { target = SAU modifier = SAU_concession_rights_to_american_companies }
+			add_opinion_modifier = { 
+				target = SAU 
+				modifier = SAU_concession_rights_to_american_companies 
+			}
 		}
 		SAU_oil_money_level_up = yes
 	}

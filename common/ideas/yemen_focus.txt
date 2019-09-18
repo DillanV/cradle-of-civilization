@@ -488,7 +488,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-				stability_weekly = -0.002
+				war_support_weekly = -0.002
 				army_org_factor = -0.2
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
@@ -511,7 +511,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-				stability_weekly = -0.003
+				war_support_weekly = -0.003
 				army_org_factor = -0.10
 				army_attack_factor = -0.075
 				army_defence_factor = -0.075
@@ -534,7 +534,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.065
-				stability_weekly = -0.004
+				war_support_weekly = -0.004
 			}
 		}
 		YEM_democraticboost = {
@@ -875,6 +875,20 @@ ideas = {
 			    	build_cost_ic = -0.1
 				}
 			}
+		}
+		YEM_aden_partisans = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = { tag = ENG attack_bonus_against = 0.15 defense_bonus_against = 0.15 } 
 		}
 	}
 }

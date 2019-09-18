@@ -199,4 +199,16 @@ spriteTypes={
 		name="GFX_generic_union_workers"
 		texturefile="gfx/interface/goals/generic_union_workers.dds"
 	}
+	SpriteType={
+		name="GFX_generic_oman_meeting"
+		texturefile="gfx/interface/goals/generic_oman_meeting.dds"
+	}
+	SpriteType={
+		name="GFX_generic_trucial_meeting"
+		texturefile="gfx/interface/goals/generic_trucial_meeting.dds"
+	}
+	SpriteType={
+		name="GFX_YEM_south_arabian_union"
+		texturefile="gfx/interface/goals/YEM_south_arabian_union.dds"
+	}
 }

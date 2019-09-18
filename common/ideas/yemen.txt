@@ -4,26 +4,31 @@ ideas = {
 
 	political_advisor = {
 
-		YEM_nae_m_al_abdul = {
-
-			picture = generic_political_advisor_arab_2
+		YEM_ahmad_muhammad_numan = {
 
 			allowed = {
 				original_tag = YEM
 			}
 			
-			traits = { silent_workhorse }
+			traits = { democratic_reformer }
 		}
 
-		YEM_cecil_barrington_hurst = {
+		YEM_ali_nasser_al_qardaei = {
 
-			picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		YEM_hassan_ibn_yahya = {
 				
 			allowed = {
 				original_tag = YEM
 			}
 			
-			traits = { captain_of_industry }
+			traits = { silent_workhorse }
 		}
 
 		YEM_fuad_ibn_falil = {

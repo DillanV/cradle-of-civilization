@@ -108,7 +108,12 @@
  YEM_taizz_arsenal_idea:0 "Expanded Taizz Arsenal"
  YEM_taizz_arsenal_idea_desc:0 "As a less than industrialised nation, it is hard to make equiupment, especially guns. The Taizz Arsenal has been expanded, and now we can make proper weapons."
  YEM_nomad_lines:0 "Tribal Optimization"
- YEM_nomad_lines_desc:0 "As we have shifted towards a more nomadic and tribal army, changes were required. Thankfully, these changes have now been for the greater good, and have improved the state of the army/"
+ YEM_nomad_lines_desc:0 "As we have shifted towards a more nomadic and tribal army, changes were required. Thankfully, these changes have now been for the greater good, and have improved the state of the army"
+ YEM_aden_partisans:0 "Ethnic Partisans"
+ YEM_aden_partisans_desc:0 "Our people want freedom, and there will be no compromise for it anymore. Partisans to weaken the UK's grasp on Arab land is growing, and we can exploit this to do better on the field."
+ YEM_ahmad_muhammad_numan:0 "Ahmad Muhammad Numan"
+ YEM_ali_nasser_al_qardaei:0 "Ali Nasser al-Qardaei"
+ YEM_hassan_ibn_yahya:0 "Hassan bin Yahya"
  ### Zanzibar
  ZAN_revolt:0 "Zanzibar Revolt"
  ZAN_revolt_desc:0 "With the help of our friends at Muscat, we have sucesfully ovethrown the English government in Zanzibar and restored the Sultanate! However, that is only half the battle. The filthy English are on to us, and every man must know that we will not go down like this. Long live the islands of Zanzibar!"
