@@ -36,7 +36,7 @@ ideas = {
 			picture = oman_undecided_military
 
 			modifier = {
-				army_org_factor = -0.15 
+				army_org_factor = -0.15
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 			}
@@ -57,7 +57,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.2
-				industrial_capacity_factory = -0.15  
+				industrial_capacity_factory = -0.15
 			}
 		}
 		OMA_industrial_incentive = {
@@ -76,10 +76,10 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.2  
+				industrial_capacity_factory = -0.2
 			}
 		}
-		OMA_new_law_code = {
+		OMA_newcodeoflaws = {
 			allowed = {
 				original_tag = OMA
 				always = no
@@ -94,9 +94,10 @@ ideas = {
 			picture = hun_treaty_of_trianon
 
 			modifier = {
-				political_power_gain = 0.25  
+				political_power_gain = 0.15
 				stability_factor = 0.05
-				war_support_factor = -0.05
+				democratic_acceptance = 30
+
 			}
 		}
 		OMA_resistance_oman = {
@@ -172,8 +173,8 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				army_core_attack_factor = 0.1 
-				army_core_defence_factor = 0.1 
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 		OMA_independent_ambitions = {
@@ -269,7 +270,7 @@ ideas = {
 			picture = generic_economic_revenue
 
 			modifier = {
-				consumer_goods_factor = -0.1 
+				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
 			}
 		}
@@ -332,7 +333,7 @@ ideas = {
 			modifier = {
 				conscription = -0.015
 				army_attack_factor = 0.05
-				army_defence_factor = 0.05 
+				army_defence_factor = 0.05
 			}
 		}
 		OMA_prussian_army_2 = {
@@ -353,7 +354,7 @@ ideas = {
 				conscription = -0.02
 				army_attack_factor = 0.15
 				army_defence_factor = 0.15
-				army_org_factor = 0.1  
+				army_org_factor = 0.1
 			}
 		}
 		OMA_education_reform = {
@@ -371,7 +372,7 @@ ideas = {
 			picture = generic_prussian_army2
 
 			modifier = {
-				research_speed_factor = -0.075  
+				research_speed_factor = -0.075
 			}
 		}
 		OMA_imam_weakened = {
@@ -390,7 +391,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1
-				army_core_defence_factor = -0.15  
+				army_core_defence_factor = -0.15
 			}
 		}
 		OMA_imam_severely_weakened = {
@@ -409,7 +410,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1
-				army_core_defence_factor = -0.15  
+				army_core_defence_factor = -0.15
 			}
 		}
 	}
