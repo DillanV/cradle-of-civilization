@@ -160,7 +160,7 @@ focus_tree = {
 		}
         completion_reward = {
 			SAU = {
-				country_event = { id = saudi.1 days = 1 }
+				country_event = { id = saudi.1 days = 0 }
 			}
         }
     }
@@ -432,6 +432,7 @@ focus_tree = {
         id = SAU_ensure_ulama_support
 #		icon = 
 		prerequisite = { focus = SAU_formulate_the_plan }
+		prerequisite = { focus = SAU_bribe_the_grand_mufti }
 		relative_position_id = SAU_formulate_the_plan
         x = 2
         y = 1
@@ -448,6 +449,40 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.10
 			}
+        }
+    }
+	
+	focus = {
+        id = SAU_bribe_the_lower_ulama
+#		icon = 
+		prerequisite = { focus = SAU_reinvite_fawzi }
+		relative_position_id = SAU_ensure_ulama_support
+        x = 0
+        y = -3
+        cost = 2
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+        }
+    }
+	
+	focus = {
+        id = SAU_bribe_the_grand_mufti
+#		icon = 
+		prerequisite = { focus = SAU_reinvite_fawzi }
+		relative_position_id = SAU_ensure_ulama_support
+        x = 0
+        y = -2
+        cost = 2
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
         }
     }
 	
@@ -482,13 +517,16 @@ focus_tree = {
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
         y = -4
-        cost = 5
+        cost = 2
         available_if_capitulated = no
         bypass = {
         }
         available = {
 		}
         completion_reward = {
+			SAU = {
+				country_event = { id = saudi.2 days = 0 }
+			}
         }
     }
 	
@@ -499,13 +537,16 @@ focus_tree = {
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
         y = -3
-        cost = 5
+        cost = 2
         available_if_capitulated = no
         bypass = {
         }
         available = {
 		}
         completion_reward = {
+			SAU = {
+				country_event = { id = saudi.3 days = 0 }
+			}
         }
     }
 	
@@ -516,14 +557,17 @@ focus_tree = {
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
         y = -2
-        cost = 5
+        cost = 2
         available_if_capitulated = no
         bypass = {
         }
         available = {
 		}
         completion_reward = {
-        }
+			SAU = {
+				country_event = { id = saudi.4 days = 0 }
+			}
+		}
     }
 	
 	focus = {

@@ -45,3 +45,102 @@ country_event = {
 		SAU_oil_money_level_up = yes
 	}
 }
+
+## Speak with Faisal
+country_event = {
+	id = saudi.2
+	title = saudi.2.t
+	desc = saudi.2.d
+#	picture = 
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		has_completed_focus = SAU_speak_with_faisal
+	}
+
+	option = { ## 
+		name = saudi.2.a
+		add_political_power = -15
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+		}
+	}
+	
+	option = { ## 
+		name = saudi.2.b
+		add_political_power = -30
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.04
+		}
+	}
+}
+
+## Speak with Khalid
+country_event = {
+	id = saudi.3
+	title = saudi.3.t
+	desc = saudi.3.d
+#	picture = 
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		has_completed_focus = SAU_speak_with_khalid
+	}
+
+	option = { ## 
+		name = saudi.3.a
+		add_political_power = -15
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+		}
+	}
+	
+	option = { ## 
+		name = saudi.3.b
+		add_political_power = -30
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.04
+		}
+	}
+}
+
+## Speak with Muhammad
+country_event = {
+	id = saudi.4
+	title = saudi.4.t
+	desc = saudi.4.d
+#	picture = 
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		has_completed_focus = SAU_speak_with_muhammad
+	}
+
+	option = { ## 
+		name = saudi.4.a
+		add_political_power = -15
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+		}
+	}
+	
+	option = { ## 
+		name = saudi.4.b
+		add_political_power = -30
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.04
+		}
+	}
+}
