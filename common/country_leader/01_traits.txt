@@ -4,14 +4,19 @@ leader_traits = {
 		army_morale_factor = 0.05
 		stability_factor = 0.05	
 	}
-}
 
-leader_traits = {
 	father_of_the_ppl = {
 		random = no
 		army_morale_factor = 0.04
 		stability_factor = 0.04	
 		war_support_factor = -0.05
 	}
+	
+	servant_of_the_two_noble_sanctuaries = {
+		random = no
+		political_power_factor = 0.10
+		consumer_goods_factor = -0.05
+	}
 }
+
 

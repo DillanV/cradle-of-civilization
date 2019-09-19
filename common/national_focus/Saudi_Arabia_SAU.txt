@@ -340,11 +340,30 @@ focus_tree = {
 			show_ideas_tooltip = fawzi_al_qawuqji
         }
     }
+	
 	focus = {
-        id = SAU_influence_saud
+        id = SAU_formulate_the_plan
 #		icon = 
 		prerequisite = { focus = SAU_reinvite_fawzi }
 		relative_position_id = SAU_reinvite_fawzi
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+	
+	focus = {
+        id = SAU_influence_saud
+#		icon = 
+		prerequisite = { focus = SAU_formulate_the_plan }
+		relative_position_id = SAU_formulate_the_plan
         x = 0
         y = 2
         cost = 10
@@ -364,28 +383,10 @@ focus_tree = {
     }
 	
 	focus = {
-        id = SAU_formulate_the_plan
+        id = SAU_ensure_army_support
 #		icon = 
 		prerequisite = { focus = SAU_influence_saud }
 		relative_position_id = SAU_influence_saud
-        x = 0
-        y = 2
-        cost = 10
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			add_political_power = 100
-        }
-    }
-	
-	focus = {
-        id = SAU_ensure_army_support
-#		icon = 
-		prerequisite = { focus = SAU_formulate_the_plan }
-		relative_position_id = SAU_formulate_the_plan
         x = 0
         y = 1
         cost = 10
@@ -396,11 +397,10 @@ focus_tree = {
 		}
         completion_reward = {
 			army_experience = 20
-			add_political_power = 100
 			add_stability = -0.05
 			add_popularity = {
 					ideology = fascism
-					popularity = 0.10
+					popularity = 0.15
 			}
         }
     }
@@ -409,7 +409,7 @@ focus_tree = {
         id = SAU_ensure_high_command_support
 #		icon = 
 		prerequisite = { focus = SAU_formulate_the_plan }
-		relative_position_id = SAU_formulate_the_plan
+		relative_position_id = SAU_influence_saud
         x = 4
         y = 1
         cost = 10
@@ -433,7 +433,7 @@ focus_tree = {
 #		icon = 
 		prerequisite = { focus = SAU_formulate_the_plan }
 		prerequisite = { focus = SAU_bribe_the_grand_mufti }
-		relative_position_id = SAU_formulate_the_plan
+		relative_position_id = SAU_influence_saud
         x = 2
         y = 1
         cost = 10
@@ -458,7 +458,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_reinvite_fawzi }
 		relative_position_id = SAU_ensure_ulama_support
         x = 0
-        y = -3
+        y = -2
         cost = 2
         available_if_capitulated = no
         bypass = {
@@ -475,7 +475,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_reinvite_fawzi }
 		relative_position_id = SAU_ensure_ulama_support
         x = 0
-        y = -2
+        y = -1
         cost = 2
         available_if_capitulated = no
         bypass = {
@@ -491,7 +491,7 @@ focus_tree = {
 #		icon = 
 		prerequisite = { focus = SAU_formulate_the_plan }
 		prerequisite = { focus = SAU_speak_with_muhammad }
-		relative_position_id = SAU_formulate_the_plan
+		relative_position_id = SAU_influence_saud
         x = -2
         y = 1
         cost = 10
@@ -516,7 +516,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_reinvite_fawzi }
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
-        y = -4
+        y = -3
         cost = 2
         available_if_capitulated = no
         bypass = {
@@ -536,7 +536,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_speak_with_faisal }
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
-        y = -3
+        y = -2
         cost = 2
         available_if_capitulated = no
         bypass = {
@@ -556,7 +556,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_speak_with_khalid }
 		relative_position_id = SAU_ensure_brothers_support
         x = 0
-        y = -2
+        y = -1
         cost = 2
         available_if_capitulated = no
         bypass = {
@@ -577,9 +577,9 @@ focus_tree = {
 		prerequisite = { focus = SAU_ensure_ulama_support }
 		prerequisite = { focus = SAU_ensure_high_command_support }
 		prerequisite = { focus = SAU_ensure_brothers_support }
-		relative_position_id = SAU_formulate_the_plan
+		relative_position_id = SAU_ensure_army_support
         x = 0
-        y = 2
+        y = 1
         cost = 5
         available_if_capitulated = no
         bypass = {
@@ -595,10 +595,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "Saud ibn Saud"
 				desc = "POLITICS_SAUD_DESC"
-#				picture = ".dds"
+				picture = "Portrait_Saud_Aziz.dds"
 				expire = "1965.1.1"
 				ideology = fascism_ideology
 				traits = {
+					servant_of_the_two_noble_sanctuaries
 				}
 			}
 			set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }

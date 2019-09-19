@@ -129,8 +129,8 @@
  ### Saudi Arabia
  SAU_treaty_of_taif:0 "Treaty of Ta'if"
  SAU_treaty_of_taif_desc:0 "In 1934, after the short Saudi-Yemeni war, the Treaty of Ta'if was signed between King Abdulaziz Ibn Saud and Imam Yahya Hamididdin. This imposed a 20-year truce between Saudi Arabia and Yemen. It was published in cities all around the Arab world, which will make it harder to justify war on our neighbors."
- SAU_inexperienced_army:0 "Inexperienced Army"
- SAU_inexperienced_army_desc:0 "The army that is in conscription by the Kingdom of Saudi Arabia is deeply inexperienced. It requires reform, higher quality equipment, and sophisticated training to be able to function as a standing army."
+ SAU_inexperienced_army_1:0 "Inexperienced Army"
+ SAU_inexperienced_army_1_desc:0 "The army that is in conscription by the Kingdom of Saudi Arabia is deeply inexperienced. It requires reform, higher quality equipment, and sophisticated training to be able to function as a standing army."
  SAU_large_rural_population_1:0 "Large Rural Population"
  SAU_large_rural_population_1_desc:0 "Large portions of our populace live in very rural areas, where few people fit to serve in the army live."
  SAU_large_rural_population_2:0 "Medium Rural Population"

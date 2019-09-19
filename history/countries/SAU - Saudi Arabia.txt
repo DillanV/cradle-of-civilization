@@ -97,7 +97,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
+		servant_of_the_two_noble_sanctuaries
 	}
 }
 
