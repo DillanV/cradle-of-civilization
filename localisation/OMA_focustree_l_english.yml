@@ -1,4 +1,4 @@
-﻿l_english: 
+﻿l_english:
   ### Misc
  OMA_royal_guard_tt:0 "§YTrains and spawns§! a royal guard division."
   ### Focus Names
@@ -160,3 +160,10 @@
  OMA_investincapitalships_desc:0 "Oman needs a pride of the fleet, a ship that every citizen can admire as it crushes the enemy. We must invest in these capital ships, even though they may be expensive."
  OMA_studyofairwarfare:0 "Study of Air Warfare"
  OMA_studyofairwarfare_desc:0 "Fighting in aviation is different from fighting on sea or land. Different methods and tactics are learned that can change the course of supremacy. It is important for us that we learn it."
+
+###IDEAS
+OMA_resistance_oman:0 "The Sultan's Opposition"
+OMA_resistance_oman_2:0 "The Sultan's Opposition"
+OMA_resistance_muscat:0 "The Imam's Opposition"
+OMA_newcodeoflaws_idea:0 "New Code Of Laws"
+OMA_newcodeoflaws_idea_2:0 "New Code Of Laws"

@@ -144,7 +144,11 @@ focus_tree = {
 			factor = 50
 		}
 		completion_reward = {
-			subtract_15_islam = yes
+			subtract_10_islam = yes
+			swap_ideas = {
+				remove_idea = OMA_newcodeoflaws_idea
+				add_idea = OMA_newcodeoflaws_idea_2
+			}
 		}
 
 	}
@@ -260,7 +264,7 @@ focus_tree = {
 			factor = 25
 		}
 		completion_reward = {
-			add_ideas = OMA_newcodeoflaws
+			add_ideas = OMA_newcodeoflaws_idea
 		}
 
 	}
@@ -512,7 +516,6 @@ focus_tree = {
 			factor = 25
 		}
 		completion_reward = {
-			add_political_power= -50
 			country_event= {
 				days = 1
 				id = oman.1
@@ -527,7 +530,7 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		x = 8
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = OMA_supremacyofmuscat }
 		mutually_exclusive = { focus = OMA_supremacyofoman }
@@ -535,8 +538,8 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward = {
-			add_political_power= -50
-			add_stability= 0.05
+			add_political_power= 25
+			add_stability= 0.025
 		}
 
 	}
@@ -806,7 +809,7 @@ focus_tree = {
 		icon = GFX_OMA_oman_supremacy
 		x = 14
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = OMA_attemptcompromise }
 		mutually_exclusive = { focus = OMA_supremacyofmuscat }

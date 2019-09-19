@@ -8,7 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
-	
+
 	OMA_imam_rivalry
 	OMA_undecided_army
 }
@@ -20,7 +20,7 @@ set_stability = 0.7
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -31,7 +31,7 @@ set_stability = 0.7
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "OMA_1939"
 	set_technology = {
 		#doctrines
@@ -57,7 +57,7 @@ set_stability = 0.7
 	}
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -85,7 +85,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Said bin Taimur"
-	picture = "GFX_portrait_oman_said_bin_taimur"
+	picture = "gfx/leaders/OMA/GFX_portrait_oman_said_bin_taimur.dds"
 	traits = {
 		desert_fox
 	}
@@ -98,7 +98,7 @@ create_corps_commander = {
 }
 
 1939.1.1 = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48

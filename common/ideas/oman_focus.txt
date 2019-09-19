@@ -79,7 +79,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 			}
 		}
-		OMA_newcodeoflaws = {
+		OMA_newcodeoflaws_idea = {
 			allowed = {
 				original_tag = OMA
 				always = no
@@ -91,12 +91,33 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = hun_treaty_of_trianon
+			picture = HUN_treaty_of_triannon
 
 			modifier = {
-				political_power_gain = 0.15
+				political_power_gain = 0.10
 				stability_factor = 0.05
 				democratic_acceptance = 30
+
+			}
+		}
+		OMA_newcodeoflaws_idea_2 = {
+			allowed = {
+				original_tag = OMA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.1
+				democratic_acceptance = 60
 
 			}
 		}

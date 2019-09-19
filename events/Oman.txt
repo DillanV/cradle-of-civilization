@@ -11,7 +11,7 @@ country_event = {
 	desc = oman.1.d
 	picture = GFX_report_event_said_bin_taimur
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		# Soft restrictions
@@ -56,14 +56,14 @@ country_event = {
 	desc = oman.2.d
 	picture = GFX_report_event_spain_civil_war_soldiers
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		# Civil War
 		name = oman.2.a
 		custom_effect_tooltip = OMA_civil_war_tt
 		subtract_5_islam = yes
-		hidden_effect = {	
+		hidden_effect = {
 
 			add_stability = -0.1
 			add_war_support = -0.1
@@ -75,9 +75,9 @@ country_event = {
 				size = 0
 				only_own_territory = yes
 				capital = 293
-				states = { 
+				states = {
 					807 789 846
-				}	
+				}
 			    keep_unit_leaders = {
 			    	9001
 			    }
@@ -86,6 +86,17 @@ country_event = {
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Said bin Taimur"
+				desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+				picture = "GFX_portrait_oman_said_bin_taimur"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					#
+				}
 			}
 
 			load_oob = "OMA_civil_war_sultan"
@@ -147,4 +158,3 @@ country_event = {
 		}
 	}
 }
-
