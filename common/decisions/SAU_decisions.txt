@@ -24,3 +24,113 @@ piety_decisions = {
 		}
 	}
 }
+
+SAU_saud_coup_preparation_decisions = {
+	SAU_speak_with_saud = {
+
+		icon = GFX_decision_generic_piety
+
+		available = {
+			original_tag = SAU
+			NOT = {
+				has_country_flag = already_speaking_with_brother
+			}
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_ensure_brothers_support
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+		
+		cost = 20
+		
+		complete_effect = {
+			set_country_flag = already_speaking_with_brother
+		}
+
+		remove_effect = {
+			SAU = {
+				country_event = {
+					id = saudi.2
+				}
+			}
+			clr_country_flag = already_speaking_with_brother
+		}
+	}
+	
+	SAU_speak_with_khalid = {
+
+		icon = GFX_decision_generic_piety
+
+		available = {
+			original_tag = SAU
+			NOT = {
+				has_country_flag = already_speaking_with_brother
+			}
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_ensure_brothers_support
+		}
+
+		fire_only_once = yes	
+		
+		days_remove = 10
+		
+		cost = 20
+		
+		complete_effect = {
+			set_country_flag = already_speaking_with_brother
+		}
+		
+		remove_effect = {
+			SAU = {
+				country_event = {
+					id = saudi.3
+				}
+			}
+			clr_country_flag = already_speaking_with_brother
+		}
+	}
+	
+	SAU_speak_with_muhammad = {
+
+		icon = GFX_decision_generic_piety
+
+		available = {
+			original_tag = SAU
+			NOT = {
+				has_country_flag = already_speaking_with_brother
+			}
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_ensure_brothers_support
+		}
+
+		fire_only_once = yes
+		
+		days_remove = 10
+		
+		cost = 20
+		
+		complete_effect = {
+			set_country_flag = already_speaking_with_brother
+		}
+
+		remove_effect = {
+			SAU = {
+				country_event = {
+					id = saudi.4
+				}
+			}
+			clr_country_flag = already_speaking_with_brother
+		}
+	}
+}

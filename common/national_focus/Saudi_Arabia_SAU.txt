@@ -40,21 +40,6 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			add_timed_idea = { idea = SAU_diversify_economy_idea days = 730 }
         }
     }
@@ -73,13 +58,13 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			add_political_power = 50
+			add_timed_idea = { idea = SAU_factory_loans days = 90 }
         }
     }
 	
 	focus = {
         id = SAU_alireza_automobile_factories
-		icon = GFX_generic_balanced_budget
+		icon = GFX_generic_industry_2
 		prerequisite = { focus = SAU_loans_for_factories }
 		relative_position_id = SAU_loans_for_factories
         x = -1
@@ -91,19 +76,25 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			add_political_power = -150
+			IF = {
+				limit = { has_idea = SAU_factory_loans }
+				modify_timed_idea = {
+					idea = SAU_factory_loans
+					days = 90
+				}
+            }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 3
+						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -265,7 +256,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = SAU_oil_money_1
+			SAU_oil_money_level_up = yes
 			SAU_hajj_based_economy_level_down = yes
         }
     }
@@ -295,7 +286,7 @@ focus_tree = {
 		relative_position_id = SAU_pro_saudi_propoganda
         x = 0
         y = 1
-        cost = 10
+        cost = 12.9
         available_if_capitulated = no
         bypass = {
         }
@@ -338,6 +329,16 @@ focus_tree = {
         completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = fawzi_al_qawuqji
+			create_corps_commander = {
+				name = "Fawzi al-Qawuqji" ## Arab Nationalist, supressed Ikwhan rebellions
+				gfx = ""
+				traits = {  }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
         }
     }
 	
@@ -356,37 +357,15 @@ focus_tree = {
 		}
         completion_reward = {
 			add_political_power = 100
+			unlock_decision_category_tooltip = SAU_saud_coup_preparation_decisions
         }
     }
 	
 	focus = {
-        id = SAU_influence_saud
+        id = SAU_influence_faisal
 #		icon = 
 		prerequisite = { focus = SAU_formulate_the_plan }
 		relative_position_id = SAU_formulate_the_plan
-        x = 0
-        y = 2
-        cost = 10
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			add_stability = -0.05
-			set_party_name = { ideology = fascism long_name = SAU_sauds_coup_long name = SAU_sauds_coup }
-			add_popularity = {
-					ideology = fascism
-					popularity = 0.05
-			}
-        }
-    }
-	
-	focus = {
-        id = SAU_ensure_army_support
-#		icon = 
-		prerequisite = { focus = SAU_influence_saud }
-		relative_position_id = SAU_influence_saud
         x = 0
         y = 1
         cost = 10
@@ -396,8 +375,82 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			army_experience = 20
 			add_stability = -0.05
+			set_party_name = { ideology = fascism long_name = SAU_faisals_coup_long name = SAU_faisals_coup }
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+			}
+			create_country_leader = {
+				name = "Faisal ibn Saud"
+				desc = "POLITICS_FAISAL_DESC"
+				picture = "Portrait_Faisal_Aziz.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					servant_of_the_two_noble_sanctuaries
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_brothers_support
+#		icon = 
+		prerequisite = { focus = SAU_influence_faisal }
+		relative_position_id = SAU_influence_faisal
+        x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			unlock_decision_tooltip = SAU_speak_with_saud
+			unlock_decision_tooltip = SAU_speak_with_khalid
+			unlock_decision_tooltip = SAU_speak_with_muhammad
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_ulama_support
+#		icon = 
+		prerequisite = { focus = SAU_influence_faisal	}
+		relative_position_id = SAU_influence_faisal
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_ensure_army_support
+#		icon = 
+		prerequisite = { focus = SAU_influence_faisal }
+		relative_position_id = SAU_influence_faisal
+        x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			army_experience = 20
 			add_popularity = {
 					ideology = fascism
 					popularity = 0.15
@@ -408,8 +461,8 @@ focus_tree = {
 	focus = {
         id = SAU_ensure_high_command_support
 #		icon = 
-		prerequisite = { focus = SAU_formulate_the_plan }
-		relative_position_id = SAU_influence_saud
+		prerequisite = { focus = SAU_influence_faisal }
+		relative_position_id = SAU_influence_faisal
         x = 4
         y = 1
         cost = 10
@@ -420,154 +473,11 @@ focus_tree = {
 		}
         completion_reward = {
 			add_political_power = 50
-			add_stability = -0.05
 			add_popularity = {
 					ideology = fascism
 					popularity = 0.05
 			}
         }
-    }
-	
-	focus = {
-        id = SAU_ensure_ulama_support
-#		icon = 
-		prerequisite = { focus = SAU_formulate_the_plan }
-		prerequisite = { focus = SAU_bribe_the_grand_mufti }
-		relative_position_id = SAU_influence_saud
-        x = 2
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-			add_popularity = {
-					ideology = fascism
-					popularity = 0.10
-			}
-        }
-    }
-	
-	focus = {
-        id = SAU_bribe_the_lower_ulama
-#		icon = 
-		prerequisite = { focus = SAU_reinvite_fawzi }
-		relative_position_id = SAU_ensure_ulama_support
-        x = 0
-        y = -2
-        cost = 2
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-        }
-    }
-	
-	focus = {
-        id = SAU_bribe_the_grand_mufti
-#		icon = 
-		prerequisite = { focus = SAU_reinvite_fawzi }
-		relative_position_id = SAU_ensure_ulama_support
-        x = 0
-        y = -1
-        cost = 2
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-        }
-    }
-	
-	focus = {
-        id = SAU_ensure_brothers_support
-#		icon = 
-		prerequisite = { focus = SAU_formulate_the_plan }
-		prerequisite = { focus = SAU_speak_with_muhammad }
-		relative_position_id = SAU_influence_saud
-        x = -2
-        y = 1
-        cost = 10
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			add_political_power = 50
-			add_stability = -0.05
-			add_popularity = {
-					ideology = fascism
-					popularity = 0.05
-			}
-        }
-    }
-	
-	focus = {
-        id = SAU_speak_with_faisal
-#		icon = 
-		prerequisite = { focus = SAU_reinvite_fawzi }
-		relative_position_id = SAU_ensure_brothers_support
-        x = 0
-        y = -3
-        cost = 2
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			SAU = {
-				country_event = { id = saudi.2 days = 0 }
-			}
-        }
-    }
-	
-	focus = {
-        id = SAU_speak_with_khalid
-#		icon = 
-		prerequisite = { focus = SAU_speak_with_faisal }
-		relative_position_id = SAU_ensure_brothers_support
-        x = 0
-        y = -2
-        cost = 2
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			SAU = {
-				country_event = { id = saudi.3 days = 0 }
-			}
-        }
-    }
-	
-	focus = {
-        id = SAU_speak_with_muhammad
-#		icon = 
-		prerequisite = { focus = SAU_speak_with_khalid }
-		relative_position_id = SAU_ensure_brothers_support
-        x = 0
-        y = -1
-        cost = 2
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			SAU = {
-				country_event = { id = saudi.4 days = 0 }
-			}
-		}
     }
 	
 	focus = {
@@ -577,7 +487,7 @@ focus_tree = {
 		prerequisite = { focus = SAU_ensure_ulama_support }
 		prerequisite = { focus = SAU_ensure_high_command_support }
 		prerequisite = { focus = SAU_ensure_brothers_support }
-		relative_position_id = SAU_ensure_army_support
+		relative_position_id = SAU_ensure_ulama_support
         x = 0
         y = 1
         cost = 5
@@ -588,21 +498,24 @@ focus_tree = {
 		}
         completion_reward = {
 			kill_country_leader = yes
+			set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = "Saud ibn Saud"
-				desc = "POLITICS_SAUD_DESC"
-				picture = "Portrait_Saud_Aziz.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					servant_of_the_two_noble_sanctuaries
+			set_country_flag = abdulaziz_dead
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0
+				only_own_territory = yes
+				capital = 799
+				states = {
+					797 799 679 838 798 800
 				}
+			    keep_unit_leaders = {
+			    }
 			}
-			set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
-        }
+		}
     }
 }

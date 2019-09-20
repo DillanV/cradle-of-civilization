@@ -1,5 +1,6 @@
 ﻿l_english:
  already_taking_piety_flag:0 "Already modifying piety through decisions."
+ already_speaking_with_brother:0 " Already speaking with one of Faisal's brothers."
  taking_debt_payment:0 "Already taking financial payments"
  YEM_debt_up_tt:0 "§RWill raise our financial debt!§!\n"
  YEM_debt_down_tt:0 "§MLowers our financial debt.§!\n"
@@ -37,3 +38,7 @@
  YEM_exploit_abyan_oil_desc:0 "There are large reserves of oil in Abyan, waiting to be discovered. Sending exploration teams there will help us drill more oil in the region."
  YEM_exploit_hadramaut_oil:0 "Prospect for Hadramaut Oil"
  YEM_exploit_hadramaut_oil_desc:0 "There are large reserves of oil in Hadramaut, waiting to be discovered. Sending exploration teams there will help us drill more oil in the region."
+ SAU_speak_with_saud:0 "Speak with Saud"
+ SAU_speak_with_khalid:0 "Speak with Khalid"
+ SAU_speak_with_muhammad:0 "Speak with Muhammad"
+ SAU_bribe_the_grand_mufti:0 "Bribe the Grand Mufti"

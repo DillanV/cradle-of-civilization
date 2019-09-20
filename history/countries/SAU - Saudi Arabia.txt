@@ -102,41 +102,30 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Saud bin Abdulaziz Al Saud"
-	picture = ""
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_field_marshal = {
-	name = "Abdulaziz ibn Saud"
+	name = "Abdulaziz ibn Saud" ## Unified Saudi Arabia
 	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
 	traits = {  }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 4
-	logistics_skill = 4
+	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Fawzi al-Qawuqji"
-	gfx = ""
+create_field_marshal = {
+	name = "Saud bin Abdulaziz Al Saud" ## Crown Prince of Saudi Arabia, commanded in the Saudi-Yemeni War
+	picture = "Portrait_Saud_Aziz.dds"
 	traits = {  }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 2
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
-	name = "Faisal bin Abdulaziz"
-	gfx = ""
+	name = "Faisal bin Abdulaziz" ## Commanded a campaign in the Saudi-Yemeni War
+	gfx = "Portrait_Faisal_Aziz.dds"
 	traits = {  }
 	skill = 2
     attack_skill = 2
@@ -146,7 +135,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ibrahim bin Aqeel"
+	name = "Ibrahim bin Aqeel" ## Commanded in the Saudi-Rashidi War
 	gfx = ""
 	traits = {  }
 	skill = 1
@@ -157,7 +146,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Hamud ibn Omar"
+	name = "Hamud ibn Omar" ## Commanded in the First Saudi–Hashemite War
 	gfx = ""
 	traits = {  }
 	skill = 1
@@ -168,7 +157,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Khalid ibn Mansur ibn Luwai"
+	name = "Khalid ibn Mansur ibn Luwai" ## Commanded in the First Saudi–Hashemite War
 	gfx = ""
 	traits = {  }
 	skill = 1
