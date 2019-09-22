@@ -331,6 +331,19 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+		noura_bint_abdul_rahman_al_saud = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { anti_ulama }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 ##############################
@@ -357,7 +370,7 @@ ideas = {
 			}
 		}
 		
-		faisal_ibn_saud = {
+		faisal_bin_abdulaziz_al_saud = {
 			
 			allowed = {
 				original_tag = SAU

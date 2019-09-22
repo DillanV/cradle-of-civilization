@@ -104,7 +104,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Abdulaziz ibn Saud" ## Unified Saudi Arabia
-	id = 10000
+	id = 10000 ## Abdulaziz; dies in the coup
 	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
 	traits = {  }
 	skill = 3
@@ -117,7 +117,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Saud bin Abdulaziz Al Saud" ## Crown Prince of Saudi Arabia, commanded in the Saudi-Yemeni War
 	picture = "Portrait_Saud_Aziz.dds"
-	id = 10001
+	id = 10001 ## Saud; leaves the country and (leads for the House of Saud)
 	traits = {  }
 	skill = 2
 	attack_skill = 3
@@ -127,9 +127,9 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Faisal bin Abdulaziz" ## Commanded a campaign in the Saudi-Yemeni War
+	name = "Faisal bin Abdulaziz Al Saud" ## Commanded a campaign in the Saudi-Yemeni War
 	picture = "Portrait_Faisal_Aziz.dds"
-	id = 10002
+	id = 10002 ## Faisal at game begin; gets replaced by field marshal Faisal in civil war
 	traits = {  }
 	skill = 2
     attack_skill = 2

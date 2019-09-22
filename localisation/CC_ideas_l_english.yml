@@ -153,6 +153,8 @@
  SAU_oil_money_2_desc:0 "The massive recently discovered oil fields in our provinces of the east have allowed us to gain a new economic base."
  SAU_factory_loans:0 "Factory Loans"
  SAU_factory_loans_desc:0 "We must take out loans from other countries to diversify our economic base. Factories are essential to any modern nation, but we lack the capital to fund such a project."
+ SAU_ensure_high_command_support_idea:0 "High Command Support"
+ SAU_ensure_high_command_support_idea_desc:0 "High Command Support"
  
  alawwal_bank:0 "Alawwal Bank"
  bin_ladin_group:0 "Bin Ladin Group"
@@ -172,4 +174,5 @@
  rashid_al_saleh:0 "Rashid al Saleh"
  mohamed_tarek_abdelkader_afrique:0 "Mohamed Tarek Abdelkader Afrique"
  said_bin_abdullah_kurdi:0 "Said bin Abdullah Kurdi"
- faisal_ibn_saud:0 "Faisal ibn Saud"
+ faisal_bin_abdulaziz_al_saud:0 "Faisal bin Abdulaziz Al Saud"
+ noura_bint_abdul_rahman_al_saud:0 "Noura bint Abdul Rahman Al Saud

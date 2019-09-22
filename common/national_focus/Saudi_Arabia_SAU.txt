@@ -482,10 +482,7 @@ focus_tree = {
 	focus = {
         id = SAU_launch_the_coup
 #		icon = 
-		prerequisite = { focus = SAU_ensure_army_support }
-		prerequisite = { focus = SAU_ensure_ulama_support }
-		prerequisite = { focus = SAU_ensure_high_command_support }
-		prerequisite = { focus = SAU_ensure_brothers_support }
+		prerequisite = { focus = SAU_ensure_army_support focus = SAU_ensure_ulama_support focus = SAU_ensure_high_command_support focus = SAU_ensure_brothers_support }
 		relative_position_id = SAU_ensure_ulama_support
         x = 0
         y = 1
@@ -493,22 +490,13 @@ focus_tree = {
         available_if_capitulated = no
         bypass = {
         }
-        available = {
-			has_decision = SAU_speak_with_saud
-			has_decision = SAU_speak_with_khalid
-			has_decision = SAU_speak_with_muhammad
-			has_decision = SAU_bribe_the_grand_mufti
-			has_decision = SAU_bribe_the_lower_ulama
-		}
         completion_reward = {
-		
+			custom_effect_tooltip = SAU_launch_the_coup_tt
+			remove_ideas = SAU_ensure_high_command_support_idea
 			hidden_effect = {
 			
-				kill_country_leader = yes
 				set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
 				set_country_flag = abdulaziz_dead
-				remove_ideas = SAU_ensure_high_command_support_idea
-				remove_unit_leader = 10000 ## Abdulaziz
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
@@ -522,9 +510,36 @@ focus_tree = {
 						797 799 679 838 798 800
 					}
 					keep_unit_leaders = {
-						10001 10002 10003
+						10002 10003
 					}
 				}
+				kill_country_leader = yes
+				remove_unit_leader = 10000 ## Abdulaziz
+				if = {
+					limit = {
+						NOT = { has_decision = SAU_speak_with_saud }
+					}
+					remove_unit_leader = 10001 ## Abdulaziz
+				}
+				random_other_country = {
+					limit = {
+						original_tag = SAU
+						has_government = neutrality
+					}
+					load_oob = ""
+				}
+				remove_unit_leader = 10002 ## Beginning Faisal
+				create_field_marshal = {
+					name = "Faisal bin Abdulaziz Al Saud" ## New faisal!!
+					picture = "Portrait_Faisal_Aziz.dds"
+					id = 10004 ## New Faisal
+					traits = { trickster }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}	
 			}
 		}
     }
