@@ -5,17 +5,22 @@ ideas = {
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
                 justify_war_goal_time = 0.20
             }
         }
-	}
-	country = {
+
         SAU_inexperienced_army_1 = {
 			picture = sau_inexperienced_army
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				max_planning = -0.15
 				army_org_factor = -0.15
@@ -23,13 +28,15 @@ ideas = {
 				army_defence_factor = -0.15
             }
         }
-	}
-	country = {
+
         SAU_inexperienced_army_2 = {
 			picture = sau_inexperienced_army
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				max_planning = -0.10
 				army_org_factor = -0.10
@@ -37,13 +44,15 @@ ideas = {
 				army_defence_factor = -0.10
             }
         }
-	}
-	country = {
+
         SAU_inexperienced_army_3 = {
 			picture = sau_inexperienced_army
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				max_planning = -0.05
 				army_org_factor = -0.05
@@ -51,136 +60,170 @@ ideas = {
 				army_defence_factor = -0.05
             }
         }
-	}
-	country = {
+
         SAU_large_rural_population_1 = {
 			picture = sau_pastoral_population
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				conscription_factor = -0.35
             }
         }
-	}
-	
-	country = {
+
         SAU_large_rural_population_2 = {
 			picture = sau_pastoral_population
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				conscription_factor = -0.30
             }
         }
-	}
 	
-	country = {
         SAU_large_rural_population_3 = {
 			picture = sau_pastoral_population
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				conscription_factor = -0.25
             }
         }
-	}
-	country = {
+
         SAU_ulama = {
 			picture = sau_ulama
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				research_speed_factor = -0.15
             }
         }
-	}
-	country = {
+
         SAU_hajj_based_economy_1 = {
 			picture = sau_hajj_based_economy
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
-				political_power_gain = -0.20
+				political_power_factor = -0.20
 				production_speed_buildings_factor = -0.20
 				consumer_goods_factor = -0.05
             }
         }
-	}
-	country = {
+
         SAU_hajj_based_economy_2 = {
 			picture = sau_hajj_based_economy
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				political_power_gain = -0.10
 				production_speed_buildings_factor = -0.10
 				consumer_goods_factor = -0.05
 			}
         }
-	}
-	country = {
+
         SAU_ikhwan_unrest = {
 			picture = sau_ikhwan
             allowed = {
                 original_tag = SAU
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				stability_factor = -0.10
             }
         }
-	}
-	country = {
+
         SAU_diversify_economy_idea = {
+			picture = man_five_year_plan_industry
             allowed = {
                 original_tag = SAU
 				always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				production_speed_industrial_complex_factor = 0.20
             }
         }
-	}
-	country = {
+
         SAU_oil_money_1 = {
 			picture = generic_foreign_capital
             allowed = {
                 original_tag = SAU
 				always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				consumer_goods_factor = -0.03
 			}
         }
-	}
-	country = {
+
         SAU_oil_money_2 = {
 			picture = generic_foreign_capital
             allowed = {
                 original_tag = SAU
 				always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				consumer_goods_factor = -0.08
 			}
         }
-	}
-	country = {
+	
         SAU_factory_loans = {
 			picture = generic_foreign_capital
             allowed = {
                 original_tag = SAU
 				always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
             modifier = {
 				consumer_goods_factor = 0.05
 				political_power_gain = -0.25
-				
+			}
+        }
+		
+		SAU_ensure_high_command_support_idea = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				command_power_gain_mult = 0.5 
 			}
         }
 	}
@@ -224,7 +267,7 @@ ideas = {
 			}
 		}
 		
-		sheikh_abdullah = {
+		jack_philby = {
 
 			allowed = {
 				original_tag = SAU
@@ -325,7 +368,7 @@ ideas = {
 
 			cost = 50
 			
-			traits = { army_chief_organizational_2 }
+			traits = { army_chief_organizational_1 }
 			
 			ai_will_do = {
 				factor = 1

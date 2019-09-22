@@ -1,3 +1,4 @@
+## RURAL POPULATION
 SAU_large_rural_population_level_down = {
 	if = {
 		limit = {
@@ -25,6 +26,7 @@ SAU_large_rural_population_level_down = {
 	}
 }
 
+## HAJJ-BASED ECONOMY
 SAU_hajj_based_economy_level_down = {
 	if = {
 		limit = {
@@ -42,6 +44,8 @@ SAU_hajj_based_economy_level_down = {
 		}
 	}
 }
+
+## OIL MONEY
 SAU_oil_money_level_up = {
 	if = {
 		limit = {

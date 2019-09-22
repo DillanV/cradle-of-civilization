@@ -29,6 +29,7 @@ on_actions = {
             #### ISLAM FOR COUNTRIES; MAX ADD AND DECREASE IS 25
             SAU = {
                 add_25_islam = yes
+				add_10_islam = yes
             }
             YEM = {
                 add_20_islam = yes

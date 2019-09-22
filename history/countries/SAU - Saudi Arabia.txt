@@ -12,7 +12,7 @@ set_technology = {
 	basic_light_tank = 1 # Bought Vickers M. II Light tanks from Italy in 1932
 }
 
-set_convoys = 5
+set_convoys = 10
 
 add_ideas = {
 	SAU_treaty_of_taif
@@ -23,6 +23,7 @@ add_ideas = {
 	SAU_ikhwan_unrest
 	limited_exports
 	limited_conscription
+	civilian_economy
 }
 
 1939.1.1 = {
@@ -103,6 +104,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Abdulaziz ibn Saud" ## Unified Saudi Arabia
+	id = 10000
 	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
 	traits = {  }
 	skill = 3
@@ -115,6 +117,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Saud bin Abdulaziz Al Saud" ## Crown Prince of Saudi Arabia, commanded in the Saudi-Yemeni War
 	picture = "Portrait_Saud_Aziz.dds"
+	id = 10001
 	traits = {  }
 	skill = 2
 	attack_skill = 3
@@ -125,7 +128,8 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Faisal bin Abdulaziz" ## Commanded a campaign in the Saudi-Yemeni War
-	gfx = "Portrait_Faisal_Aziz.dds"
+	picture = "Portrait_Faisal_Aziz.dds"
+	id = 10002
 	traits = {  }
 	skill = 2
     attack_skill = 2

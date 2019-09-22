@@ -1,6 +1,8 @@
 ﻿l_english:
- already_taking_piety_flag:0 "Already modifying piety through decisions."
- already_speaking_with_brother:0 " Already speaking with one of Faisal's brothers."
+ already_taking_piety_flag:0 " Already modifying piety through decisions"
+ already_getting_support:0 " Already getting support for the coup"
+ bribed_lower_ulama:0 "Has bribed the Lower Ulama"
+ abdulaziz_dead:0 "Abdulaziz ibn Saud is dead"
  taking_debt_payment:0 "Already taking financial payments"
  YEM_debt_up_tt:0 "§RWill raise our financial debt!§!\n"
  YEM_debt_down_tt:0 "§MLowers our financial debt.§!\n"
@@ -42,3 +44,5 @@
  SAU_speak_with_khalid:0 "Speak with Khalid"
  SAU_speak_with_muhammad:0 "Speak with Muhammad"
  SAU_bribe_the_grand_mufti:0 "Bribe the Grand Mufti"
+ SAU_bribe_the_lower_ulama:0 "Bribe the Lower Ulama"
+ 

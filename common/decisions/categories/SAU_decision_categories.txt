@@ -2,7 +2,7 @@
 ######  SAUD'S COUP #######
 ###########################
 
-SAU_saud_coup_preparation_decisions = {
+SAU_faisal_coup_preparation_decisions = {
 
 	icon = GFX_decision_category_generic_prospect_for_resources
 	
