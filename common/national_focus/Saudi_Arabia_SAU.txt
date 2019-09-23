@@ -505,7 +505,7 @@ focus_tree = {
 					ideology = neutrality
 					size = 0
 					only_own_territory = yes
-					capital = 292
+					capital = 797
 					states = {
 						797 799 679 838 798 800
 					}
@@ -519,14 +519,14 @@ focus_tree = {
 					limit = {
 						NOT = { has_decision = SAU_speak_with_saud }
 					}
-					remove_unit_leader = 10001 ## Abdulaziz
+					remove_unit_leader = 10001 ## Saud
 				}
 				random_other_country = {
 					limit = {
 						original_tag = SAU
 						has_government = neutrality
 					}
-					load_oob = ""
+					load_oob = "SAU_civil_war_fascism"
 				}
 				remove_unit_leader = 10002 ## Beginning Faisal
 				create_field_marshal = {
