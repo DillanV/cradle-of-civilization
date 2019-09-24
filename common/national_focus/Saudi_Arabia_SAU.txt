@@ -26,6 +26,23 @@ focus_tree = {
         }
     }
 	
+#	focus = {
+#       id = SAU_fourth_saudi_state
+#		icon = GFX_unitethearabs
+#        x = 7
+#        y = 0
+#        cost = 10
+#        available_if_capitulated = no
+#        bypass = {
+#        }
+#        available = {
+#			SAU = { has_government = fascism }
+#		}
+#        completion_reward = {
+#			add_political_power = 150
+#        }
+#    }
+	
 	focus = {
         id = SAU_diversify_economy
 		icon = GFX_generic_balanced_budget
@@ -64,7 +81,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_alireza_automobile_factories
-		icon = GFX_generic_industry_2
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = SAU_loans_for_factories }
 		relative_position_id = SAU_loans_for_factories
         x = -1
@@ -204,7 +221,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SAU_invite_american_experts }
         x = 1
         y = 1
-        cost = 10
+        cost = 15
         available_if_capitulated = no
         bypass = {
         }
@@ -263,6 +280,23 @@ focus_tree = {
     }
 	
 	focus = {
+        id = SAU_revise_the_concessions
+		icon = GFX_generic_oil_discovery
+		prerequisite = { focus = SAU_exploit_ghawar }
+		relative_position_id = SAU_exploit_ghawar
+        x = 0
+        y = 1
+        cost = 15
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+        }
+    }
+	
+	focus = {
         id = SAU_pro_saudi_propoganda
 #		icon = 
 		prerequisite = { focus = SAU_third_saudi_state }
@@ -299,7 +333,36 @@ focus_tree = {
     }
 	
 	focus = {
-        id = SAU_raise_bedouin_levies
+        id = SAU_form_the_general_staff
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SAU_third_saudi_state }
+		relative_position_id = SAU_third_saudi_state
+        x = 2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = mohamed_tarek_abdelkader_afrique
+			create_corps_commander = {
+				name = "Mohamed Tarek Abdelkader Afrique" ## Ottoman trained officer
+				picture = ""
+				traits = {  }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_the_white_army
 		icon = GFX_generic_tribal_army
         x = 10
         y = 5
@@ -311,8 +374,10 @@ focus_tree = {
 		}
         completion_reward = {
 			custom_effect_tooltip = SAU_raise_bedouin_levies_tt
+			add_stability = -0.10
 			hidden_effect = {
 				load_oob = SAU_bedouin_levies
+				add_manpower = -15000
 			}
         }
     }
@@ -515,7 +580,7 @@ focus_tree = {
 			custom_effect_tooltip = SAU_launch_the_coup_tt
 			remove_ideas = SAU_ensure_high_command_support_idea
 			hidden_effect = {
-			
+				kill_country_leader = yes
 				set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
 				set_country_flag = abdulaziz_dead
 				set_politics = {
@@ -526,7 +591,7 @@ focus_tree = {
 					ideology = neutrality
 					size = 0
 					only_own_territory = yes
-					capital = 797
+					capital = 679
 					states = {
 						797 799 679 838 798 800
 					}
@@ -534,7 +599,6 @@ focus_tree = {
 						10002 10003
 					}
 				}
-				kill_country_leader = yes
 				remove_unit_leader = 10000 ## Abdulaziz
 				if = {
 					limit = {
@@ -554,7 +618,7 @@ focus_tree = {
 					name = "Faisal bin Abdulaziz Al Saud" ## New faisal!!
 					picture = "Portrait_Faisal_Aziz.dds"
 					id = 10004 ## New Faisal
-					traits = { trickster }
+					traits = { trickster } ## Gottem
 					skill = 3
 					attack_skill = 3
 					defense_skill = 2

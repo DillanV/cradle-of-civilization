@@ -122,7 +122,7 @@ ideas = {
 				always = yes
 			}
             modifier = {
-				political_power_factor = -0.20
+				political_power_factor = -0.30
 				production_speed_buildings_factor = -0.20
 				consumer_goods_factor = -0.05
             }
@@ -137,8 +137,22 @@ ideas = {
 				always = yes
 			}
             modifier = {
-				political_power_gain = -0.10
+				political_power_factor = -0.20
 				production_speed_buildings_factor = -0.10
+				consumer_goods_factor = -0.05
+			}
+        }
+		
+		SAU_hajj_based_economy_3 = {
+			picture = sau_hajj_based_economy
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				political_power_factor = -0.10
 				consumer_goods_factor = -0.05
 			}
         }
@@ -223,7 +237,7 @@ ideas = {
 				always = yes
 			}
             modifier = {
-				command_power_gain_mult = 0.5 
+				command_power_gain_mult = 0.50
 			}
         }
 	}
@@ -468,6 +482,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = SAU
+				has_completed_focus = SAU_form_the_general_staff
 			}
 			
 			traits = { army_infantry_2 }

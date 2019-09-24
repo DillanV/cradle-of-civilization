@@ -20,28 +20,28 @@ units = {
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "2adawin Ikhawat al-2i"
+		name = "Badawin Ikhawat al-2i"
 		location = 12727
 		division_template = "Badawin Ikhawat"
 		start_equipment_factor = 0.3
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "adawin Ikhawat al-3i"
+		name = "Badawin Ikhawat al-3i"
 		location = 12727
 		division_template = "Badawin Ikhawat"
 		start_equipment_factor = 0.3
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "adawin Ikhawat al-4i"
+		name = "Badawin Ikhawat al-4i"
 		location = 12727
 		division_template = "Badawin Ikhawat"
 		start_equipment_factor = 0.3
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "adawin Ikhawat al-5i"
+		name = "Badawin Ikhawat al-5i"
 		location = 12727
 		division_template = "Badawin Ikhawat"
 		start_equipment_factor = 0.5
