@@ -139,6 +139,17 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Abdullah bin Abdul-Raman" ## Crushed Ikhwan rebellion, took prominent Ikhwan center of Ghatghat
+	gfx = ""
+	traits = {  }
+	skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
 	name = "Ibrahim bin Aqeel" ## Commanded in the Saudi-Rashidi War
 	gfx = ""
 	traits = {  }
@@ -169,17 +180,6 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 1
     logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = ""
-	gfx = ""
-	traits = {  }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
 }
 
 1939.1.1 = {

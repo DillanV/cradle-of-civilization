@@ -297,6 +297,26 @@ focus_tree = {
 			SAU_large_rural_population_level_down = yes
         }
     }
+	
+	focus = {
+        id = SAU_raise_bedouin_levies
+		icon = GFX_generic_tribal_army
+        x = 10
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			custom_effect_tooltip = SAU_raise_bedouin_levies_tt
+			hidden_effect = {
+				load_oob = SAU_bedouin_levies
+			}
+        }
+    }
+	
 	focus = {
         id = SAU_support_abdulaziz
 #		icon = 
@@ -314,6 +334,7 @@ focus_tree = {
 			add_5_islam = yes
         }
     }
+	
 	focus = {
         id = SAU_reinvite_fawzi
 #		icon = 
@@ -539,7 +560,7 @@ focus_tree = {
 					defense_skill = 2
 					planning_skill = 2
 					logistics_skill = 3
-				}	
+				}
 			}
 		}
     }

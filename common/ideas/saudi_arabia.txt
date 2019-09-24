@@ -231,7 +231,7 @@ ideas = {
 ########################################	
 ######################################## MINISTERS
 	political_advisor = {
-		fawzi_al_qawuqji = {
+		fawzi_al_qawuqji = { ## Arab nationalist
 
 			allowed = {
 				original_tag = SAU
@@ -254,7 +254,7 @@ ideas = {
 			}
 		}
 		
-		nazir_tyuryakulov = {
+		nazir_tyuryakulov = { ## Soviet Ambassador to Saudi Arabia
 
 			allowed = {
 				original_tag = SAU
@@ -267,10 +267,11 @@ ideas = {
 			}
 		}
 		
-		jack_philby = {
+		asad_al_faqih = { ## Saudi Arabian Minister to the US
 
 			allowed = {
 				original_tag = SAU
+				has_completed_focus = ## SAU_american_diplomatic_mission
 			}
 			
 			traits = { democratic_reformer }
@@ -280,7 +281,7 @@ ideas = {
 			}
 		}
 		
-		mohamed_bin_awad_bin_laden = {
+		mohamed_bin_awad_bin_laden = { ## Ran the biggest construction company in Saudi Arabia and refurbished the mosques in Makkah and Madinah.
 
 			allowed = {
 				original_tag = SAU
@@ -293,7 +294,7 @@ ideas = {
 			}
 		}
 		
-		faisal_bin_abdulaziz = {
+		faisal_bin_abdulaziz = { ## Foreign minister of Saudi Arabia
 
 			allowed = {
 				original_tag = SAU
@@ -306,20 +307,20 @@ ideas = {
 			}
 		}
 		
-		abdullah_al_sulaiman_al_hamdan = {
+		abdullah_ibn_sulaiman_al_hamdan = { ## Minister of Finance, enterpreneur, advisor to Abdulaziz
 
 			allowed = {
 				original_tag = SAU
 			}
 			
-			traits = { silent_workhorse }
+			traits = { financial_expert }
 
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-		jawhara_bint_faisal = {
+		jawhara_bint_faisal = { ## Convinced Abdulaziz to regain the glory of the House of Saud at a young age. One of his most trusted and influential advisors.
 
 			allowed = {
 				original_tag = SAU
@@ -332,13 +333,40 @@ ideas = {
 			}
 		}
 		
-		noura_bint_abdul_rahman_al_saud = {
+		noura_bint_abdul_rahman_al_saud = { ## Very progressive, but Abdulaziz admired her greatly. One of his main advisors.
 
 			allowed = {
 				original_tag = SAU
 			}
 			
 			traits = { anti_ulama }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		abdullah_bin_abdul_raman = { ## Prominent advisor to Abdulaziz, assisted him with many things during his reign, involved in state affairs until his death
+		
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		khalid_al_gargani = { ## Met with Hitler
+		
+			allowed = {
+				original_tag = SAU
+				has_completed_focus = ## SAU_german_diplomatic_mission
+			}
+			
+			traits = { fascist_demagogue }
 
 			ai_will_do = {
 				factor = 1
@@ -472,7 +500,7 @@ ideas = {
 				original_tag = SAU
 			}
 			
-			traits = { army_commando_1 }
+			traits = { army_commando_2 }
 			
 			ai_will_do = {
 				factor = 1
