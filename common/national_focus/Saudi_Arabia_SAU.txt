@@ -18,9 +18,6 @@ focus_tree = {
         available_if_capitulated = no
         bypass = {
         }
-        available = {
-			SAU = { has_government = neutrality }
-		}
         completion_reward = {
 			add_political_power = 150
         }
@@ -62,29 +59,11 @@ focus_tree = {
     }
 	
 	focus = {
-        id = SAU_loans_for_factories
-		icon = GFX_generic_balanced_budget
+        id = SAU_alireza_automobile_factories
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = SAU_diversify_economy }
 		relative_position_id = SAU_diversify_economy
         x = -2
-        y = 1
-        cost = 5
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
-			add_timed_idea = { idea = SAU_factory_loans days = 90 }
-        }
-    }
-	
-	focus = {
-        id = SAU_alireza_automobile_factories
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = SAU_loans_for_factories }
-		relative_position_id = SAU_loans_for_factories
-        x = -1
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -93,13 +72,16 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			IF = {
+			if = {
 				limit = { has_idea = SAU_factory_loans }
 				modify_timed_idea = {
 					idea = SAU_factory_loans
 					days = 90
 				}
             }
+			else = {
+				add_timed_idea = { idea = SAU_factory_loans days = 90 }
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -111,6 +93,90 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_saudi_products
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = SAU_alireza_automobile_factories }
+		relative_position_id = SAU_alireza_automobile_factories
+        x = -2
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			if = {
+				limit = { has_idea = SAU_factory_loans }
+				modify_timed_idea = {
+					idea = SAU_factory_loans
+					days = 90
+				}
+            }
+			else = {
+				add_timed_idea = { idea = SAU_factory_loans days = 90 }
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_saudi_arms
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = SAU_alireza_automobile_factories }
+		relative_position_id = SAU_alireza_automobile_factories
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			if = {
+				limit = { has_idea = SAU_factory_loans }
+				modify_timed_idea = {
+					idea = SAU_factory_loans
+					days = 90
+				}
+            }
+			else = {
+				add_timed_idea = { idea = SAU_factory_loans days = 90 }
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -160,7 +226,7 @@ focus_tree = {
 		relative_position_id = SAU_prospect_for_oil
         x = 0
         y = 1
-        cost = 10
+        cost = 5
         available_if_capitulated = no
         bypass = {
         }
@@ -209,7 +275,6 @@ focus_tree = {
 			USA = {
 				add_opinion_modifier = { target = SAU modifier = SAU_invited_american_experts }
 			}
-			SAU_oil_money_level_up = yes
         }
     }
 	
@@ -249,6 +314,23 @@ focus_tree = {
 			GER = {
 				add_opinion_modifier = { target = SAU modifier = SAU_invited_german_experts }
 			}
+        }
+    }
+	
+	focus = {
+        id = SAU_revise_the_concessions
+		icon = GFX_generic_oil_discovery
+		prerequisite = { focus = SAU_invite_german_experts focus = SAU_invite_american_experts }
+		relative_position_id = SAU_invite_german_experts
+        x = 1
+        y = 1
+        cost = 5
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
 			SAU_oil_money_level_up = yes
         }
     }
@@ -256,11 +338,11 @@ focus_tree = {
 	focus = {
         id = SAU_exploit_ghawar
 		icon = GFX_generic_oil_discovery
-		prerequisite = { focus = SAU_invite_german_experts focus = SAU_invite_american_experts}
-		relative_position_id = SAU_invite_german_experts
-        x = -1
+		prerequisite = { focus = SAU_revise_the_concessions }
+		relative_position_id = SAU_revise_the_concessions
+        x = 0
         y = 1
-        cost = 15
+        cost = 12.9
         available_if_capitulated = no
         bypass = {
         }
@@ -276,23 +358,6 @@ focus_tree = {
 				}
 			}
 			SAU_hajj_based_economy_level_down = yes
-        }
-    }
-	
-	focus = {
-        id = SAU_revise_the_concessions
-		icon = GFX_generic_oil_discovery
-		prerequisite = { focus = SAU_exploit_ghawar }
-		relative_position_id = SAU_exploit_ghawar
-        x = 0
-        y = 1
-        cost = 15
-        available_if_capitulated = no
-        bypass = {
-        }
-        available = {
-		}
-        completion_reward = {
         }
     }
 	
@@ -351,13 +416,38 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Mohamed Tarek Abdelkader Afrique" ## Ottoman trained officer
 				picture = ""
-				traits = {  }
+				traits = { organizer }
 				skill = 4
 				attack_skill = 4
 				defense_skill = 3
 				planning_skill = 3
 				logistics_skill = 3
 			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+        }
+    }
+	
+	focus = {
+        id = SAU_reopen_the_taif_military_school
+		icon = GFX_advanceddoctrinalstudies
+		prerequisite = { focus = SAU_form_the_general_staff }
+		relative_position_id = SAU_form_the_general_staff
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			army_experience = 15
+			SAU_inexperienced_army_level_down = yes
         }
     }
 	
@@ -374,7 +464,7 @@ focus_tree = {
 		}
         completion_reward = {
 			custom_effect_tooltip = SAU_raise_bedouin_levies_tt
-			add_stability = -0.10
+			add_ideas = SAU_ikwhan_unrest
 			hidden_effect = {
 				load_oob = SAU_bedouin_levies
 				add_manpower = -15000
@@ -483,6 +573,28 @@ focus_tree = {
     }
 	
 	focus = {
+        id = SAU_ensure_family_support
+#		icon = 
+		prerequisite = { focus = SAU_influence_faisal }
+		relative_position_id = SAU_influence_faisal
+        x = -4
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        available = {
+		}
+        completion_reward = {
+			custom_effect_tooltip = SAU_ensure_family_support_tt
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+			}
+        }
+    }
+	
+	focus = {
         id = SAU_ensure_brothers_support
 #		icon = 
 		prerequisite = { focus = SAU_influence_faisal }
@@ -536,10 +648,7 @@ focus_tree = {
 		}
         completion_reward = {
 			army_experience = 15
-			add_popularity = {
-					ideology = fascism
-					popularity = 0.15
-			}
+			add_timed_idea = { idea = SAU_propagandize_the_army days = 365 }
         }
     }
 	
@@ -568,7 +677,7 @@ focus_tree = {
 	focus = {
         id = SAU_launch_the_coup
 #		icon = 
-		prerequisite = { focus = SAU_ensure_army_support focus = SAU_ensure_ulama_support focus = SAU_ensure_high_command_support focus = SAU_ensure_brothers_support }
+		prerequisite = { focus = SAU_ensure_army_support focus = SAU_ensure_ulama_support focus = SAU_ensure_high_command_support focus = SAU_ensure_brothers_support focus = SAU_ensure_family_support }
 		relative_position_id = SAU_ensure_ulama_support
         x = 0
         y = 1
@@ -579,6 +688,7 @@ focus_tree = {
         completion_reward = {
 			custom_effect_tooltip = SAU_launch_the_coup_tt
 			remove_ideas = SAU_ensure_high_command_support_idea
+			remove_ideas = SAU_propagandize_the_army
 			hidden_effect = {
 				kill_country_leader = yes
 				set_party_name = { ideology = fascism long_name = SAU_saudi_nationalist_league_long name = SAU_saudi_nationalist_league }
@@ -606,12 +716,28 @@ focus_tree = {
 					}
 					remove_unit_leader = 10001 ## Saud
 				}
-				random_other_country = {
+				if = {
 					limit = {
-						original_tag = SAU
-						has_government = neutrality
+						SAU = {
+							has_completed_focus = SAU_ensure_army_support
+						}
 					}
-					load_oob = "SAU_civil_war_fascism"
+					random_other_country = {
+							limit = {
+								original_tag = SAU
+								has_government = neutrality
+							}
+							load_oob = "SAU_civil_war_fascism_easy"
+					}
+				}
+				else = {
+					random_other_country = {
+						limit = {
+							original_tag = SAU
+							has_government = neutrality
+						}
+						load_oob = "SAU_civil_war_fascism"
+					}
 				}
 				remove_unit_leader = 10002 ## Beginning Faisal
 				create_field_marshal = {
@@ -627,5 +753,21 @@ focus_tree = {
 				}
 			}
 		}
+    }
+	
+	focus = {
+        id = SAU_fourth_saudi_state
+		icon = GFX_unitethearabs
+		prerequisite = { focus = SAU_launch_the_coup }
+		relative_position_id = SAU_launch_the_coup
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        bypass = {
+        }
+        completion_reward = {
+			add_political_power = 150
+        }
     }
 }

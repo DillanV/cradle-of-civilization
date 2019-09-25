@@ -11,5 +11,9 @@ spriteTypes = {
 		name = "GFX_encouragemigration"
 		texturefile = "gfx/interface/goals/GFX_encouragemigration.dds"			
 	}
+	spriteType = {
+		name = "GFX_advanceddoctrinalstudies"
+		texturefile = "gfx/interface/goals/GFX_advanceddoctrinalstudies.dds"			
+	}
 	
 }

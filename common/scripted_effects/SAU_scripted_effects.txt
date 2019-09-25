@@ -54,6 +54,34 @@ SAU_hajj_based_economy_level_down = {
 	}
 }
 
+## INEXPERIENCED ARMY
+SAU_inexperienced_army_level_down = {
+	if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_3
+		}
+		remove_ideas = SAU_inexperienced_army_3
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_2
+		}
+		swap_ideas = {
+			remove_idea = SAU_inexperienced_army_2
+			add_idea = SAU_inexperienced_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_inexperienced_army_1
+			add_idea = SAU_inexperienced_army_2
+		}
+	}
+}
+
 ## OIL MONEY
 SAU_oil_money_level_up = {
 	if = {

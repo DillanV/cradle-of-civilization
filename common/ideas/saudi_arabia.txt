@@ -26,6 +26,7 @@ ideas = {
 				army_org_factor = -0.15
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
+				military_leader_cost_factor = 1.00
             }
         }
 
@@ -240,6 +241,20 @@ ideas = {
 				command_power_gain_mult = 0.50
 			}
         }
+		
+		SAU_propagandize_the_army = {
+			picture = chi_army_corruption3
+				allowed = {
+					original_tag = SAU
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					fascism_drift = 0.10
+				}
+        }
 	}
 	
 ########################################	
@@ -339,7 +354,14 @@ ideas = {
 			allowed = {
 				original_tag = SAU
 			}
-			
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
 			traits = { smooth_talking_charmer }
 
 			ai_will_do = {
@@ -352,7 +374,14 @@ ideas = {
 			allowed = {
 				original_tag = SAU
 			}
-			
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
 			traits = { anti_ulama }
 
 			ai_will_do = {
@@ -437,7 +466,14 @@ ideas = {
 			allowed = {
 				original_tag = SAU
 			}
-			
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
 			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
@@ -482,6 +518,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = SAU
+			}
+			
+			available = {
 				has_completed_focus = SAU_form_the_general_staff
 			}
 			
