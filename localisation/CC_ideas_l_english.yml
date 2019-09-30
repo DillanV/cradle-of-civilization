@@ -158,7 +158,9 @@
  SAU_factory_loans:0 "Factory Loans"
  SAU_factory_loans_desc:0 "We must take out loans from other countries to diversify our economic base. Factories are essential to any modern nation, but we lack the capital to fund such a project."
  SAU_ensure_high_command_support_idea:0 "High Command Support"
- SAU_ensure_high_command_support_idea_desc:0 "High Command Support"
+ SAU_ensure_high_command_support_idea_desc:0 "We have ensured that our generals and Field Marshals will remain loyal to our regime when we topple Abdulaziz."
+ SAU_propogandize_the_army:0 "Propogandizing the Army"
+ SAU_propogandize_the_army_desc:0 "Placing anti-Abdulaziz propoganda in military training barracks and grounds gives us significant leverage over the guns of the country."
  
  alawwal_bank:0 "Alawwal Bank"
  bin_ladin_group:0 "Bin Ladin Group"

@@ -155,7 +155,7 @@ SAU_faisal_coup_preparation_decisions = {
 		
 		days_remove = 10
 		
-		cost = 30
+		cost = 20
 		
 		complete_effect = {
 			set_country_flag = already_getting_support
@@ -191,7 +191,7 @@ SAU_faisal_coup_preparation_decisions = {
 		
 		days_remove = 10
 		
-		cost = 25
+		cost = 20
 		
 		complete_effect = {
 			set_country_flag = already_getting_support

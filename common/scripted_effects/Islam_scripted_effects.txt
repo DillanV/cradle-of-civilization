@@ -16,7 +16,7 @@ add_5_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -39,7 +39,7 @@ add_10_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -62,7 +62,7 @@ add_15_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -85,7 +85,7 @@ add_20_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -108,7 +108,7 @@ add_25_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -131,7 +131,7 @@ subtract_5_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -154,7 +154,7 @@ subtract_10_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -177,7 +177,7 @@ subtract_15_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -200,7 +200,7 @@ subtract_20_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }
@@ -223,7 +223,7 @@ subtract_25_islam = {
 		set_variable = { islam_effect_3 = islam }
 		multiply_variable = {
 			var = islam_effect_3
-			value = -1.5
+			value = -1.0
 		}
 	}
 }

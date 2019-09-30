@@ -110,7 +110,7 @@ ideas = {
 				always = yes
 			}
             modifier = {
-				research_speed_factor = -0.15
+				research_speed_factor = -0.10
             }
         }
 
@@ -223,7 +223,7 @@ ideas = {
 				always = yes
 			}
             modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 				political_power_gain = -0.25
 			}
         }

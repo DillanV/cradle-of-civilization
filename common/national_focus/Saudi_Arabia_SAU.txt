@@ -221,7 +221,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_the_concession_question
-		icon = GFX_generic_oil_discovery
+		icon = generic_improve_relations
 		prerequisite = { focus = SAU_prospect_for_oil }
 		relative_position_id = SAU_prospect_for_oil
         x = 0
@@ -241,7 +241,7 @@ focus_tree = {
 	
 	focus = {
         id = SAU_invite_american_experts
-#		icon = 
+		icon = chi_mission_to_the_us
 		prerequisite = { focus = SAU_the_concession_question }
 		relative_position_id = SAU_the_concession_question
 		mutually_exclusive = { focus = SAU_invite_german_experts }
@@ -322,7 +322,7 @@ focus_tree = {
 		icon = GFX_generic_oil_discovery
 		prerequisite = { focus = SAU_invite_german_experts focus = SAU_invite_american_experts }
 		relative_position_id = SAU_invite_german_experts
-        x = 1
+        x = -1
         y = 1
         cost = 5
         available_if_capitulated = no
@@ -464,10 +464,9 @@ focus_tree = {
 		}
         completion_reward = {
 			custom_effect_tooltip = SAU_raise_bedouin_levies_tt
-			add_ideas = SAU_ikwhan_unrest
+			add_ideas = SAU_ikhwan_unrest
 			hidden_effect = {
 				load_oob = SAU_bedouin_levies
-				add_manpower = -15000
 			}
         }
     }
@@ -584,6 +583,9 @@ focus_tree = {
         bypass = {
         }
         available = {
+			NOT = {
+				has_country_flag = abdulaziz_dead
+			}
 		}
         completion_reward = {
 			custom_effect_tooltip = SAU_ensure_family_support_tt
@@ -606,6 +608,9 @@ focus_tree = {
         bypass = {
         }
         available = {
+			NOT = {
+				has_country_flag = abdulaziz_dead
+			}
 		}
         completion_reward = {
 			unlock_decision_tooltip = SAU_speak_with_saud
@@ -626,6 +631,9 @@ focus_tree = {
         bypass = {
         }
         available = {
+			NOT = {
+				has_country_flag = abdulaziz_dead
+			}
 		}
         completion_reward = {
 			unlock_decision_tooltip = SAU_bribe_the_grand_mufti
@@ -645,6 +653,9 @@ focus_tree = {
         bypass = {
         }
         available = {
+			NOT = {
+				has_country_flag = abdulaziz_dead
+			}
 		}
         completion_reward = {
 			army_experience = 15
@@ -664,6 +675,9 @@ focus_tree = {
         bypass = {
         }
         available = {
+			NOT = {
+				has_country_flag = abdulaziz_dead
+			}
 		}
         completion_reward = {
 			add_timed_idea = { idea = SAU_ensure_high_command_support_idea days = 365 }
@@ -697,26 +711,109 @@ focus_tree = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
-				start_civil_war = {
-					ideology = neutrality
-					size = 0
-					only_own_territory = yes
-					capital = 679
-					states = {
-						797 799 679 838 798 800
+				if = {					## Keep or lose Shammar, depending on if you have bribed the grand mufti
+					limit = {
+						SAU = {
+							has_decision = SAU_bribe_the_grand_mufti
+						}
 					}
-					keep_unit_leaders = {
-						10002 10003
+					start_civil_war = {
+						ideology = neutrality
+						size = 0
+						only_own_territory = yes
+						capital = 679
+						keep_unit_leaders = {							
+							10002 10003
+						}
+						states = {
+							797 799 679
+						}
 					}
 				}
-				remove_unit_leader = 10000 ## Abdulaziz
-				if = {
+				else = {
+					start_civil_war = {
+						ideology = neutrality
+						size = 0
+						only_own_territory = yes
+						capital = 679
+						keep_unit_leaders = {							
+							10002 10003
+						}
+						states = {
+							797 799 679 838 798 800
+						}
+					}
+				}
+				
+				remove_unit_leader = 10000 ## Abdulaziz					## Kill Abdulaziz
+				
+				if = {					## If you have not spoken with Saud, remove him
 					limit = {
 						NOT = { has_decision = SAU_speak_with_saud }
 					}
 					remove_unit_leader = 10001 ## Saud
+					random_other_country = {
+						limit = {
+							original_tag = SAU
+							has_government = neutrality
+						}
+						create_field_marshal = {
+							name = "Saud bin Abdulaziz Al Saud" ## Crown Prince of Saudi Arabia, commanded in the Saudi-Yemeni War
+							picture = "Portrait_Saud_Aziz.dds"
+							traits = {  }
+							skill = 2
+							attack_skill = 3
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+						}
+					}
 				}
-				if = {
+				if = {					## If you have not completed high command support, remove most generals and give them to the House of Saud. Otherwise, keep them.
+					limit = {
+						NOT = { has_completed_focus	= SAU_ensure_high_command_support }
+					}
+					remove_unit_leader = 10005
+					remove_unit_leader = 10006
+					remove_unit_leader = 10008
+					random_other_country = {
+						limit = {
+							original_tag = SAU
+							has_government = neutrality
+						}
+						create_corps_commander = {
+							name = "Abdullah bin Abdul-Raman" ## Crushed Ikhwan rebellion, took prominent Ikhwan center of Ghatghat
+							gfx = ""
+							traits = {  }
+							skill = 1
+							attack_skill = 2
+							defense_skill = 1
+							planning_skill = 2
+							logistics_skill = 1
+						}
+						create_corps_commander = {
+							name = "Ibrahim bin Aqeel" ## Commanded in the Saudi-Rashidi War
+							gfx = ""
+							traits = {  }
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 2
+						}
+						create_corps_commander = {
+							name = "Khalid ibn Mansur ibn Luwai" ## Commanded in the First Saudi–Hashemite War
+							gfx = ""
+							traits = {  }
+							skill = 1
+							attack_skill = 2
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+						}
+					}
+				}
+				if = {					## Change the amount of divisions the House of Saud gets on civil war start
 					limit = {
 						SAU = {
 							has_completed_focus = SAU_ensure_army_support
@@ -739,7 +836,7 @@ focus_tree = {
 						load_oob = "SAU_civil_war_fascism"
 					}
 				}
-				remove_unit_leader = 10002 ## Beginning Faisal
+				remove_unit_leader = 10002 ## Beginning Faisal					## Make Faisal level up and become a field marshall
 				create_field_marshal = {
 					name = "Faisal bin Abdulaziz Al Saud" ## New faisal!!
 					picture = "Portrait_Faisal_Aziz.dds"
@@ -766,6 +863,11 @@ focus_tree = {
         available_if_capitulated = no
         bypass = {
         }
+		available = {
+			SAU = {
+				has_civil_war = no
+			}
+		}
         completion_reward = {
 			add_political_power = 150
         }
