@@ -41,9 +41,12 @@
  YEM_exploit_abyan_oil_desc:0 "There are large reserves of oil in Abyan, waiting to be discovered. Sending exploration teams there will help us drill more oil in the region."
  YEM_exploit_hadramaut_oil:0 "Prospect for Hadramaut Oil"
  YEM_exploit_hadramaut_oil_desc:0 "There are large reserves of oil in Hadramaut, waiting to be discovered. Sending exploration teams there will help us drill more oil in the region."
+ SAU_faisal_coup_preparation_decisions:0 "Faisal's Coup"
  SAU_speak_with_saud:0 "Speak with Saud"
  SAU_speak_with_khalid:0 "Speak with Khalid"
  SAU_speak_with_muhammad:0 "Speak with Muhammad"
  SAU_bribe_the_grand_mufti:0 "Bribe the Grand Mufti"
  SAU_bribe_the_lower_ulama:0 "Bribe the Lower Ulama"
- 
+ SAU_raise_bedouin_levies:0 "Raise the Bedouin Levies"
+ SAU_lower_bedouin_levies:0 "Lower the Bedouin Levies"
+ SAU_bedouin_levies_decisions:0 "Bedouin Levies"

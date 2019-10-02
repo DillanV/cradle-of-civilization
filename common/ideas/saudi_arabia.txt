@@ -125,7 +125,6 @@ ideas = {
             modifier = {
 				political_power_factor = -0.30
 				production_speed_buildings_factor = -0.20
-				consumer_goods_factor = -0.05
             }
         }
 
@@ -140,7 +139,6 @@ ideas = {
             modifier = {
 				political_power_factor = -0.20
 				production_speed_buildings_factor = -0.10
-				consumer_goods_factor = -0.05
 			}
         }
 		
@@ -154,7 +152,6 @@ ideas = {
 			}
             modifier = {
 				political_power_factor = -0.10
-				consumer_goods_factor = -0.05
 			}
         }
 
@@ -300,7 +297,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SAU
-				has_completed_focus = ## SAU_american_diplomatic_mission
+##				has_completed_focus = ## SAU_american_diplomatic_mission
 			}
 			
 			traits = { democratic_reformer }
@@ -406,7 +403,7 @@ ideas = {
 		
 			allowed = {
 				original_tag = SAU
-				has_completed_focus = ## SAU_german_diplomatic_mission
+##				has_completed_focus = ## SAU_german_diplomatic_mission
 			}
 			
 			traits = { fascist_demagogue }
@@ -446,13 +443,16 @@ ideas = {
 			allowed = {
 				original_tag = SAU
 			}
+			
 			available = {
-				has_country_flag = abdulaziz_dead
+				NOT = {
+					has_country_flag = abdulaziz_dead
+				}
 			}
 
 			cost = 50
 			
-			traits = { army_chief_organizational_1 }
+			traits = { army_chief_organizational_2 }
 			
 			ai_will_do = {
 				factor = 1

@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Badawin Ikhawat"		# 'Infantry Division' - Represents local tribal levies (militia)
-
+	is_locked = yes
 	division_names_group = SAU_INF_01
 
 	regiments = {

@@ -35,18 +35,17 @@ SAU_faisal_coup_preparation_decisions = {
 			NOT = {
 				has_country_flag = already_getting_support
 			}
+			has_completed_focus = SAU_ensure_brothers_support
 		}
 
 		visible = {
 			original_tag = SAU
-			has_completed_focus = SAU_ensure_brothers_support
+			has_completed_focus = SAU_formulate_the_plan
 		}
 
 		fire_only_once = yes
 
 		days_remove = 10
-		
-		cost = 20
 		
 		complete_effect = {
 			set_country_flag = already_getting_support
@@ -71,18 +70,17 @@ SAU_faisal_coup_preparation_decisions = {
 			NOT = {
 				has_country_flag = already_getting_support
 			}
+			has_completed_focus = SAU_ensure_brothers_support
 		}
 
 		visible = {
 			original_tag = SAU
-			has_completed_focus = SAU_ensure_brothers_support
+			has_completed_focus = SAU_formulate_the_plan
 		}
 
 		fire_only_once = yes	
 		
 		days_remove = 10
-		
-		cost = 20
 		
 		complete_effect = {
 			set_country_flag = already_getting_support
@@ -107,18 +105,17 @@ SAU_faisal_coup_preparation_decisions = {
 			NOT = {
 				has_country_flag = already_getting_support
 			}
+			has_completed_focus = SAU_ensure_brothers_support
 		}
 
 		visible = {
 			original_tag = SAU
-			has_completed_focus = SAU_ensure_brothers_support
+			has_completed_focus = SAU_formulate_the_plan
 		}
 
 		fire_only_once = yes
 		
 		days_remove = 10
-		
-		cost = 20
 		
 		complete_effect = {
 			set_country_flag = already_getting_support
@@ -144,21 +141,23 @@ SAU_faisal_coup_preparation_decisions = {
 				has_country_flag = already_getting_support
 			}
 			has_country_flag = bribed_lower_ulama
+			has_completed_focus = SAU_ensure_ulama_support
 		}
 
 		visible = {
 			original_tag = SAU
-			has_completed_focus = SAU_ensure_ulama_support
+			has_completed_focus = SAU_formulate_the_plan
 		}
 
 		fire_only_once = yes
 		
 		days_remove = 10
 		
-		cost = 20
+		cost = 25
 		
 		complete_effect = {
 			set_country_flag = already_getting_support
+			set_country_flag = bribed_grand_mufti
 		}
 
 		remove_effect = {
@@ -180,19 +179,20 @@ SAU_faisal_coup_preparation_decisions = {
 			NOT = {
 				has_country_flag = already_getting_support
 			}
+			has_completed_focus = SAU_ensure_ulama_support
 		}
 
 		visible = {
 			original_tag = SAU
-			has_completed_focus = SAU_ensure_ulama_support
+			has_completed_focus = SAU_formulate_the_plan
 		}
 
 		fire_only_once = yes
 		
 		days_remove = 10
 		
-		cost = 20
-		
+		cost = 25
+
 		complete_effect = {
 			set_country_flag = already_getting_support
 		}
@@ -208,3 +208,91 @@ SAU_faisal_coup_preparation_decisions = {
 		}
 	}
 }
+
+SAU_bedouin_levies_decisions = {
+	SAU_raise_bedouin_levies = {
+
+		icon = GFX_decision_generic_piety ## Placeholder
+
+		available = {
+			original_tag = SAU
+			NOT = {
+				has_country_flag = bedouin_levies_raised
+			}
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_the_white_army
+		}
+
+		fire_only_once = no
+
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			custom_effect_tooltip = SAU_the_white_army_tt
+			add_ideas = SAU_ikhwan_unrest
+			hidden_effect = {
+				load_oob = "SAU_bedouin_levies"
+				set_country_flag = bedouin_levies_raised
+			}
+		}
+	}
+	
+	SAU_lower_bedouin_levies = {
+
+		icon = GFX_decision_generic_piety ## Placeholder
+
+		available = {
+			original_tag = SAU
+			has_country_flag = bedouin_levies_raised
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_the_white_army
+		}
+
+		fire_only_once = no
+
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			delete_unit_template_and_units = { division_template = "Badawin Ikhawat" }
+			clr_country_flag = bedouin_levies_raised
+			remove_ideas = SAU_ikhwan_unrest
+		}
+	}
+	
+	SAU_keep_the_levies_happy = {			## UNDER CONSTRUCTION ##
+
+		icon = GFX_decision_generic_piety ## Placeholder
+
+		available = {
+			original_tag = SAU
+			has_country_flag = bedouin_levies_raised
+		}
+
+		visible = {
+			original_tag = SAU
+			has_completed_focus = SAU_the_white_army
+		}
+
+		selectable_mission = yes
+		days_mission_timeout = 220
+		is_good = no
+		fire_only_once = no
+		days_remove = 220
+
+		complete_effect = {
+			add_5_islam = yes ## under construction
+		}
+		
+		timeout_effect = {
+			SAU_ikhwan_unrest_level_up = yes
+		}
+	}
+	

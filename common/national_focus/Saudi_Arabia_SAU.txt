@@ -247,7 +247,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SAU_invite_german_experts }
         x = -1
         y = 1
-        cost = 15
+        cost = 12.9
         available_if_capitulated = no
         bypass = {
         }
@@ -286,7 +286,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SAU_invite_american_experts }
         x = 1
         y = 1
-        cost = 15
+        cost = 12.9
         available_if_capitulated = no
         bypass = {
         }
@@ -342,7 +342,7 @@ focus_tree = {
 		relative_position_id = SAU_revise_the_concessions
         x = 0
         y = 1
-        cost = 12.9
+        cost = 10
         available_if_capitulated = no
         bypass = {
         }
@@ -463,10 +463,12 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			custom_effect_tooltip = SAU_raise_bedouin_levies_tt
+			custom_effect_tooltip = SAU_the_white_army_tt
 			add_ideas = SAU_ikhwan_unrest
+			unlock_decision_category_tooltip = SAU_bedouin_levies_decisions
 			hidden_effect = {
 				load_oob = SAU_bedouin_levies
+				set_country_flag = bedouin_levies_raised
 			}
         }
     }
@@ -510,10 +512,10 @@ focus_tree = {
 				id = 10003
 				gfx = ""
 				traits = {  }
-				skill = 3
-				attack_skill = 3
+				skill = 2
+				attack_skill = 2
 				defense_skill = 2
-				planning_skill = 3
+				planning_skill = 2
 				logistics_skill = 2
 			}
         }
@@ -526,7 +528,7 @@ focus_tree = {
 		relative_position_id = SAU_reinvite_fawzi
         x = 0
         y = 1
-        cost = 10
+        cost = 5
         available_if_capitulated = no
         bypass = {
         }
@@ -553,11 +555,11 @@ focus_tree = {
 		}
         completion_reward = {
 			add_stability = -0.05
-			set_party_name = { ideology = fascism long_name = SAU_faisals_coup_long name = SAU_faisals_coup }
 			add_popularity = {
 					ideology = fascism
 					popularity = 0.05
 			}
+			set_party_name = { ideology = fascism long_name = SAU_faisals_coup_long name = SAU_faisals_coup }
 			create_country_leader = {
 				name = "Faisal ibn Saud"
 				desc = "POLITICS_FAISAL_DESC"
@@ -714,7 +716,7 @@ focus_tree = {
 				if = {					## Keep or lose Shammar, depending on if you have bribed the grand mufti
 					limit = {
 						SAU = {
-							has_decision = SAU_bribe_the_grand_mufti
+							has_country_flag = bribed_grand_mufti
 						}
 					}
 					start_civil_war = {
