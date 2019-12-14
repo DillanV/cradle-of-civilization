@@ -8,8 +8,8 @@ state={
 
 	history={
 		owner = SAU
-		victory_points = {
-			12101 3
+		victory_points = {			## Madinah	
+			10835 1
 		}
 		buildings = {
 			infrastructure = 2

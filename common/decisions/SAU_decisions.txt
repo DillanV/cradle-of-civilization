@@ -58,6 +58,7 @@ SAU_faisal_coup_preparation_decisions = {
 				}
 			}
 			clr_country_flag = already_getting_support
+			set_country_flag = has_saud_support
 		}
 	}
 	

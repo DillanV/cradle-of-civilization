@@ -10,11 +10,11 @@ state={
 			industrial_complex = 1
 
 		}
-		victory_points = {
-			2057 3 
+		victory_points = {			## Ha'il
+			5027 1 
 		}
-		victory_points = {
-			10835 1 
+		victory_points = {			## Buraydah
+			4968 1
 		}
 		add_core_of = SAU
 

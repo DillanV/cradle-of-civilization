@@ -1,5 +1,5 @@
-﻿name="(Cradle Of Civilization)"
-path="mod/cradleofcivilization/"
+﻿name="Cradle Of Civilization"
+path="mod/cradle-of-civilization/"
 tags={
 	"Historical"
 	"National Focuses"

@@ -700,6 +700,7 @@ focus_tree = {
         cost = 5
         available_if_capitulated = no
         bypass = {
+			
         }
         completion_reward = {
 			custom_effect_tooltip = SAU_launch_the_coup_tt
@@ -731,6 +732,13 @@ focus_tree = {
 							797 799 679
 						}
 					}
+					random_other_country = {
+						limit = {
+							original_tag = SAU
+							has_government = neutrality
+						}
+						set_capital = 679
+					}
 				}
 				else = {
 					start_civil_war = {
@@ -745,13 +753,20 @@ focus_tree = {
 							797 799 679 838 798 800
 						}
 					}
+					random_other_country = {
+							limit = {
+								original_tag = SAU
+								has_government = neutrality
+							}
+							set_capital = 679
+						}
 				}
 				
 				remove_unit_leader = 10000 ## Abdulaziz					## Kill Abdulaziz
 				
 				if = {					## If you have not spoken with Saud, remove him
 					limit = {
-						NOT = { has_decision = SAU_speak_with_saud }
+						NOT = { has_country_flag = has_saud_support }
 					}
 					remove_unit_leader = 10001 ## Saud
 					random_other_country = {
@@ -840,7 +855,7 @@ focus_tree = {
 				}
 				remove_unit_leader = 10002 ## Beginning Faisal					## Make Faisal level up and become a field marshall
 				create_field_marshal = {
-					name = "Faisal bin Abdulaziz Al Saud" ## New faisal!!
+					name = "Faisal bin Abdulaziz Al Saud" 		## New faisal!!
 					picture = "Portrait_Faisal_Aziz.dds"
 					id = 10004 ## New Faisal
 					traits = { trickster } ## Gottem

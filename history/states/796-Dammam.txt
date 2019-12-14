@@ -13,8 +13,11 @@ state={
 			}
 
 		}
-		victory_points = {
+		victory_points = {			## Dammam
 			12702 3 
+		}
+		victory_points = {			## Hufuf
+			5024 1
 		}
 		add_core_of = SAU
 
