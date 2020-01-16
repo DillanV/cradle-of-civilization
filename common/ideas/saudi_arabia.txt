@@ -164,7 +164,72 @@ ideas = {
 				always = yes
 			}
             modifier = {
+				stability_factor = -0.05
+            }
+        }
+		
+		SAU_ikhwan_unrest_2 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
 				stability_factor = -0.10
+            }
+        }
+		
+		SAU_ikhwan_unrest_3 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.15
+            }
+        }
+		
+		SAU_ikhwan_unrest_4 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.20
+            }
+        }
+		
+		SAU_ikhwan_unrest_5 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.25
+            }
+        }
+		
+		SAU_ikhwan_unrest_6 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.30
             }
         }
 

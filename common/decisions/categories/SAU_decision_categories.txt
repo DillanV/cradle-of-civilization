@@ -16,6 +16,10 @@ SAU_faisal_coup_preparation_decisions = {
 	}
 }
 
+###########################
+##### BEDOUIN LEVIES ######
+###########################
+
 SAU_bedouin_levies_decisions = {
 
 	icon = GFX_decision_category_piety

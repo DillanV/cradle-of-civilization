@@ -50,3 +50,5 @@
  SAU_raise_bedouin_levies:0 "Raise the Bedouin Levies"
  SAU_lower_bedouin_levies:0 "Lower the Bedouin Levies"
  SAU_bedouin_levies_decisions:0 "Bedouin Levies"
+ SAU_keep_the_levies_happy:0 "Keep the Ikhwan Levies Happy"
+ SAU_keep_the_levies_happy_desc:0 "To ensure the loyalty of the Ikhwan, we must allow them controll over part of our society. As fanatics of traditionalist Islam, they will never turn down a conservative change."

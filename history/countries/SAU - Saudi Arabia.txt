@@ -20,7 +20,6 @@ add_ideas = {
 	SAU_large_rural_population_1
 	SAU_ulama
 	SAU_hajj_based_economy_1
-	SAU_ikhwan_unrest
 	limited_conscription
 	closed_economy
 	civilian_economy
