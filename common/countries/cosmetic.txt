@@ -1,9 +1,4 @@
 
-OMA_empire = {
-	color = rgb { 140 30 60 }
-	color_ui = rgb { 140 30 60 }
-}
-
 UAE_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

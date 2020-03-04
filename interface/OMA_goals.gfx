@@ -83,20 +83,4 @@ spriteTypes = {
 		name = "GFX_OMA_western_blueprints"
 		texturefile = "gfx/interface/goals/OMA_western_blueprints.dds"
 	}
-	SpriteType = {
-		name = "GFX_generic_annex_uae"
-		texturefile = "gfx/interface/goals/generic_annex_uae.dds"
-	}
-	SpriteType = {
-		name = "GFX_OMA_reclaim_trucial_oman"
-		texturefile = "gfx/interface/goals/OMA_reclaim_trucial_oman.dds"
-	}
-	SpriteType = {
-		name = "GFX_OMA_even_field"
-		texturefile = "gfx/interface/goals/OMA_even_field.dds"
-	}
-	SpriteType = {
-		name = "GFX_OMA_indian_consolate"
-		texturefile = "gfx/interface/goals/OMA_indian_consolate.dds"
-	}
 }

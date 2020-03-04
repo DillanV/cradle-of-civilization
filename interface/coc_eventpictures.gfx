@@ -34,10 +34,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/GFX_report_event_sword_of_islam_2.dds"
 	}
 	spriteType = {
-		name = "GFX_report_event_ibn_majid"
-		texturefile = "gfx/event_pictures/GFX_report_event_ibn_majid.dds"
-	}
-	spriteType = {
 		name = "GFX_abbased_texticon"
 		texturefile = "gfx/texticons/abbased_texticon.dds"
 		legacy_lazy_load = no

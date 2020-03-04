@@ -5,84 +5,50 @@ ideas = {
 	political_advisor = {
 
 		YEM_ahmad_muhammad_numan = {
+
 			allowed = {
 				original_tag = YEM
 			}
+			
 			traits = { democratic_reformer }
 		}
 
-		YEM_pietro_badoglio = {
-			allowed = {
-				original_tag = YEM
-			}
-			traits = { fascist_demagogue }
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-		}
-
-		YEM_abdullah_as_sallal = {
-			allowed = {
-				original_tag = YEM
-			}
-			traits = { communist_revolutionary }
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-				NOT = {
-					has_completed_focus = YEM_riseofdemocracy
-				}
-			}
-		}
-
 		YEM_ali_nasser_al_qardaei = {
+
 			allowed = {
 				original_tag = YEM
 			}
+			
 			traits = { popular_figurehead }
 		}
 
-		YEM_ahmad_bin_yahya = {
+		YEM_hassan_ibn_yahya = {
+				
 			allowed = {
 				original_tag = YEM
 			}
+			
 			traits = { silent_workhorse }
-			available = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = democratic
-						has_completed_focus = YEM_alwaziri_coup
-					}
-				}
-			}
 		}
 
-		YEM_hassan_bin_yahya = {
+		YEM_fuad_ibn_falil = {
+
+			picture = generic_political_advisor_arab_1
+				
 			allowed = {
 				original_tag = YEM
 			}
+			
 			traits = { quartermaster_general }
-			available = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = democratic
-						has_completed_focus = YEM_alwaziri_coup
-					}
-				}
-			}
 		}
+
 	}
 
 	army_chief = {
 
-		YEM_abdullah_as_sallal_military = {
+		YEM_ahmad_al_hamid = {
+
+			picture = generic_army_arab_2
 			
 			allowed = {
 				original_tag = YEM
@@ -95,7 +61,9 @@ ideas = {
 			}
 		}
 
-		YEM_ahmad_bin_yahya_military = {
+		YEM_ahmad_bin_yaha = {
+
+			picture = generic_army_arab_3
 			
 			allowed = {
 				original_tag = YEM

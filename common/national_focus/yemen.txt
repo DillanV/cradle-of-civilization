@@ -942,10 +942,6 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = YEM_greateryemenproject }
-		prerequisite = { 
-			focus = YEM_unwaveringbastion
-			focus = YEM_italianbasingrights
-		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -2139,7 +2135,7 @@ focus_tree = {
 		icon = GFX_generic_tribal_army
 		x = 53
 		y = 2
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_thenewarmy }
 		mutually_exclusive = { focus = YEM_city_military }
@@ -2147,12 +2143,8 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			add_tech_bonus= {
-				bonus = 1
-				uses = 1
-				category = cat_mass_assault
-			}
 		}
+
 	}
 
 	#Focus for Standardized Training
@@ -2263,7 +2255,7 @@ focus_tree = {
 		icon = GFX_YEM_city_military
 		x = 49
 		y = 2
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_thenewarmy }
 		mutually_exclusive = { focus = YEM_tribal_army }
@@ -2271,11 +2263,6 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			add_tech_bonus= {
-				bonus = 1
-				uses = 1
-				category = cat_grand_battle_plan
-			}
 		}
 
 	}
