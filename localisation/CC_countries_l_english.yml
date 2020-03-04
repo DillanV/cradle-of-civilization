@@ -119,3 +119,6 @@
  OMA_neutrality:0 "Muscat-Oman"
  OMA_neutrality_DEF:0 "the Sultanate of Muscat and Oman"
  OMA_neutrality_ADJ:0 "Omani"
+ OMA_empire_neutrality:0 "Omani Empire"
+ OMA_empire_neutrality_DEF:0 "the Omani Empire"
+ OMA_empire_neutrality_ADJ:0 "Omani"

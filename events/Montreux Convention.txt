@@ -282,7 +282,7 @@ country_event = {
 		341 = {
 			set_demilitarized_zone = no
 		}
-		841 = {
+		850 = {
 			set_demilitarized_zone = no
 		}
 		if = {
@@ -341,7 +341,7 @@ country_event = {
 		341 = {
 			set_demilitarized_zone = no
 		}
-		841 = {
+		850 = {
 			set_demilitarized_zone = no
 		}
 		if = {

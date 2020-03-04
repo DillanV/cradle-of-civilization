@@ -21,7 +21,7 @@ country_event = {
 	option = { ## Give concession rights to Germany and Japan
 		name = saudi.1.a
 		SAU = {
-			give_resource_rights = { receiver = GER state = 798 }
+			give_resource_rights = { receiver = GER state = 807 }
 			give_resource_rights = { receiver = JAP state = 292 }
 		}
 		GER = {
@@ -42,7 +42,7 @@ country_event = {
 	option = { # Give concession rights to Texas Company and Socal (USA)
 		name = saudi.1.b
 		SAU = {
-			give_resource_rights = { receiver = USA state = 798 }
+			give_resource_rights = { receiver = USA state = 807 }
 			give_resource_rights = { receiver = USA state = 292 }
 		}
 		USA = {
