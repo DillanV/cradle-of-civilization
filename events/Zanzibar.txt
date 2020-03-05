@@ -1,0 +1,176 @@
+﻿###########################
+##### Zanzibar Events #####
+###########################
+
+add_namespace = zanzibar
+
+country_event = {
+	id = zanzibar.1
+	title = zanzibar.1.t
+	desc = zanzibar.1.d
+	picture = GFX_report_event_african_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		# Revolt
+		name = zanzibar.1.a
+		custom_effect_tooltip = OMA_zanzibar_revolt_tt
+		ZAN = {
+			transfer_state = 833
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+			    democratic = 0
+			    fascism = 0
+			    communism = 0
+			    neutrality = 100
+			}
+			load_oob = "ZAN_militia"
+			set_global_flag = zanzibar_revolt
+		}
+		hidden_effect = {
+			set_variable = {
+			    var = zanzibar_revolt_days
+			    value = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = zanzibar.1001
+	title = zanzibar.1001.t
+	desc = zanzibar.1001.d
+	picture = GFX_report_event_south_africa_patrol
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = ENG
+		ENG = {
+			has_war_with = ZAN
+			check_variable = { zanzibar_revolt_days > 180 }
+		}
+	}
+
+	option = {
+		# Accept
+		name = zanzibar.1001.a
+		ai_chance = {
+			factor = 100
+		}
+		ZAN = {
+			country_event = {
+				id = zanzibar.2001
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		# Decline
+		name = zanzibar.1001.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = zanzibar.2001
+	title = zanzibar.2001.t
+	desc = zanzibar.2001.d
+	picture = GFX_report_event_south_africa_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		# Accept
+		name = zanzibar.2001.a
+		every_country = {
+			limit = {
+				has_war_with = ZAN
+			}
+			white_peace = ZAN
+		}
+		if = {
+			limit = {
+				ZAN = {
+					controls_state = 834
+				}
+			}
+			transfer_state = 834
+		}
+	}
+}
+
+#Oman wants to unify
+country_event = {
+	id = zanzibar.2
+	title = zanzibar.2.t
+	desc = zanzibar.2.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+
+	option = {
+		# Revolt
+		name = zanzibar.2.a
+		ai_chance = {
+			factor = 80
+		}
+		OMA = {
+			country_event = {
+				id = oman.102
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		# Revolt
+		name = zanzibar.2.b
+		ai_chance = {
+			factor = 20
+		}
+		OMA = {
+			country_event = {
+				id = oman.202
+				days = 1
+			}
+		}
+	}
+}
+
+#Successful unification
+country_event = {
+	id = zanzibar.102
+	title = zanzibar.102.t
+	desc = zanzibar.102.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+
+	option = {
+		# Revolt
+		name = zanzibar.102.a
+		OMA = {
+			annex_country = {
+			    target = ZAN
+			    transfer_troops = yes
+			}
+			833 = {
+				add_core_of = OMA
+			}
+			834 = {
+				add_core_of = OMA
+			}
+		}
+	}
+}
