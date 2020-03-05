@@ -1,5 +1,5 @@
 state={
-	id=844
+	id=853
 	name="STATE_844"
 	history = {
 		owner = AFG
@@ -9,7 +9,7 @@ state={
 		}
 	}
 	provinces={
-		7448 7584 7984 12877 13271 
+		7448 7584 7984 12877 13287 
 	}
 	manpower=937000
 	state_category=pastoral

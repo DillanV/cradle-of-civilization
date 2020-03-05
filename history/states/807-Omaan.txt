@@ -1,6 +1,6 @@
 
 state={
-	id=807
+	id=816
 	name="STATE_807"
 
 	history={
@@ -11,14 +11,14 @@ state={
 
 		}
 		victory_points = {
-			13242 1 
+			13258 1 
 		}
 		add_core_of = OMA
 
 	}
 
 	provinces={
-		2018 5049 13229 13241 13242 
+		2018 5049 13245 13257 13258 
 	}
 	manpower=83000
 	buildings_max_level_factor=1.000

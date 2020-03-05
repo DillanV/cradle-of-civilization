@@ -1,5 +1,5 @@
 state={
-	id=800
+	id=809
 	name="STATE_800"
 	history = {
 		owner = SAU
@@ -11,7 +11,7 @@ state={
 		set_demilitarized_zone = yes
 	}
 	provinces={
-		13222 
+		13238 
 	}
 	manpower=610
 	state_category=wasteland

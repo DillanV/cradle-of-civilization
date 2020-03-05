@@ -754,10 +754,10 @@ focus_tree = {
 				idea = OMA_sent_aid
 				days = 120
 			}
-			807 = {
+			816 = {
 				one_random_infrastructure = yes
 			}
-			808 = {
+			817 = {
 				one_random_infrastructure = yes
 			}
 		}
@@ -884,12 +884,12 @@ focus_tree = {
 			add_resource= {
 				type = oil
 				amount = 4
-				state = 807
+				state = 816
 			}
 			add_resource= {
 				type = oil
 				amount = 2
-				state = 808
+				state = 817
 			}
 		}
 

@@ -1,5 +1,5 @@
 state={
-	id=841
+	id=850
 	name="STATE_841"
 
 	history={
@@ -8,14 +8,14 @@ state={
 			infrastructure = 3
 		}
 		victory_points = {
-			13262 1 
+			13278 1 
 		}
 		add_core_of = TUR
 		set_demilitarized_zone = yes
 	}
 
 	provinces={
-		849 13262
+		849 13278
 	}
 	manpower=310000
 	state_category = rural

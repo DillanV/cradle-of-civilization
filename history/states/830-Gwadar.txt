@@ -1,5 +1,5 @@
 state={
-	id=830
+	id=839
 	name="STATE_830"
 	history = {
 		owner = OMA
@@ -8,13 +8,13 @@ state={
 		add_claim_by = BAL
 		buildings = {
 			infrastructure = 1
-			13254 = {
+			13270 = {
 				naval_base = 1
 			}
 		}
 	}
 	provinces={
-		13254 
+		13270 
 	}
 	manpower=9870
 	state_category=wasteland

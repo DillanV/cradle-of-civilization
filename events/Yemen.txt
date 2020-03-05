@@ -104,15 +104,14 @@ country_event = {
 		}
 		subtract_20_islam = yes
 		hidden_effect = {
-			set_capital = 805
+			set_capital = 814
 			start_civil_war = {
 				ruling_party = democratic
 				ideology = neutrality
 				size = 0.5
-				only_own_territory = yes
 				capital = 293
 				states = { 
-					293 806
+					293 815
 				}	
 			    keep_unit_leaders = {
 			    	8003
@@ -353,18 +352,18 @@ country_event = {
 		if = {
 			limit = {
 				any_country = {
-					has_full_control_of_state = 803
+					has_full_control_of_state = 812
 				}
 			}
-			transfer_state = 803
+			transfer_state = 812
 		}
 		if = {
 			limit = {
 				any_country = {
-					has_full_control_of_state = 804
+					has_full_control_of_state = 813
 				}
 			}
-			transfer_state = 804
+			transfer_state = 813
 		}
 	}
 }
@@ -574,7 +573,7 @@ country_event = {
 
 	option = {
 		name = yemen.108.a
-		transfer_state = 789
+		transfer_state = 798
 	}
 }
 

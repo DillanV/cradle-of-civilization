@@ -14,10 +14,10 @@ neutral_zone_management = {
 	}
 
 	visible = {
-		800 = {
+		809 = {
 			is_demilitarized_zone = yes
 		}
-		801 = {
+		810 = {
 			is_demilitarized_zone = yes
 		}
 	}

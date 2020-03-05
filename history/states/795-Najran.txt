@@ -1,5 +1,5 @@
 state={
-	id=795
+	id=804
 	name="STATE_795"
 	history = {
 		owner = SAU
@@ -9,7 +9,7 @@ state={
 		}
 	}
 	provinces={
-		8030 13220 
+		8030 13236 
 	}
 	manpower=12700
 	state_category=wasteland

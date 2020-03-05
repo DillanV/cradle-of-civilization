@@ -4,10 +4,10 @@ neutral_zone_management = {
 breaktheprotocol = {
 	icon = decision_generic_break_treaty
 	visible = {
-		800 = {
+		809 = {
 			is_demilitarized_zone = yes
 		}
-		801 = {
+		810 = {
 			is_demilitarized_zone = yes
 		}
 	}
@@ -19,7 +19,7 @@ breaktheprotocol = {
 				}
 			}
 			SAU = {
-				800 = {
+				809 = {
 					set_demilitarized_zone = no
 				}
 			}
@@ -37,7 +37,7 @@ breaktheprotocol = {
 				}
 			}
 			IRQ = {
-				801 = {
+				810 = {
 					set_demilitarized_zone = no
 				}
 			}
@@ -59,7 +59,7 @@ breaktheprotocol = {
 					}
 				}
 			}
-			801 = {
+			810 = {
 				set_demilitarized_zone = no
 			}
 			SAU = {

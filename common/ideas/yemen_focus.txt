@@ -179,9 +179,9 @@ ideas = {
 			picture = generic_islamic_tolerance
 
 			modifier = {
-				non_core_manpower = 0.08
-				enemy_partisan_effect = -0.25
-				drift_defence_factor = 0.2
+				non_core_manpower = 0.05
+				stability_factor = -0.05
+				drift_defence_factor = 0.33
 			}
 		}
 		YEM_state_shiite = {
@@ -200,10 +200,9 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.05
 				non_core_manpower = -0.02
 				drift_defence_factor = -0.2
-				enemy_partisan_effect = 0.33
 			}
 		}
 		YEM_rise_democracy = {
@@ -771,7 +770,7 @@ ideas = {
 			picture = generic_spy_intel
 
 			modifier = {
-				enemy_partisan_effect = -0.33
+				intel_network_gain = 0.15
 				decryption_factor = 0.25 
 			}
 		}

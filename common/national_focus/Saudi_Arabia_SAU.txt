@@ -198,7 +198,7 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			796 = {
+			805 = {
 				add_resource = {
 					type = oil
 					amount = 12
@@ -210,7 +210,7 @@ focus_tree = {
 					amount = 6
 				}
 			}
-			798 = {
+			807 = {
 				add_resource = {
 					type = oil
 					amount = 6
@@ -254,7 +254,7 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			796 = {
+			805 = {
 				add_resource = {
 					type = oil
 					amount = 48
@@ -266,7 +266,7 @@ focus_tree = {
 					amount = 24
 				}
 			}
-			798 = {
+			807 = {
 				add_resource = {
 					type = oil
 					amount = 24
@@ -293,7 +293,7 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			796 = {
+			805 = {
 				add_resource = {
 					type = oil
 					amount = 48
@@ -305,7 +305,7 @@ focus_tree = {
 					amount = 24
 				}
 			}
-			798 = {
+			807 = {
 				add_resource = {
 					type = oil
 					amount = 24
@@ -349,7 +349,7 @@ focus_tree = {
         available = {
 		}
         completion_reward = {
-			796 = {
+			805 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
@@ -723,13 +723,12 @@ focus_tree = {
 					start_civil_war = {
 						ideology = neutrality
 						size = 0
-						only_own_territory = yes
 						capital = 679
 						keep_unit_leaders = {							
 							10002 10003
 						}
 						states = {
-							797 799 679
+							806 808 679
 						}
 					}
 					random_other_country = {
@@ -744,13 +743,12 @@ focus_tree = {
 					start_civil_war = {
 						ideology = neutrality
 						size = 0
-						only_own_territory = yes
 						capital = 679
 						keep_unit_leaders = {							
 							10002 10003
 						}
 						states = {
-							797 799 679 838 798 800
+							806 808 679 847 807 809
 						}
 					}
 					random_other_country = {

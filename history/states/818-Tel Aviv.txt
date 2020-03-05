@@ -1,6 +1,6 @@
 
 state={
-	id=818
+	id=827
 	name="STATE_818"
 
 	history={
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1065 1201 4088 4206 13273 13274 
+		1065 1201 4088 4206 13289 13290 
 	}
 	manpower=418000
 	buildings_max_level_factor=1.000

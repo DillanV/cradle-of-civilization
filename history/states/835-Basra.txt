@@ -1,5 +1,5 @@
 state={
-	id=835
+	id=844
 	name="STATE_835"
 	history={
 		owner = IRQ
@@ -18,7 +18,7 @@ state={
 		}
 	}
 	provinces={
-		2089 13256 13257 
+		2089 13272 13273 
 	}
 	manpower=293100
 	state_category=town

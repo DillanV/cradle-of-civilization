@@ -1,6 +1,6 @@
 
 state={
-	id=819
+	id=828
 	name="STATE_819"
 
 	history={
@@ -13,13 +13,13 @@ state={
 		add_core_of = PAL
 		add_core_of = ISR
 		victory_points = {
-			13239 1 
+			13255 1 
 		}
 
 	}
 
 	provinces={
-		13239 13272 
+		13255 13288 
 	}
 	manpower=43000
 	buildings_max_level_factor=1.000

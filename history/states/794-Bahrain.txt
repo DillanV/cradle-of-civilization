@@ -1,5 +1,5 @@
 state={
-	id=794
+	id=803
 	name="STATE_794"
 	resources={
 		oil=6 # was: 3
@@ -9,17 +9,17 @@ state={
 		owner = BRI
 		add_claim_by = PER
 		victory_points = {
-			13218 1
+			13234 1
 		}
 		buildings = {
 			infrastructure = 2
-			13218 = {
+			13234 = {
 				naval_base = 3
 			}
 		}
 	}
 	provinces={
-		13218 
+		13234 
 	}
 	manpower=95610
 	state_category=rural

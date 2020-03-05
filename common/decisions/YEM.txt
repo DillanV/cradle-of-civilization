@@ -75,7 +75,7 @@ yemen_oil_prospect = {
 			add_resource = {
 			    type = oil
 			    amount = 2
-			    state = 805
+			    state = 814
 			}
 			hidden_effect = {
 				add_to_variable = {
@@ -91,7 +91,7 @@ yemen_oil_prospect = {
 
 		visible = {
 			#has_country_flag = YEM_exploit_oil
-			has_full_control_of_state = 806
+			has_full_control_of_state = 815
 			tag = YEM
 
 		}
@@ -118,7 +118,7 @@ yemen_oil_prospect = {
 			add_resource = {
 			    type = oil
 			    amount = 2
-			    state = 806
+			    state = 815
 			}
 			hidden_effect = {
 				add_to_variable = {
@@ -134,7 +134,7 @@ yemen_oil_prospect = {
 
 		visible = {
 			#has_country_flag = YEM_exploit_oil
-			has_full_control_of_state = 803
+			has_full_control_of_state = 812
 			tag = YEM
 
 		}
@@ -161,7 +161,7 @@ yemen_oil_prospect = {
 			add_resource = {
 			    type = oil
 			    amount = 2
-			    state = 803
+			    state = 812
 			}
 			hidden_effect = {
 				add_to_variable = {

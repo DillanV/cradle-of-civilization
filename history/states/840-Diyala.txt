@@ -1,5 +1,5 @@
 state={
-	id=840
+	id=849
 	name="STATE_840"
 	history = {
 		owner = IRQ
@@ -9,7 +9,7 @@ state={
 		}
 	}
 	provinces={
-		10793 13258
+		10793 13274
 	}
 	manpower=219900
 	state_category=pastoral

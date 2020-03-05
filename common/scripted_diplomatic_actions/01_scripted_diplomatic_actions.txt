@@ -108,8 +108,8 @@ scripted_diplomatic_actions = {
 	YEM_saudi_peace = {
 		allowed = { #if action is valid
 			YEM = {
-				has_full_control_of_state = 797
-				has_full_control_of_state = 799
+				has_full_control_of_state = 806
+				has_full_control_of_state = 808
 			}
 		}
 		visible = { #if action is visible on gui
@@ -140,8 +140,8 @@ scripted_diplomatic_actions = {
 		# runs when the action is properly sent and accepted
 		complete_effect = {
 			YEM = {
-				transfer_state = 797
-				transfer_state = 795
+				transfer_state = 806
+				transfer_state = 804
 				white_peace = SAU
 			}
 			SAU = {

@@ -1,5 +1,5 @@
 state={
-	id=845
+	id=854
 	name="STATE_845"
 	history = {
 		owner = AFG
@@ -9,7 +9,7 @@ state={
 		}
 	}
 	provinces={
-		7519 10781 10852 12248 12314 12653 13270 
+		7519 10781 10852 12248 12314 12653 13286 
 	}
 	manpower=995000
 	state_category=wasteland

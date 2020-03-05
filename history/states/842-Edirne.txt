@@ -1,5 +1,5 @@
 state={
-	id=842
+	id=851
 	name="STATE_842"
 
 	history={
@@ -16,7 +16,7 @@ state={
 	}
 
 	provinces={
-		922 3879 3893 6895 11842 13261 13263 
+		922 3879 3893 6895 11842 13277 13279 
 	}
 	manpower=654000
 	state_category=town

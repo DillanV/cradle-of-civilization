@@ -1,6 +1,6 @@
 
 state={
-	id=805
+	id=814
 	name="STATE_805"
 
 	history={
@@ -11,14 +11,14 @@ state={
 
 		}
 		victory_points = {
-			13248 3 
+			13264 3 
 		}
 		add_core_of = YEM
 
 	}
 
 	provinces={
-		1973 10752 13248 13266 
+		1973 10752 13264 13282 
 	}
 	manpower=457000
 	buildings_max_level_factor=1.000

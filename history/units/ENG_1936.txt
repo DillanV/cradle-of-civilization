@@ -507,14 +507,14 @@ air_wings = {
 			amount = 64
 		}
 	}
-	819 = { 
+	828 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 32
 		}
 	}
-	804 = { 
+	813 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
 			owner = "ENG" 

@@ -1,5 +1,5 @@
 state={
-	id=810
+	id=819
 	name="STATE_810"
 	history={
 		add_core_of = OMA
@@ -10,7 +10,7 @@ state={
 		}
 	}
 	provinces={
-		13219 
+		13235 
 	}
 	manpower=10700
 	state_category=enclave

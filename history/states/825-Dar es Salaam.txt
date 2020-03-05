@@ -1,6 +1,6 @@
 
 state={
-	id=825
+	id=834
 	name="STATE_825"
 	history={
 		owner = ENG
@@ -21,7 +21,7 @@ state={
 
 	}
 	provinces={
-		2196 8182 8183 12944 13244 
+		2196 8182 8183 12944 13260 
 	}
 	manpower=1927000
 	state_category=rural

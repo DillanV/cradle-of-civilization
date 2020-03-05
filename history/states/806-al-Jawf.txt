@@ -1,5 +1,5 @@
 state={
-	id=806
+	id=815
 	name="STATE_806"
 	history={
 		owner = YEM
@@ -8,12 +8,12 @@ state={
 		}
 		add_core_of = YEM
 		victory_points = {
-			13247 1 
+			13263 1 
 		}
 
 	}
 	provinces={
-		4924 13233 13247
+		4924 13249 13263
 	}
 	manpower=289000
 	state_category=pastoral

@@ -272,7 +272,7 @@ SAU_bedouin_levies_decisions = {
 
 		icon = GFX_decision_generic_piety ## Placeholder
 
-		allowed = { has_country_flag = bedouin_levies_raised }
+		allowed = {  }
 
 		available = {
 			original_tag = SAU

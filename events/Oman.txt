@@ -73,10 +73,9 @@ country_event = {
 				ruling_party = neutrality
 				ideology = neutrality
 				size = 0
-				only_own_territory = yes
 				capital = 293
 				states = {
-					807 789 846
+					816 798 855
 				}
 			    keep_unit_leaders = {
 			    	9001
