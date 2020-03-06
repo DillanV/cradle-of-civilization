@@ -157,3 +157,1284 @@ country_event = {
 		}
 	}
 }
+
+### Civil war ended in victory; Sultan path
+country_event = {
+	id = oman.102
+	title = oman.102.t
+	desc = oman.102.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.102.a 
+		ai_chance = { 
+			factor = 50 
+		} 
+		add_ideas = OMA_resistance_oman
+		add_political_power = 150
+		set_country_flag = OMA_civil_war_ended
+	} 
+}
+
+### Meeting with the Imam
+country_event = {
+	id = oman.3
+	title = oman.3.t
+	desc = oman.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.3.a 
+		ai_chance = { 
+			factor = 50 
+		} 
+		add_stability = -0.1 
+		add_political_power = -150
+		hidden_effect = {
+			random_list = {
+			    50 = {
+			        country_event = {
+			        	id = oman.103
+			        	days = 7
+			        }
+			    }
+			    25 = {
+			        country_event = {
+			        	id = oman.203
+			        	days = 7
+			        }
+			    }
+			    15 = {
+			        country_event = {
+			        	id = oman.303
+			        	days = 7
+			        }
+			    }
+			    10 = {
+			        country_event = {
+			        	id = oman.403
+			        	days = 7
+			        }
+			    }
+			}
+		}
+	} 
+ 
+	option = {
+		name = oman.3.b 
+		ai_chance = { 
+			factor = 50 
+		} 
+		add_stability = -0.03
+		add_political_power = -50
+		hidden_effect = {
+			random_list = {
+			    25 = {
+			        country_event = {
+			        	id = oman.103
+			        	days = 7
+			        }
+			    }
+			    25 = {
+			        country_event = {
+			        	id = oman.203
+			        	days = 7
+			        }
+			    }
+			    25 = {
+			        country_event = {
+			        	id = oman.303
+			        	days = 7
+			        }
+			    }
+			    25 = {
+			        country_event = {
+			        	id = oman.403
+			        	days = 7
+			        }
+			    }
+			}
+		}
+	}
+}
+
+### Excellent meeting!
+country_event = {
+	id = oman.103
+	title = oman.103.t
+	desc = oman.103.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.103.a
+		add_stability = 0.1
+		add_political_power = 150
+		set_country_flag = OMA_excellent_meeting
+	}
+}
+
+### Successful meeting
+country_event = {
+	id = oman.203
+	title = oman.203.t
+	desc = oman.203.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.203.a
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = OMA_successful_meeting
+	}
+}
+
+### Okay meeting
+country_event = {
+	id = oman.303
+	title = oman.303.t
+	desc = oman.303.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.303.a
+		set_country_flag = OMA_okay_meeting
+	}
+}
+
+### Terrible meeting!
+country_event = {
+	id = oman.403
+	title = oman.403.t
+	desc = oman.403.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.403.a
+		set_country_flag = OMA_terrible_meeting
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
+
+### Congress of Nizwa
+country_event = {
+	id = oman.4
+	title = oman.4.t
+	desc = oman.4.d
+	picture = GFX_report_event_german_politician_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.4.a
+		custom_effect_tooltip = OMA_congress_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = OMA_excellent_meeting
+				}
+				random_list = {
+					90 = {
+						country_event = {
+							id = oman.104
+							days = 6
+						}
+					}
+					10 = {
+						country_event = {
+							id = oman.204
+							days = 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = OMA_excellent_meeting
+				}
+				random_list = {
+					90 = {
+						country_event = {
+							id = oman.104
+							days = 6
+						}
+					}
+					10 = {
+						country_event = {
+							id = oman.204
+							days = 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = OMA_okay_meeting
+				}
+				random_list = {
+					67 = {
+						country_event = {
+							id = oman.104
+							days = 6
+						}
+					}
+					33 = {
+						country_event = {
+							id = oman.204
+							days = 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = OMA_terrible_meeting
+				}
+				random_list = {
+					35 = {
+						country_event = {
+							id = oman.104
+							days = 6
+						}
+					}
+					65 = {
+						country_event = {
+							id = oman.204
+							days = 6
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### Congress of Nizwa
+country_event = {
+	id = oman.104
+	title = oman.104.t
+	desc = oman.104.d
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.104.a
+		custom_effect_tooltip = OMA_congress_success_tt
+		remove_ideas = OMA_imam_rivalry
+		add_ideas = OMA_resistance_general
+		set_country_flag = OMA_civil_war_ended
+	}
+}
+
+### Congress struggling
+country_event = {
+	id = oman.204
+	title = oman.204.t
+	desc = oman.204.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.204.a
+
+		ai_chance = {
+			factor = 66
+		}
+		add_stability = -0.15
+		add_war_support = -0.2
+		random_list = {
+			40 = {
+				country_event = {
+					id = oman.104
+					days = 6
+				}
+			}
+			60 = {
+				country_event = {
+					id = oman.304
+					days = 6
+				}
+			}
+		}
+	}
+
+	option = {
+		name = oman.204.b
+
+		ai_chance = {
+			factor = 34
+		}
+		random_list = {
+			20 = {
+				country_event = {
+					id = oman.104
+					days = 6
+				}
+			}
+			80 = {
+				country_event = {
+					id = oman.304
+					days = 6
+				}
+			}
+		}
+	}
+}
+
+### Congress failed - civil war!
+country_event = {
+	id = oman.304
+	title = oman.304.t
+	desc = oman.304.d
+	picture = GFX_report_event_mex_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.304.a
+		ai_chance = {
+			factor = 50
+		}
+		custom_effect_tooltip = OMA_civil_war_tt
+		subtract_5_islam = yes
+		hidden_effect = {
+
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			add_stability = -0.1
+			add_war_support = -0.1
+			set_country_flag = OMA_sultan_backed
+
+			start_civil_war = {
+				ideology = neutrality
+				size = 0
+				capital = 293
+				states = {
+					816 798 855
+				}
+			    keep_unit_leaders = {
+			    	9001
+			    }
+			}
+
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Said bin Taimur"
+				desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+				picture = "GFX_portrait_oman_said_bin_taimur"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					#
+				}
+			}
+
+			load_oob = "OMA_civil_war_sultan"
+
+			random_country = {
+				limit = {
+					original_tag = OMA
+					NOT = {
+						has_country_flag = OMA_sultan_backed
+					}
+				}
+				load_oob = "OMA_civil_war_imam"
+				add_offsite_building = { type = arms_factory level = 1 }
+				create_country_leader = {
+					name = "Ghalib Alhinai"
+					desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+					picture = "OMA_Ghalib_Alhinai.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_weakened_imam
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_sultan_backed
+						}
+					}
+					add_ideas = OMA_imam_weakened
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_severe_weakened_imam
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_sultan_backed
+						}
+					}
+					add_ideas = OMA_imam_severely_weakened
+				}
+			}
+		}
+	}
+
+	option = {
+		name = oman.304.b
+		ai_chance = {
+			factor = 50
+		}
+		custom_effect_tooltip = OMA_civil_war_tt
+		add_10_islam = yes
+		hidden_effect = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			add_stability = -0.1
+			add_war_support = -0.1
+			set_country_flag = OMA_imam_backed
+
+			start_civil_war = {
+				ideology = neutrality
+				size = 1
+				capital = 293
+				states = {
+					294 819 839
+				}
+			}
+
+			create_country_leader = {
+				name = "Ghalib Alhinai"
+				desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+				picture = "OMA_Ghalib_Alhinai.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					#
+				}
+			}
+
+			create_corps_commander = {
+				name = "Ghalib Alhanai"
+				picture = "gfx/leaders/OMA/OMA_Ghalib_Alhinai.dds"
+				traits = {
+					desert_fox
+				}
+				id = 9002
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+
+			load_oob = "OMA_civil_war_imam_alt"
+
+			add_offsite_building = { type = arms_factory level = 1 }
+
+			random_country = {
+				limit = {
+					original_tag = OMA
+					NOT = {
+						has_country_flag = OMA_sultan_backed
+					}
+				}
+				load_oob = "OMA_civil_war_sultan_alt"
+				create_country_leader = {
+					name = "Said bin Taimur"
+					desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+					picture = "GFX_portrait_oman_said_bin_taimur"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_sultan_weakened
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_imam_backed
+						}
+					}
+					add_ideas = OMA_sultan_weakened
+				}
+			}
+		}
+	}
+}
+
+### Petitioning the Sultan
+country_event = {
+	id = oman.5
+	title = oman.5.t
+	desc = oman.5.d
+	picture = GFX_report_event_soviet_purge_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.5.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -150
+		random_list = {
+			75 = {
+				country_event = {
+					id = oman.105
+					days = 2
+				}
+			}
+			25 = {
+				country_event = {
+					id = oman.205
+					days = 2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = oman.5.b
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -50
+		random_list = {
+			50 = {
+				country_event = {
+					id = oman.105
+					days = 2
+				}
+			}
+			50 = {
+				country_event = {
+					id = oman.205
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+### Sultan accepts petition
+country_event = {
+	id = oman.105
+	title = oman.105.t
+	desc = oman.105.d
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.105.a
+		add_political_power = 100
+		set_country_flag = OMA_sultan_weakened
+	}
+}
+
+### Sultan declines petition
+country_event = {
+	id = oman.205
+	title = oman.205.t
+	desc = oman.205.d
+	picture = GFX_report_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.205.a
+		add_political_power = -65
+	}
+}
+
+### Overthrow the Muscat regime!
+country_event = {
+	id = oman.6
+	title = oman.6.t
+	desc = oman.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		# Civil War
+		name = oman.6.a
+		custom_effect_tooltip = OMA_civil_war_tt
+		add_10_islam = yes
+		hidden_effect = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			add_stability = -0.1
+			add_war_support = -0.1
+			set_country_flag = OMA_imam_backed
+
+			start_civil_war = {
+				ideology = neutrality
+				size = 1
+				capital = 293
+				states = {
+					294 819 839
+				}
+			}
+
+			create_country_leader = {
+				name = "Ghalib Alhinai"
+				desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+				picture = "OMA_Ghalib_Alhinai.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					#
+				}
+			}
+
+			create_corps_commander = {
+				name = "Ghalib Alhanai"
+				picture = "gfx/leaders/OMA/OMA_Ghalib_Alhinai.dds"
+				traits = {
+					desert_fox
+				}
+				id = 9002
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+
+			load_oob = "OMA_civil_war_imam_alt"
+
+			add_offsite_building = { type = arms_factory level = 1 }
+
+			random_country = {
+				limit = {
+					original_tag = OMA
+					NOT = {
+						has_country_flag = OMA_sultan_backed
+					}
+				}
+				load_oob = "OMA_civil_war_sultan_alt"
+				create_country_leader = {
+					name = "Said bin Taimur"
+					desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+					picture = "GFX_portrait_oman_said_bin_taimur"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = OMA_sultan_weakened
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = OMA
+						NOT = {
+							has_country_flag = OMA_imam_backed
+						}
+					}
+					add_ideas = OMA_sultan_weakened
+				}
+			}
+		}
+	}
+}
+
+### Civil war ended in victory; Imam path
+country_event = {
+	id = oman.106
+	title = oman.106.t
+	desc = oman.106.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.106.a 
+		ai_chance = { 
+			factor = 50 
+		} 
+		add_ideas = OMA_resistance_muscat
+		add_political_power = 150
+		set_country_flag = OMA_civil_war_ended
+	} 
+}
+
+### Demanding Emirati submission
+country_event = {
+	id = oman.7
+	title = oman.7.t
+	desc = oman.7.d
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.7.a
+		ai_chance = {
+			factor = 100
+		}
+		OMA = {
+			country_event = {
+				id = oman.107
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = oman.7.b
+		ai_chance = {
+			factor = 33
+		}
+		OMA = {
+			country_event = {
+				id = oman.207
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				UAE = {
+					is_subject_of = ENG
+				}
+			}
+			ENG = {
+				country_event = {
+					id = oman.1007
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+### Emiratis accept our submission
+country_event = {
+	id = oman.107
+	title = oman.107.t
+	desc = oman.107.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.107.a
+		annex_country = {
+		    target = UAE
+		    transfer_troops = yes
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = UAE
+				}
+				add_core_of = OMA
+			}
+		}
+	}
+}
+
+### Emiratis refuse
+country_event = {
+	id = oman.207
+	title = oman.207.t
+	desc = oman.207.d
+	picture = GFX_report_event_saf_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.207.a
+		ai_chance = {
+			factor = 100
+		}
+		declare_war_on = {
+		    target = UAE
+		    type = annex_everything
+		}
+	}
+
+	option = {
+		name = oman.207.b
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -200
+	}
+}
+
+### React to Oman's aggression
+country_event = {
+	id = oman.1007
+	title = oman.1007.t
+	desc = oman.1007.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.1007.a
+		ai_chance = {
+			factor = 100
+		}
+		UAE = {
+			country_event = {
+				id = oman.2007
+			}
+		}
+		end_puppet = UAE
+		add_political_power = 50
+	}
+
+	option = {
+		name = oman.1007.b
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -150
+		UAE = {
+			country_event = {
+				id = oman.3007
+			}
+		}
+	}
+}
+
+### No help comes to us
+country_event = {
+	id = oman.2007
+	title = oman.2007.t
+	desc = oman.2007.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.2007.a
+	}
+}
+
+### UK swears to defend us
+country_event = {
+	id = oman.3007
+	title = oman.3007.t
+	desc = oman.3007.d
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.3007.a
+		add_stability = 0.1
+		add_war_support = 0.2
+		add_political_power = 100
+	}
+}
+
+### Demanding Hadramaut
+country_event = {
+	id = oman.8
+	title = oman.8.t
+	desc = oman.8.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.8.a
+		ai_chance = {
+			factor = 100
+		}
+		OMA = {
+			country_event = {
+				id = oman.108
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = oman.8.b
+		ai_chance = {
+			factor = 20
+		}
+		OMA = {
+			country_event = {
+				id = oman.208
+				days = 1
+			}
+		}
+	}
+}
+
+### British transfer Hadramaut
+country_event = {
+	id = oman.108
+	title = oman.108.t
+	desc = oman.108.d
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.108.a
+		random_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = ENG
+						is_subject_of = ENG
+					}
+					owns_state = 659
+				}
+			}
+			transfer_state = 659
+		}
+		random_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = ENG
+						is_subject_of = ENG
+					}
+					owns_state = 799
+				}
+			}
+			transfer_state = 799
+		}
+		random_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = ENG
+						is_subject_of = ENG
+					}
+					owns_state = 812
+				}
+			}
+			transfer_state = 812
+		}
+		random_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = ENG
+						is_subject_of = ENG
+					}
+					owns_state = 813
+				}
+			}
+			transfer_state = 813
+		}
+		hidden_effect = {
+			659 = {
+				add_core_of = OMA
+			}
+			799 = {
+				add_core_of = OMA
+			}
+			812 = {
+				add_core_of = OMA
+			}
+			813 = {
+				add_core_of = OMA
+			}
+		}
+	}
+}
+
+### British decline proposition
+country_event = {
+	id = oman.208
+	title = oman.208.t
+	desc = oman.208.d
+	picture = GFX_report_event_saf_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.208.a
+		ai_chance = {
+			factor = 100
+		}
+		declare_war_on = {
+		    target = ENG
+		    type = annex_everything
+		}
+	}
+
+	option = {
+		name = oman.208.b
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -200
+	}
+}
+
+### Guns to Zanzibar revolters?
+country_event = {
+	id = oman.9
+	title = oman.9.t
+	desc = oman.9.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.9.a
+		ai_chance = {
+			factor = 40
+		}
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = -500
+		    producer = OMA
+		}
+		set_country_flag = OMA_guns_zanzibar_big
+	}
+
+	option = {
+		name = oman.9.b
+		ai_chance = {
+			factor = 50
+		}
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = -150
+		    producer = OMA
+		}
+		set_country_flag = OMA_guns_zanzibar_small
+	}
+
+	option = {
+		name = oman.9.c
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -50
+	}
+}
+
+### Requesting Emirati suzerainty
+country_event = {
+	id = oman.10
+	title = oman.10.t
+	desc = oman.10.d
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.10.a
+		ai_chance = {
+			factor = 75
+		}
+		ENG = {
+			country_event = {
+				id = oman.110
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = oman.10.b
+		ai_chance = {
+			factor = 25
+		}
+		ENG = {
+			country_event = {
+				id = oman.210
+				days = 1
+			}
+		}
+	}
+}
+
+### Getting the Emirates
+country_event = {
+	id = oman.110
+	title = oman.110.t
+	desc = oman.110.d
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.110.a
+		annex_country = {
+		    target = UAE
+		    transfer_troops = yes
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = UAE
+				}
+				add_core_of = OMA
+			}
+		}
+	}
+}
+
+### Not Getting the Emirates
+country_event = {
+	id = oman.210
+	title = oman.210.t
+	desc = oman.210.d
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.210.a
+	}
+}
+
+### Who to give the oil concessions to...
+country_event = {
+	id = oman.11
+	title = oman.11.t
+	desc = oman.11.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.11.a
+		ai_chance = {
+			factor = 25
+		}
+		add_stability = -0.15
+		add_political_power = -200
+		set_country_flag = OMA_shell
+	}
+
+	option = {
+		name = oman.11.b
+		ai_chance = {
+			factor = 25
+		}
+		add_stability = -0.1
+		add_political_power = -150
+		set_country_flag = OMA_ipc
+	}
+
+	option = {
+		name = oman.11.c
+		ai_chance = {
+			factor = 25
+		}
+		add_stability = -0.05
+		add_political_power = -100
+		set_country_flag = OMA_cfp
+	}
+
+	option = {
+		name = oman.11.e
+		ai_chance = {
+			factor = 25
+		}
+		set_country_flag = OMA_nedc
+	}
+}
+### Oil Discovered
+country_event = {
+	id = oman.12
+	title = oman.12.t
+	desc = oman.12.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = oman.12.a
+		ai_chance = {
+			factor = 25
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_country_flag = OMA_shell
+			}
+			add_resource = {
+			    type = oil
+			    amount = 8
+			    state = 294
+			}
+			add_resource = {
+			    type = oil
+			    amount = 12
+			    state = 816
+			}
+			add_resource = {
+			    type = oil
+			    amount = 3
+			    state = 817
+			}
+		}
+	}
+}

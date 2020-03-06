@@ -211,4 +211,8 @@ spriteTypes={
 		name="GFX_YEM_south_arabian_union"
 		texturefile="gfx/interface/goals/YEM_south_arabian_union.dds"
 	}
+	SpriteType={
+		name="GFX_YEM_political_union"
+		texturefile="gfx/interface/goals/YEM_political_union.dds"
+	}
 }
