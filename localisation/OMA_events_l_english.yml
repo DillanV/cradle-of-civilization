@@ -12,5 +12,57 @@
  oman.1.c:0 "Place no restrictions on the Imam."
 
  oman.2.t:0 "Vanquishing The Imam"
- oman.2.d:0 "The Imam has been pushing the Sultan for too long, actions must be taken in order to ensure the Sultan will be the only leader of Oman."
- oman.2.a:0 "Destroy Him."
+ oman.2.d:0 "For the better part of two centuries, the nation of Oman has been divided into two seperate but equal entities, the Sultan and the Imam of Oman. Over the past few years, European involvement has made this balance teeter. The discovery of oil in Iraq and Arabia may suggest oil can be discovered in the Imam's land, much to the dismay of him. This, coupled with conflicts, have shown one thing. We must strike first."
+ oman.2.a:0 "Destroy him."
+
+ oman.102.t:0 "The Exiled Imam"
+ oman.102.d:0 "Civil war has unfortunately infected the once peaceful state, but for a cause. The Imam of Oman has been driven out of our lands, but this alone will not end the conflict. We must root out the Imam's elements in Omani society and pacify the dissenters, and only then can true peace be discovered."
+ oman.102.a:0 "I am the state."
+
+ oman.3.t:0 "Meeting with Imam Ghalib"
+ oman.3.d:0 "As two rulers, the Sultan and the Imam have had to work close together, for the same goals or out of necessity. We wish to prevent war in the region, or at least delay it. Our Sultan has decided to pay the Imam a special visit, but time will tell how he reacts."
+ oman.3.a:0 "Offer him concessions."
+ oman.3.b:0 "The values of the Sultan must'nt be compromised."
+
+ oman.103.t:0 "Excellent Results"
+ oman.103.d:0 "The meeting between the two leaders has at last concluded. Many points were made, but eventually, the two people have compromised on a lot of issues. This bodes well for any future arguments about peace."
+ oman.103.a:0 "Our work is almost done."
+
+ oman.203.t:0 "Good Results"
+ oman.203.d:0 "The meeting between the two leaders has at last concluded. Many points were made, but eventually, the two people have compromised some of the major303 issues. This bodes well for any future arguments about peace."
+ oman.203.a:0 "Our work is almost done."
+
+ oman.303.t:0 "Deadlock in meeting!"
+ oman.303.d:0 "The two people, Sultan and Imam, have met today. Both have conceded on minor issues, however the bigger picture wasn't made. The leaders refused to concede on many issues. Regardless, the ship must go on."
+ oman.303.a:0 "Not good."
+
+ oman.403.t:0 "A Disaster in the making..."
+ oman.403.d:0 "It is abundantly clear that no peace can be made in Oman. Today, heated arguments between Sultan Said and Imam Ghalib almost resulted in a fight. The two left, without saying a word. They refuse to talk any further, but is there actually a sliver of hope in this situation?"
+ oman.403.a:0 "This is our burden to bear..."
+
+ oman.4.t:0 "The Congress of Nizwa"
+ oman.4.d:0 "The day of reckoning has finally arrived. The Sultan and Imam, along with many delegates, are deciding the fate of the nation. Peace will be hard-fought, but we must hope that the right option is found."
+ oman.4.a:0 "May we be blessed."
+
+ oman.104.t:0 "Peace in Oman"
+ oman.104.d:0 "Today, the Congress has at last concluded.\nThe Omani delegates, along with the two heads of states, have reached compromise. There will be no war, and our country will be saved from needless misery. The two extremes are unsatisfied, however it will be easy to quash these dissenters."
+ oman.104.a:0 "Glory to us!"
+
+ oman.204.t:0 "The Struggling Congress"
+ oman.204.d:0 "Today, the Congress is still going.\nArguments are still going on in the nation, about concessions, treaties, and the other things that accompany a bureaucratic mess. If we do not react fast enough, civil war may be unavoidable."
+ oman.204.a:0 "There must be more concesions!"
+ oman.204.b:0 "Those fools, we will win anyway."
+
+ oman.204.t:0 "End of the Congress"
+ oman.204.d:0 "Today, the Congress has at last concluded.\nNo clear conclusion has arried at the congress, which has broken down and only delayed the inevitable. Right now, two sides are preparing to take over the Omani region, and peace is a foregone conclusion. The only option now is who to support."
+ oman.204.a:0 "Back the Sultan!"
+ oman.204.b:0 "Back the Imam!"
+
+ oman.5.t:0 "Petition to the Sultan"
+ oman.5.d:0 "The Sultan has clearly encroached enough upon our territory. We have drafted a petition force the Sultanate to limit their control over us, and let us have more power inside the government."
+ oman.5.a:0 "Demand Muscat to limit their governance."
+ oman.5.b:0 "Demand Muscat to hire new administrators."
+
+ oman.105.t:0 "Sultan Accepts Petition"
+ oman.105.d:0 "The Sultan, speaking on behalf of the Sultanate of Muscat, has agreed to treaties limiting the Sultan's control over Oman Proper. Now we must use this new freedom to prepare for the eventual war."
+ oman.105.a:0 "A victory for us!"
