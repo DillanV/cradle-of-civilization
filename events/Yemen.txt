@@ -1037,3 +1037,460 @@ country_event = {
 	}
 }
 
+# Revolt of the Najran Tribes
+country_event = {
+	id = yemen.16
+	title = yemen.16.t
+	desc = yemen.16.d
+	picture = GFX_report_event_bedouin_tribes
+
+	trigger = {
+		SAU = {
+			has_war_with = YEM
+		}
+	}
+
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = yemen.16.a
+		custom_effect_tooltip = YEM_tribes_boost_tt
+		SAU = {
+			country_event = {
+				id = yemen.116
+				days = 1
+			}
+		}
+	}
+}
+
+# Revolt of the Najran Tribes
+country_event = {
+	id = yemen.116
+	title = yemen.116.t
+	desc = yemen.116.d
+	picture = GFX_report_event_bedouin_tribes
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.116.a
+		custom_effect_tooltip = YEM_tribes_nerf_tt
+		set_variable = {
+		    var = tribes_attack_modifier
+		    value = -0.2
+		}
+		set_variable = {
+		    var = tribes_org_modifier
+		    value = -0.5
+		}
+		hidden_effect = {
+			804 = {
+				add_dynamic_modifier = { modifier = saudi_asir_najran_tribes scope = SAU days = 180 }
+			}
+			806 = {
+				add_dynamic_modifier = { modifier = saudi_asir_najran_tribes scope = SAU days = 180 }
+			}
+		}
+	}
+}
+
+# Capture of Mecca
+country_event = {
+	id = yemen.17
+	title = yemen.17.t
+	desc = yemen.17.d
+	picture = GFX_report_event_mecca
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.17.a
+		ai_chance = {
+			factor = 90
+		}
+		custom_effect_tooltip = YEM_peaceoffereasy
+		hidden_effect = {
+			SAU = {
+				country_event = {
+					id = yemen.117
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = yemen.17.b
+		ai_chance = {
+			factor = 10
+		}
+		custom_effect_tooltip = YEM_peaceofferhard
+		hidden_effect = {
+			SAU = {
+				set_country_flag = YEM_wants_mecca
+				country_event = {
+					id = yemen.117
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = yemen.17.c
+		ai_chance = {
+			factor = 5
+		}
+		add_stability = -0.1
+		add_political_power = -200
+	}
+}
+
+# Yemen wants the tribal lands!
+country_event = {
+	id = yemen.117
+	title = yemen.117.t
+	desc = yemen.117.d
+	picture = GFX_report_event_mecca
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.117.a
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.5
+				has_country_flag = YEM_wants_mecca
+			}
+		}
+		YEM = {
+			country_event = {
+				id = yemen.217
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = yemen.117.b
+		ai_chance = {
+			factor = 5
+		}
+		YEM = {
+			country_event = {
+				id = yemen.317
+				days = 1
+			}
+		}
+	}
+}
+
+# Offer accepted!
+country_event = {
+	id = yemen.217
+	title = yemen.217.t
+	desc = yemen.217.d
+	picture = GFX_report_event_mecca
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.217.a
+		if = {
+			limit = {
+				SAU = {
+					owns_state = 806
+				}
+			}
+			transfer_state = 806
+		}
+		if = {
+			limit = {
+				SAU = {
+					owns_state = 804
+				}
+			}
+			transfer_state = 804
+		}
+		if = {
+			limit = {
+				SAU = {
+					AND = {
+						owns_state = 808
+						has_country_flag = YEM_wants_mecca
+					}
+				}
+			}
+			transfer_state = 808
+		}
+		hidden_effect = {
+			white_peace = SAU
+		}
+	}
+}
+
+# No peace
+country_event = {
+	id = yemen.317
+	title = yemen.317.t
+	desc = yemen.317.d
+	picture = GFX_report_event_mecca
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.317.a
+	}
+}
+
+# Seizure of Aden
+country_event = {
+	id = yemen.18
+	title = yemen.18.t
+	desc = yemen.18.d
+	picture = GFX_report_event_generic_naval_treaty
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.18.a
+		if = {
+			limit = {
+				any_country = {
+					has_full_control_of_state = 659
+				}
+			}
+			transfer_state = 659
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_full_control_of_state = 812
+				}
+			}
+			transfer_state = 812
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_full_control_of_state = 813
+				}
+			}
+			transfer_state = 813
+		}
+		ENG = {
+			country_event = {
+				id = yemen.118
+			}
+		}
+	}
+}
+
+# Reaction to Seizure
+country_event = {
+	id = yemen.118
+	title = yemen.118.t
+	desc = yemen.118.d
+	picture = GFX_report_event_generic_naval_treaty
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.118.a
+		ai_chance = {
+			factor = 30
+		}
+
+		add_political_power = -100
+	}
+
+	option = {
+		name = yemen.118.b
+		ai_chance = {
+			factor = 30
+		}
+		YEM = {
+			country_event = {
+				id = yemen.218
+				days = 1
+			}
+		}
+	}
+}
+
+# Not getting Aden
+country_event = {
+	id = yemen.218
+	title = yemen.218.t
+	desc = yemen.218.d
+	picture = GFX_report_event_generic_naval_treaty
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.218.a
+		ai_chance = {
+			factor = 30
+		}
+		ENG = {
+			if = {
+				limit = {
+					any_country = {
+						has_full_control_of_state = 659
+					}
+				}
+				transfer_state = 659
+			}
+			if = {
+				limit = {
+					any_country = {
+						has_full_control_of_state = 812
+					}
+				}
+				transfer_state = 812
+			}
+			if = {
+				limit = {
+					any_country = {
+						has_full_control_of_state = 813
+					}
+				}
+				transfer_state = 813
+			}
+		}
+		add_opinion_modifier = {
+		    target = ENG
+		    modifier = YEM_denied_aden
+		}
+	}
+
+	option = {
+		name = yemen.218.b
+		ai_chance = {
+			factor = 30
+		}
+		add_stability = -0.2
+		add_manpower = -25000
+	}
+}
+
+# Alliance with Yemen?
+country_event = {
+	id = yemen.19
+	title = yemen.19.t
+	desc = yemen.19.d
+	picture = GFX_report_event_saudi_meet
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.19.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				OR = {
+					tag = KUW
+					tag = BRI
+					tag = QAT
+				}
+			}
+		}
+		YEM = {
+			country_event = {
+				id = yemen.119
+			}
+		}
+	}
+
+	option = {
+		name = yemen.19.b
+		ai_chance = {
+			factor = 20
+		}
+		YEM = {
+			country_event = {
+				id = yemen.219
+			}
+		}
+	}
+
+	option = {
+		name = yemen.19.c
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 5
+				OR = {
+					tag = KUW
+					tag = BRI
+					tag = QAT
+				}
+			}
+		}
+		YEM = {
+			country_event = {
+				id = yemen.319
+			}
+		}
+	}
+}
+
+# FROM Accepts
+country_event = {
+	id = yemen.119
+	title = yemen.119.t
+	desc = yemen.119.d
+	picture = GFX_report_event_saudi_meet
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.119.a
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = YEM
+		}
+		YEM = { 
+			annex_country = {
+			    target = FROM
+			}
+		}
+	}
+}
+
+# FROM Declines
+country_event = {
+	id = yemen.219
+	title = yemen.219.t
+	desc = yemen.219.d
+	picture = GFX_report_event_saudi_meet
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.219.a
+	}
+}
+
+# FROM Subjugated
+country_event = {
+	id = yemen.319
+	title = yemen.319.t
+	desc = yemen.319.d
+	picture = GFX_report_event_saudi_meet
+
+	is_triggered_only = yes	
+
+	option = {
+		name = yemen.319.a
+		YEM = {
+			puppet = FROM
+		}
+	}
+}
+

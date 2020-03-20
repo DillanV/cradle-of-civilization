@@ -5,14 +5,13 @@ state={
 		owner = SAU
 		add_core_of = SAU
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 	}
 	provinces={
-		8030 13236 
+		8030 13236 13297 13298
 	}
-	manpower=12700
-	state_category=wasteland
-	impassable=yes
+	manpower=22700
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

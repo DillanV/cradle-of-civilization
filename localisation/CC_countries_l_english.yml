@@ -122,3 +122,10 @@
  OMA_empire_neutrality:0 "Omani Empire"
  OMA_empire_neutrality_DEF:0 "the Omani Empire"
  OMA_empire_neutrality_ADJ:0 "Omani"
+  ### South Arabia
+ YEM_southern_arabia_neutrality:0 "South Arabia"
+ YEM_southern_arabia_neutrality_DEF:0 "South Arabia"
+ YEM_southern_arabia_neutrality_ADJ:0 "South Arabian"
+ YEM_southern_arabia_democratic:0 "South Arabia"
+ YEM_southern_arabia_democratic_DEF:0 "South Arabia"
+ YEM_southern_arabia_democratic_ADJ:0 "South Arabian"

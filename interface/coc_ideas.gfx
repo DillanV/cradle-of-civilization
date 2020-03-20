@@ -243,4 +243,12 @@ spriteTypes = {
 	name = "GFX_idea_YEM_hassan_ibn_yahya"
 	texturefile = "gfx/interface/ideas/idea_YEM_hassan_ibn_yahya.dds"
 	}
+	spriteType = {
+	name = "GFX_modifier_najran_revolts"
+	texturefile = "gfx/interface/ideas/modifier_najran_revolts.dds"
+	}
+	spriteType = {
+	name = "GFX_coffea_arabica_icon"
+	texturefile = "gfx/interface/ideas/modifier_arabian_coffee.dds"
+	}
 }

@@ -124,4 +124,26 @@ on_actions = {
 			}
 		}
 	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						original_tag = YEM
+						NOT = {
+							has_country_flag = YEM_peace_offer
+						}
+					}
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 808 }
+				}
+				set_country_flag = YEM_peace_offer
+				country_event = {
+					id = yemen.17
+				}
+			}
+		}
+	}
 }

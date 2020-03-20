@@ -215,4 +215,16 @@ spriteTypes={
 		name="GFX_YEM_political_union"
 		texturefile="gfx/interface/goals/YEM_political_union.dds"
 	}
+	SpriteType={
+		name="GFX_YEM_coffee"
+		texturefile="gfx/interface/goals/YEM_coffee.dds"
+	}
+	SpriteType={
+		name="GFX_YEM_hadramaut_gambit"
+		texturefile="gfx/interface/goals/YEM_hadramaut_gambit.dds"
+	}
+	SpriteType={
+		name="GFX_YEM_reign_in_gulf"
+		texturefile="gfx/interface/goals/YEM_reign_in_gulf.dds"
+	}
 }

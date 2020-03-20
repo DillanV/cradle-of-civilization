@@ -34,6 +34,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/GFX_report_event_sword_of_islam_2.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_bedouin_tribes"
+		texturefile = "gfx/event_pictures/GFX_report_event_bedouin_tribes.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mecca"
+		texturefile = "gfx/event_pictures/GFX_report_event_mecca.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mecca_2"
+		texturefile = "gfx/event_pictures/GFX_report_event_mecca_2.dds"
+	}
+	spriteType = {
 		name = "GFX_abbased_texticon"
 		texturefile = "gfx/texticons/abbased_texticon.dds"
 		legacy_lazy_load = no

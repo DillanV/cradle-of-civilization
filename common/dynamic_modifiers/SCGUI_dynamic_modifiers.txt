@@ -40,3 +40,28 @@ islamic_dynamic_modifier = {
 	political_power_gain = islam_effect_3
 	conscription_factor = islam
 }
+
+saudi_asir_najran_tribes = {
+	enable = { always = yes }
+	icon = GFX_modifier_najran_revolts
+	army_attack_factor = tribes_attack_modifier
+	army_defence_factor = tribes_attack_modifier
+	army_morale_factor = tribes_org_modifier
+}
+
+coffea_arabica = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_coffea_arabica_icon
+	production_speed_buildings_factor = coffea_arabica_modifier_build_time
+	local_building_slots = coffea_arabica_modifier_build_slots
+}
+
+greater_yemen_project = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_najran_revolts
+	army_core_attack_factor = greater_yemen_project_attack_modifier
+}
