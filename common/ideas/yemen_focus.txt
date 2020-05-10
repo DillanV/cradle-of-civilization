@@ -94,6 +94,28 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.2
+				political_power_cost = 0.5
+				neutrality_drift = -0.03
+			}
+		}
+		YEM_family_struggle_2 = {
+
+			allowed = {
+				original_tag = YEM
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_family_struggle
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.5
 			}
 		}
 		YEM_traditional_law = {
@@ -888,6 +910,96 @@ ideas = {
 			removal_cost = -1
 
 			targeted_modifier = { tag = ENG attack_bonus_against = 0.15 defense_bonus_against = 0.15 } 
+		}
+		YEM_shia_keepers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.1
+				justify_war_goal_time = -0.33
+				resistance_target = -0.05
+			}
+		}
+		YEM_brotherhood_shadow = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.2
+				justify_war_goal_time = 0.25
+				neutrality_drift = 0.03
+			}
+		}
+		YEM_anti_zionist_rhetoric = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = -0.75 
+				stability_factor = -0.05
+				offensive_war_stability_factor = 0.4 
+				political_power_gain = 0.35
+			}
+		}
+		YEM_jewish_acceptance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				conscription = 0.003
+				industrial_capacity_factory = 0.1
+			}
+		}
+		YEM_shura_council = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.2
+				stability_weekly = 0.001
+			}
 		}
 	}
 }

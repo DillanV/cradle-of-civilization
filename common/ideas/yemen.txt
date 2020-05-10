@@ -78,6 +78,22 @@ ideas = {
 				}
 			}
 		}
+
+		YEM_abdullah_al_wazir = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { prince_of_terror }
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+						has_country_flag = YEM_brotherhood_assassination
+					}
+				}
+			}
+		}
 	}
 
 	army_chief = {

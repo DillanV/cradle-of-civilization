@@ -464,21 +464,51 @@ focus_tree = {
 	focus = {
 		id = YEM_crush_bait_al-nidal
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 2
+		x = 0
 		y = 3
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_expandmilitarycontrol }
+		prerequisite = { focus = YEM_anti_zionism focus = YEM_expandmilitarycontrol }
 		ai_will_do = {
-			factor = 15
+			factor = 100
 		}
 		completion_reward = {
 			add_popularity = {
 			    ideology = fascism
 			    popularity = -0.1
 			}
+			swap_ideas = {
+				remove_idea = YEM_family_struggle
+				add_idea = YEM_family_struggle_2
+			}
 		}
 
+	}
+
+	#Focus for The Imamate Triumphant
+
+	focus = {
+		id = YEM_imamate_triumphant
+		icon = GFX_YEM_imamate_triumphant
+		cost = 10
+		x = 1
+		y = 4
+		available = {}
+		bypass = {}
+		allow_branch = {}
+		prerequisite = {
+			focus = YEM_crush_bait_al-nidal
+		}
+		prerequisite = {
+			focus = YEM_organize_royal_guard
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	
+		completion_reward = {
+			remove_ideas = YEM_family_struggle
+		}
 	}
 
 	#Focus for Italian Production Mission
@@ -867,7 +897,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			QAT = { country_event = { days = 1 id = yemen.7 } }
-			BRI = { country_event = { days = 1 id = yemen.7 } }
+			BHR = { country_event = { days = 1 id = yemen.7 } }
 			KUW = { country_event = { days = 1 id = yemen.7 } }
 		}
 
@@ -1117,7 +1147,7 @@ focus_tree = {
 	#Focus for Request Control of Aden
 	focus = {
 		id = YEM_requestcontrolofaden
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_YEM_foster_religious_identity
 		x = 21
 		y = 6
 		cost = 8
@@ -1303,23 +1333,22 @@ focus_tree = {
 
 	}
 
-	#Focus for Expand Military Control
+	#Focus for Jewish Acceptance
 	focus = {
 		id = YEM_expandmilitarycontrol
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_generic_jewish_acceptance
 		x = 2
 		y = 2
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_thenewcentralgovernment }
+		mutually_exclusive = { focus = YEM_anti_zionism } 
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
-			country_event= {
-				days = 1
-				id = yemen.10
-			}
+			add_ideas = YEM_jewish_acceptance
+			add_war_support = -0.1
 		}
 
 	}
@@ -1333,30 +1362,15 @@ focus_tree = {
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_thenewcentralgovernment }
+		mutually_exclusive = { focus = YEM_expandmilitarycontrol } 
 		ai_will_do = {
 			factor = 20
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_opinion_modifier = {
-			    target = ISR
-			    modifier = anti_zionism
-			}
-			custom_effect_tooltip = YEM_anti_zionism_tt
-			SAU = {
-				country_event = {
-					id = yemen.15
-					days = 1
-				}
-			}
-			IRQ = {
-				country_event = {
-					id = yemen.15
-					days = 1
-				}
-			}
-			hidden_effect = {
-				add_ideas = YEM_anti_zionist_pact
+			add_timed_idea = {
+				idea = YEM_anti_zionist_rhetoric
+				days = 730
 			}
 		}
 	}
@@ -1457,6 +1471,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
+			add_ideas = YEM_shura_council
 			swap_ideas = {
 				remove_idea = YEM_resistance
 				add_idea = YEM_resistance_2
@@ -1470,17 +1485,42 @@ focus_tree = {
 		id = YEM_supreme_guide
 		icon = GFX_focus_generic_support_the_left_right
 		relative_position_id = YEM_shura_council
-        x = 0
+        x = 1
         y = 1
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = YEM_shura_council }
+		prerequisite = { focus = YEM_anti_sunni }
 		ai_will_do = {
 			factor = 40
 		}
 		completion_reward = {
 			remove_ideas = YEM_resistance_2
 			add_15_islam = yes
+		}
+
+	}
+
+	#Focus for Keepers of the Kaaba
+	focus = {
+		id = YEM_kaaba_stone
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = YEM_shura_council
+        x = -1
+        y = 3
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			YEM = {
+				owns_state = 808 
+			}
+		}
+		prerequisite = { focus = YEM_imamate_triumphant focus = YEM_incite_saudi_riots }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_ideas = YEM_shia_keepers
 		}
 
 	}
@@ -1501,6 +1541,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_5_islam = yes
+			add_opinion_modifier = {
+				target = SAU
+				modifier = YEM_anti_sunni_opinion
+			}
 		}
 
 	}
@@ -1511,8 +1555,8 @@ focus_tree = {
 		icon = GFX_YEM_wargoal_focus
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_anti_sunni }
-		relative_position_id = YEM_anti_sunni
+		prerequisite = { focus = YEM_supreme_guide }
+		relative_position_id = YEM_supreme_guide
         x = 0
         y = 1
 		ai_will_do = {
@@ -1533,17 +1577,19 @@ focus_tree = {
 	focus = {
 		id = YEM_organize_royal_guard
 		icon = GFX_focus_generic_treaty
-		x = 0
+		x = 2
 		y = 3
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = YEM_anti_zionism }
+		prerequisite = { focus = YEM_anti_zionism focus = YEM_expandmilitarycontrol }
 		ai_will_do = {
 			factor = 15
 		}
 		completion_reward = {
-			remove_ideas= YEM_family_struggle
-			add_manpower = 6000
+			country_event = {
+				id = yemen.20
+				days = 1
+			}
 		}
 
 	}

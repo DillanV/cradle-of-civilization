@@ -155,7 +155,7 @@ if = {
 		freedom_level = 0.5
 	}
 	set_autonomy = {
-		target = BRI
+		target = BHR
 		autonomous_state = autonomy_protectorate
 		freedom_level = 0.3
 	}
@@ -198,7 +198,7 @@ if = {
 UAE = {
 	set_cosmetic_tag = UAE_UK
 }
-BRI = {
+BHR = {
 	set_cosmetic_tag = BRI_UK
 }
 QAT = {

@@ -34,4 +34,7 @@ opinion_modifiers = {
 	SAU_concession_rights_to_american_companies = {
 		value = 30
 	}
+	YEM_anti_sunni_opinion = {
+		value = -100
+	}
 }

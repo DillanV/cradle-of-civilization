@@ -5,8 +5,8 @@ state={
 		oil=6 # was: 3
 	}
 	history={
-		add_core_of = BRI
-		owner = BRI
+		add_core_of = BHR
+		owner = BHR
 		add_claim_by = PER
 		victory_points = {
 			13234 1

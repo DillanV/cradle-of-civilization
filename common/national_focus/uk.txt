@@ -3890,25 +3890,25 @@ focus_tree = {
 					has_full_control_of_state = 690
 					has_full_control_of_state = 693
 				}
-				release = BAH
+				release = BHR
 				if = {
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-					set_autonomy = { target = BAH autonomy_state = autonomy_dominion }
+					set_autonomy = { target = BHR autonomy_state = autonomy_dominion }
 				}
 				if = {
 					limit = {
 						NOT = { has_dlc = "Together for Victory" }
 					}
-					puppet = BAH
+					puppet = BHR
 				}
 				hidden_effect = {
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
 						}
-						BAH = {
+						BHR = {
 							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
 						}
 					}

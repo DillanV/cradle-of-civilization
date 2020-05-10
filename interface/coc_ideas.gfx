@@ -228,8 +228,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/idea_YEM_abdullah_as_sallal.dds"
 	}
 	spriteType = {
+	name = "GFX_idea_YEM_abdullah_as_sallal_military"
+	texturefile = "gfx/interface/ideas/idea_YEM_abdullah_as_sallal_military.dds"
+	}
+	spriteType = {
 	name = "GFX_idea_YEM_ahmad_bin_yahya"
 	texturefile = "gfx/interface/ideas/idea_YEM_ahmad_bin_yahya.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_ahmad_bin_yahya_military"
+	texturefile = "gfx/interface/ideas/idea_YEM_ahmad_bin_yahya_military.dds"
 	}
 	spriteType = {
 	name = "GFX_idea_YEM_ahmad_muhammad_numan"
@@ -240,8 +248,12 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/idea_YEM_ali_nasser_al_qardaei.dds"
 	}
 	spriteType = {
-	name = "GFX_idea_YEM_hassan_ibn_yahya"
-	texturefile = "gfx/interface/ideas/idea_YEM_hassan_ibn_yahya.dds"
+	name = "GFX_idea_YEM_hassan_bin_yahya"
+	texturefile = "gfx/interface/ideas/idea_YEM_hassan_bin_yahya.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_pietro_badoglio"
+	texturefile = "gfx/interface/ideas/idea_YEM_pietro_badoglio.dds"
 	}
 	spriteType = {
 	name = "GFX_modifier_najran_revolts"
@@ -250,5 +262,13 @@ spriteTypes = {
 	spriteType = {
 	name = "GFX_coffea_arabica_icon"
 	texturefile = "gfx/interface/ideas/modifier_arabian_coffee.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_shia_keepers"
+	texturefile = "gfx/interface/ideas/idea_YEM_shia_keepers.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_YEM_shia_keepers"
+	texturefile = "gfx/interface/ideas/idea_YEM_brotherhood_shadow.dds"
 	}
 }

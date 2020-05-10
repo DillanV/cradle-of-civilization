@@ -227,4 +227,20 @@ spriteTypes={
 		name="GFX_YEM_reign_in_gulf"
 		texturefile="gfx/interface/goals/YEM_reign_in_gulf.dds"
 	}
+	SpriteType={
+		name="GFX_YEM_kaaba_stone"
+		texturefile="gfx/interface/goals/YEM_kaaba_stone.dds"
+	}
+	SpriteType={
+		name="GFX_YEM_foster_religious_identity"
+		texturefile="gfx/interface/goals/YEM_foster_religious_identity.dds"
+	}
+	SpriteType={
+		name="GFX_YEM_imamate_triumphant"
+		texturefile="gfx/interface/goals/YEM_imamate_triumphant.dds"
+	}
+	SpriteType={
+		name="GFX_generic_jewish_acceptance"
+		texturefile="gfx/interface/goals/generic_jewish_acceptance.dds"
+	}
 }

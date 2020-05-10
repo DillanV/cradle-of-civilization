@@ -1376,7 +1376,7 @@ country_event = {
 	}
 }
 
-# Alliance with Yemen?
+# Unification with Yemen?
 country_event = {
 	id = yemen.19
 	title = yemen.19.t
@@ -1425,7 +1425,7 @@ country_event = {
 				factor = 5
 				OR = {
 					tag = KUW
-					tag = BRI
+					tag = BHR
 					tag = QAT
 				}
 			}
@@ -1491,6 +1491,28 @@ country_event = {
 		YEM = {
 			puppet = FROM
 		}
+	}
+}
+
+# Fate of the Brotherhood
+country_event = {
+	id = yemen.20
+	title = yemen.20.t
+	desc = yemen.20.d
+	picture = GFX_report_event_yugoslavian_cavalry
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yemen.20.a
+		set_country_flag = YEM_brotherhood_assassination
+		add_stability = -0.1
+	}
+
+	option = {
+		name = yemen.20.b
+		add_ideas = YEM_brotherhood_shadow
 	}
 }
 
