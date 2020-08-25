@@ -20,6 +20,9 @@ state={
 		victory_points = {			## Taif
 			2090 3 
 		}
+		victory_points = {			## Hufuf
+			5024 1
+		}
 		add_core_of = SAU
 
 	}
