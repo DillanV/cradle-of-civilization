@@ -1,6 +1,9 @@
 state={
 	id=838
 	name="STATE_829"
+	resources={
+		oil=2.000
+	}
 	history={
 		owner = EGY
 		buildings = {
@@ -8,7 +11,10 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			3996 5 
+			10031 1
+		}
+		victory_points = {
+			4055 3 
 		}
 		add_core_of = EGY
 	}

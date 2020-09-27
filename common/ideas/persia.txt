@@ -13,7 +13,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_oil_concession
+			picture = PER_british_influence
 
 			modifier = {
 				political_power_factor = -0.05
@@ -33,7 +33,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_army_problems
+			picture = PER_corrupt_economy
 
 			modifier = {
 				stability_factor = -0.10
@@ -99,7 +99,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_school_shia_jafari
+			picture = PER_hostile_clergy
 
 			modifier = {
 				political_power_factor = -0.05

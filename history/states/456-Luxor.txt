@@ -4,13 +4,19 @@ state={
 	name="STATE_456"
 
 	history={
-		victory_points = {
-			11999 1 
-		}
 		owner = EGY
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+		}
+		victory_points = {
+			7073 3
+		}
+		victory_points = {
+			12071 3
+		}
+		victory_points = {
+			11999 2
 		}
 		add_core_of = EGY
 

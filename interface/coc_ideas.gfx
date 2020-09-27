@@ -271,4 +271,16 @@ spriteTypes = {
 	name = "GFX_idea_YEM_shia_keepers"
 	texturefile = "gfx/interface/ideas/idea_YEM_brotherhood_shadow.dds"
 	}
+	spriteType = {
+	name = "GFX_idea_PER_british_influence"
+	texturefile = "gfx/interface/ideas/idea_PER_british_influence.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_PER_hostile_clergy"
+	texturefile = "gfx/interface/ideas/idea_PER_hostile_clergy.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_PER_corrupt_economy"
+	texturefile = "gfx/interface/ideas/idea_PER_corrupt_economy.dds"
+	}
 }

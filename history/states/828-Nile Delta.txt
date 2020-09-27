@@ -7,8 +7,23 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			dockyard = 1
+			10005 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = EGY
+		victory_points = {
+			7164 3
+		}
+		victory_points = {
+			10073 2
+		}
+		victory_points = {
+			7091 3
+		}
+		victory_points = {
+			10005 5
+		}
 	}
 	provinces={
 		4076 7091 7164 10005 10073 11964 

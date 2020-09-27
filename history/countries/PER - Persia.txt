@@ -70,13 +70,11 @@ set_popularities = {
 }
 
 add_ideas = {
-	PER_oil_concessions
-	
 	PER_you_are_corrupt_congrats
-	PER_ploopy_economy
-	PER_you_are_unpopular
 	PER_the_clergy_hate_you
+	limited_conscription
 }
+add_dynamic_modifier = { modifier = PER_anglo_influence }
 
 create_country_leader = {
 	name = "Reza Shah Pahlavi"

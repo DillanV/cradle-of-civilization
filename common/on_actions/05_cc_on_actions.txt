@@ -122,6 +122,13 @@ on_actions = {
 				}
 				set_country_flag = muslim_nation
 			}
+			PER = {
+				set_variable = { anglo_influence_political_modifier = -0.1 }
+				set_variable = { anglo_influence_states_fuel = -0.5 }
+				set_variable = { anglo_influence_max_fuel = -0.25 }
+				give_resource_rights = { receiver = ENG state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+			}
 		}
 	}
 
