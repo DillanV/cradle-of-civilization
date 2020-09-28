@@ -119,24 +119,112 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Hassan Arfa"
-	portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
-	traits = {  trickster desert_fox }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
 create_field_marshal = {
 	name = "Reza Shah"
 	portrait_path = "gfx/leaders/PER/Reza_Khan.tga"
-	traits = { old_guard war_hero defensive_doctrine }
+	traits = { inspirational_leader cavalry_officer unyielding_defender politically_connected }
 	skill = 4
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 1
 	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ahmad Amir-Ahmadi"
+	#portrait_path = "gfx/leaders/PER/Reza_Khan.tga"
+	traits = { inspirational_leader politically_connected hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Karim Khan Buzzarjohmeri"
+	#portrait_path = "gfx/leaders/PER/Reza_Khan.tga"
+	traits = { politically_connected infantry_leader organizer logistics_wizard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Hassan Arfa"
+	portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = { trait_mountaineer desert_fox }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Amanollah Jahanbani"
+	#portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = { old_guard cavalry_officer media_personality }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Assadollah Hosseinpour"
+	#portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = { trickster skilled_staffer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Fazlollah Zahedi"
+	#portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = { cavalry_officer trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Morteza Yazdanpanah"
+	#portrait_path = "gfx/leaders/PER/Hassan_Arfa.tga"
+	traits = { ambusher infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Gholamali Bayandor"
+	#picture = "Portrait_Britain_Arthur_Power.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Yadollah Bayandor"
+	#picture = "Portrait_Britain_Arthur_Power.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
