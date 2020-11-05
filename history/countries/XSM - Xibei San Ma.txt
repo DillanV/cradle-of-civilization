@@ -102,6 +102,9 @@ if = {
 	}
 }
 
+create_faction = Ma_Clique
+add_to_faction = NMC
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
