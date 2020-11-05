@@ -129,3 +129,7 @@
  YEM_southern_arabia_democratic:0 "South Arabia"
  YEM_southern_arabia_democratic_DEF:0 "South Arabia"
  YEM_southern_arabia_democratic_ADJ:0 "South Arabian"
+  ### Ma Cliques
+ XSM_neutrality:0 "Qinghai Ma Clique"
+ XSM_neutrality_DEF:1 "the Qinghai Ma Family"
+ XSM_neutrality_ADJ:0 "Hui"
