@@ -356,6 +356,11 @@ XSM = {
 	color_ui = rgb { 105 90 132 }
 }
 
+NMC = {
+	color = rgb { 105 90 132 }
+	color_ui = rgb { 105 90 132 }
+}
+
 LBA = {
 	color = rgb { 200 180 90 }
 	color_ui = rgb { 200 180 90 }
